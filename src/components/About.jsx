@@ -1,5 +1,5 @@
 import React from 'react';
-import { FileText, ArrowUpRight, Terminal, Sparkles, CheckCircle2 } from 'lucide-react';
+import { FileText, ArrowUpRight, Terminal } from 'lucide-react';
 import { personalInfo } from '../data/personalInfo';
 
 export default function About() {

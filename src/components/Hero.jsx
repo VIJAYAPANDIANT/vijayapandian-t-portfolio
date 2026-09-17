@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, MessageSquare, Github, Linkedin, Code2, Sparkles } from 'lucide-react';
+import { ArrowRight, MessageSquare, Github, Linkedin, Code2 } from 'lucide-react';
 import { personalInfo } from '../data/personalInfo';
 import HeroScene from './HeroScene';
 

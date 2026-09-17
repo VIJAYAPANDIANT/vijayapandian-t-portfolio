@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, Github, ArrowUpRight, Info } from 'lucide-react';
+import { ExternalLink, Github, Info } from 'lucide-react';
 
 export default function ProjectCard({ project, onOpenModal }) {
   return (

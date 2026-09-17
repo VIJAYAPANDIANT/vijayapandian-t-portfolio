@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Trophy, Binary, Award, Rocket, Sparkles } from 'lucide-react';
+import { Trophy, Binary, Award, Rocket } from 'lucide-react';
 import { achievementsData } from '../data/achievements';
 
 const iconMap = {

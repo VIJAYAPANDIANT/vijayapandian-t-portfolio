@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Github, Linkedin, Send, MessageSquare, CheckCircle, AlertCircle, ExternalLink } from 'lucide-react';
+import { Mail, Github, Linkedin, Send, MessageSquare, CheckCircle, ExternalLink } from 'lucide-react';
 import { personalInfo } from '../data/personalInfo';
 
 export default function Contact() {
