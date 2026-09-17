@@ -1,0 +1,54 @@
+<svg width="600" height="360" viewBox="0 0 600 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="360" rx="16" fill="#0c1220"/>
+  <circle cx="300" cy="180" r="140" fill="url(#violet-glow)" opacity="0.18"/>
+  <defs>
+    <radialGradient id="violet-glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(300 180) rotate(90) scale(140)">
+      <stop stop-color="#8b5cf6"/>
+      <stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Browser window container -->
+  <rect x="110" y="60" width="380" height="240" rx="12" fill="#131d33" stroke="#2a2e4a" stroke-width="1.5"/>
+  <circle cx="135" cy="82" r="5" fill="#ef4444" opacity="0.8"/>
+  <circle cx="152" cy="82" r="5" fill="#eab308" opacity="0.8"/>
+  <circle cx="169" cy="82" r="5" fill="#22c55e" opacity="0.8"/>
+  <rect x="200" y="75" width="260" height="14" rx="7" fill="#1e293b"/>
+  <text x="215" y="86" fill="#64748b" font-family="monospace" font-size="9">https://testforge.runner/execute</text>
+
+  <!-- Visual Workflow Blocks -->
+  <g transform="translate(140, 115)">
+    <!-- Block 1: Trigger -->
+    <rect x="0" y="0" width="80" height="42" rx="6" fill="#1e293b" stroke="#8b5cf6" stroke-width="1.5"/>
+    <text x="40" y="18" fill="#c4b5fd" font-family="monospace" font-size="10" font-weight="bold" text-anchor="middle">NAVIGATE</text>
+    <text x="40" y="32" fill="#94a3b8" font-family="monospace" font-size="8" text-anchor="middle">/login</text>
+
+    <!-- Arrow 1 -->
+    <line x1="80" y1="21" x2="110" y2="21" stroke="#8b5cf6" stroke-width="2"/>
+    <polygon points="108,18 114,21 108,24" fill="#8b5cf6"/>
+
+    <!-- Block 2: Action -->
+    <rect x="115" y="0" width="85" height="42" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="157" y="18" fill="#7dd3fc" font-family="monospace" font-size="10" font-weight="bold" text-anchor="middle">CLICK</text>
+    <text x="157" y="32" fill="#94a3b8" font-family="monospace" font-size="8" text-anchor="middle">#btn-submit</text>
+
+    <!-- Arrow 2 -->
+    <line x1="200" y1="21" x2="230" y2="21" stroke="#38bdf8" stroke-width="2"/>
+    <polygon points="228,18 234,21 228,24" fill="#38bdf8"/>
+
+    <!-- Block 3: Assert -->
+    <rect x="235" y="0" width="85" height="42" rx="6" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+    <text x="277" y="18" fill="#6ee7b7" font-family="monospace" font-size="10" font-weight="bold" text-anchor="middle">ASSERT</text>
+    <text x="277" y="32" fill="#94a3b8" font-family="monospace" font-size="8" text-anchor="middle">Status 200 OK</text>
+  </g>
+
+  <!-- Output Playwright Code Box -->
+  <rect x="140" y="175" width="320" height="105" rx="8" fill="#090d16" stroke="#1e293b"/>
+  <circle cx="155" cy="192" r="3.5" fill="#10b981"/>
+  <text x="165" y="195" fill="#10b981" font-family="monospace" font-size="9" font-weight="bold">PLAYWRIGHT SUITE PASSED (3/3)</text>
+  <text x="155" y="218" fill="#a78bfa" font-family="monospace" font-size="9.5">await page.goto('/login');</text>
+  <text x="155" y="236" fill="#38bdf8" font-family="monospace" font-size="9.5">await page.click('#btn-submit');</text>
+  <text x="155" y="254" fill="#34d399" font-family="monospace" font-size="9.5">expect(page.url()).toContain('/dashboard');</text>
+
+  <text x="300" y="335" fill="#94a3b8" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="middle">TESTFORGE • No-Code Test Automation</text>
+</svg>

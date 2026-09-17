@@ -1,0 +1,62 @@
+<svg width="600" height="360" viewBox="0 0 600 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="360" rx="16" fill="#0c1220"/>
+  <circle cx="300" cy="180" r="140" fill="url(#blue-glow)" opacity="0.18"/>
+  <defs>
+    <radialGradient id="blue-glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(300 180) rotate(90) scale(140)">
+      <stop stop-color="#06b6d4"/>
+      <stop offset="1" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="grid-line" x1="0" y1="0" x2="600" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38bdf8" stop-opacity="0.02"/>
+      <stop offset="0.5" stop-color="#38bdf8" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#38bdf8" stop-opacity="0.02"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Subtle grid lines -->
+  <line x1="0" y1="90" x2="600" y2="90" stroke="url(#grid-line)" stroke-width="1"/>
+  <line x1="0" y1="180" x2="600" y2="180" stroke="url(#grid-line)" stroke-width="1"/>
+  <line x1="0" y1="270" x2="600" y2="270" stroke="url(#grid-line)" stroke-width="1"/>
+  <line x1="150" y1="0" x2="150" y2="360" stroke="url(#grid-line)" stroke-width="1"/>
+  <line x1="300" y1="0" x2="300" y2="360" stroke="url(#grid-line)" stroke-width="1"/>
+  <line x1="450" y1="0" x2="450" y2="360" stroke="url(#grid-line)" stroke-width="1"/>
+
+  <!-- Center Card UI -->
+  <rect x="120" y="60" width="360" height="240" rx="12" fill="#131d33" stroke="#253556" stroke-width="1.5"/>
+  
+  <!-- Window dots -->
+  <circle cx="145" cy="82" r="5" fill="#ef4444" opacity="0.8"/>
+  <circle cx="162" cy="82" r="5" fill="#eab308" opacity="0.8"/>
+  <circle cx="179" cy="82" r="5" fill="#22c55e" opacity="0.8"/>
+  <rect x="210" y="75" width="180" height="14" rx="7" fill="#1e293b"/>
+
+  <!-- Decision Nodes / Diagram -->
+  <rect x="150" y="115" width="90" height="50" rx="8" fill="#1e293b" stroke="#06b6d4" stroke-width="1.5"/>
+  <text x="195" y="145" fill="#38bdf8" font-family="monospace" font-size="11" font-weight="bold" text-anchor="middle">TELEMETRY</text>
+  
+  <line x1="240" y1="140" x2="275" y2="140" stroke="#06b6d4" stroke-width="2" stroke-dasharray="3 3"/>
+  <polygon points="275,137 282,140 275,143" fill="#06b6d4"/>
+
+  <!-- Central Intelligence Node -->
+  <circle cx="315" cy="140" r="28" fill="#0e7490" stroke="#22d3ee" stroke-width="2"/>
+  <text x="315" y="144" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle">AI</text>
+
+  <line x1="345" y1="140" x2="375" y2="140" stroke="#06b6d4" stroke-width="2" stroke-dasharray="3 3"/>
+  <polygon points="375,137 382,140 375,143" fill="#06b6d4"/>
+
+  <!-- Output Decision -->
+  <rect x="385" y="115" width="80" height="50" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+  <text x="425" y="145" fill="#34d399" font-family="monospace" font-size="10" font-weight="bold" text-anchor="middle">INSIGHTS</text>
+
+  <!-- Metrics Bar Chart Mock -->
+  <rect x="150" y="190" width="300" height="85" rx="8" fill="#0f172a" stroke="#1e293b"/>
+  <rect x="175" y="240" width="22" height="25" rx="4" fill="#0284c7"/>
+  <rect x="210" y="225" width="22" height="40" rx="4" fill="#06b6d4"/>
+  <rect x="245" y="210" width="22" height="55" rx="4" fill="#10b981"/>
+  <rect x="280" y="230" width="22" height="35" rx="4" fill="#0284c7"/>
+  <rect x="315" y="200" width="22" height="65" rx="4" fill="#38bdf8"/>
+  <rect x="350" y="218" width="22" height="47" rx="4" fill="#06b6d4"/>
+  <rect x="385" y="205" width="22" height="60" rx="4" fill="#10b981"/>
+
+  <text x="300" y="335" fill="#94a3b8" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="middle">IntelliSphere • Decision Intelligence Platform</text>
+</svg>

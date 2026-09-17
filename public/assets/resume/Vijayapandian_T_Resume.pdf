@@ -1,0 +1,89 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 850 >>
+stream
+BT
+/F2 20 Tf
+50 740 Td
+(VIJAYAPANDIAN T) Tj
+/F1 11 Tf
+0 -22 Td
+(Aspiring Software Development Engineer | Full-Stack Developer | AI Enthusiast) Tj
+0 -16 Td
+(Email: vijayapandian.dev@example.com | GitHub: github.com/vijayapandiant) Tj
+0 -24 Td
+/F2 13 Tf
+(EDUCATION) Tj
+/F1 10 Tf
+0 -16 Td
+(Easwari Engineering College - B.E. Computer Science and Engineering (2024 - 2028) | CGPA: 8.49) Tj
+0 -24 Td
+/F2 13 Tf
+(TECHNICAL SKILLS) Tj
+/F1 10 Tf
+0 -16 Td
+(Languages: Java, Python, JavaScript, SQL) Tj
+0 -14 Td
+(Frontend: React.js, HTML5, CSS3, Modern JavaScript) Tj
+0 -14 Td
+(Backend: Spring Boot, Node.js, Express.js, REST APIs, PostgreSQL, MySQL, MongoDB) Tj
+0 -14 Td
+(AI & Tools: Generative AI, Gemini API, Git, GitHub, Postman, VS Code, Figma) Tj
+0 -24 Td
+/F2 13 Tf
+(EXPERIENCE) Tj
+/F1 10 Tf
+0 -16 Td
+(Infosys Springboard - AI Intern [Aug 2026 - Present]) Tj
+0 -14 Td
+(Elevate Labs - SQL Developer Intern [Jan 2026 - Apr 2026]) Tj
+0 -14 Td
+(1M1B - Smart Waste Mapping [Feb 2026 - Mar 2026]) Tj
+0 -24 Td
+/F2 13 Tf
+(FEATURED PROJECTS) Tj
+/F1 10 Tf
+0 -16 Td
+(1. IntelliSphere - AI Decision Intelligence Platform [React, Spring Boot, PostgreSQL, Gemini AI]) Tj
+0 -14 Td
+(2. TESTFORGE - No-Code Test Automation Platform [React, Node.js, Express, MongoDB, Playwright]) Tj
+0 -14 Td
+(3. AI Resume Builder - ATS Resume Generator [React, JavaScript, Gemini AI]) Tj
+0 -24 Td
+/F2 13 Tf
+(ACHIEVEMENTS) Tj
+/F1 10 Tf
+0 -16 Td
+(300+ DSA Problems Solved | 10+ Hackathons | 18+ Online Quiz Wins) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000249 00000 n 
+0000001150 00000 n 
+0000001217 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+1289
+%%EOF
