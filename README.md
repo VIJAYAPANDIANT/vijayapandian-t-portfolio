@@ -123,8 +123,8 @@ npm run preview
 7. **Experience (`Experience.jsx`)**: Interactive accordion timeline detailing roles at Infosys Springboard, Elevate Labs, and 1M1B.
 8. **Education (`Education.jsx`)**: Easwari Engineering College card showcasing 8.49 CGPA and an interactive toggle displaying coursework and academic activities.
 9. **Achievements (`Achievements.jsx`)**: Verified accomplishment cards with hover micro-interactions.
-10. **Services (`Services.jsx`)**: 4 freelance offerings (Portfolio Websites, Frontend Websites, Bug Fixing, GitHub & Vercel Deployment) with a "Work With Me" CTA.
-11. **Contact (`Contact.jsx`)**: Client-validated contact form (name, email, subject, message) with error states and a success notification, alongside direct email and social profiles.
+10. **Services (`Services.jsx`)**: 6 freelance offerings (Portfolio Websites, Frontend Websites, Website Bug Fixing, Responsive Design, GitHub Setup, Vercel Deployment) with a "Let's Work Together" CTA.
+11. **Contact (`Contact.jsx`)**: Client-validated contact form (name, email, subject, message) with error states, success notification, and a direct "Email Me Directly" button.
 12. **Footer (`Footer.jsx`)**: Brand tagline, social links, back-to-top button, and copyright notice.
 
 ---
@@ -137,13 +137,25 @@ All information is separated into `src/data/`:
 * To add or modify skills: Edit `src/data/skills.js`.
 * To add new projects: Edit `src/data/projects.js`.
 * To update work experience: Edit `src/data/experience.js`.
+* To update services: Edit `src/data/services.js`.
 
 ---
 
-## Next Steps for Day 2
+## Day 3 Checklist: GitHub + Vercel Deployment
 
-1. **Connect Real Email Backend**: Integrate EmailJS, Formspree, or a serverless function (e.g. Vercel Serverless / Resend API) into `Contact.jsx`.
-2. **Deploy to Vercel / Netlify**: Link your GitHub repository to Vercel for automatic zero-config deployments on every push.
-3. **Add Real Project Screenshots / Video Demos**: Replace the SVG placeholders in `public/assets/images/` with live screenshots or short mp4 previews.
-4. **Custom Domain**: Connect a custom domain (e.g., `vijayapandian.dev`) to your Vercel deployment.
-5. **Analytics**: Add privacy-first analytics (such as Vercel Analytics or Cloudflare Web Analytics) to track portfolio visits and recruiter engagement.
+- [ ] **Push Latest Code**: Ensure all local commits are pushed to `https://github.com/VIJAYAPANDIANT/vijayapandian-t-portfolio`.
+- [ ] **Import to Vercel**:
+  1. Go to [vercel.com](https://vercel.com) and log in with your GitHub account.
+  2. Click **Add New...** -> **Project**.
+  3. Select `vijayapandian-t-portfolio`.
+  4. Framework Preset: **Vite** (auto-detected).
+  5. Build Command: `npm run build`.
+  6. Output Directory: `dist`.
+  7. Click **Deploy**.
+- [ ] **Configure Custom Domain (Optional)**:
+  - Under Project Settings -> Domains, add your domain (e.g. `vijayapandian.dev` or `vijayapandiant.in`).
+  - Follow DNS CNAME / A record instructions.
+- [ ] **Connect Email Backend**:
+  - Connect Formspree or EmailJS endpoint to `src/components/Contact.jsx` for direct email delivery.
+- [ ] **Verify Production URL**:
+  - Test live responsive layouts, 3D Hero canvas, resume downloads, and modal dialogs on mobile and desktop.

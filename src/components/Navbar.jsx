@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { FileText, Github, Linkedin, Menu, X, ArrowUpRight } from 'lucide-react';
 import { personalInfo } from '../data/personalInfo';
 
@@ -20,11 +20,11 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 30);
+      setScrolled(window.scrollY > 25);
 
       // Determine active section based on scroll offset
       const sections = navItems.map(item => item.href.substring(1));
-      const scrollPos = window.scrollY + 120;
+      const scrollPos = window.scrollY + 140;
 
       for (let i = sections.length - 1; i >= 0; i--) {
         const el = document.getElementById(sections[i]);
@@ -39,7 +39,30 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleNavClick = (e, href) => {
+  // Prevent background scrolling when mobile menu is open
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [mobileMenuOpen]);
+
+  // Close menu on Escape key press
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape' && mobileMenuOpen) {
+        setMobileMenuOpen(false);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [mobileMenuOpen]);
+
+  const handleNavClick = useCallback((e, href) => {
     e.preventDefault();
     setMobileMenuOpen(false);
     const targetId = href.substring(1);
@@ -47,7 +70,7 @@ export default function Navbar() {
     if (targetEl) {
       targetEl.scrollIntoView({ behavior: 'smooth' });
     }
-  };
+  }, []);
 
   return (
     <header className={`navbar-wrapper ${scrolled ? 'navbar-scrolled' : ''}`}>
@@ -57,6 +80,7 @@ export default function Navbar() {
           href="#home" 
           className="nav-brand"
           onClick={(e) => handleNavClick(e, '#home')}
+          aria-label="Vijayapandian T - Home"
         >
           <span className="nav-brand-bracket">&lt;</span>
           <span>{personalInfo.name}</span>
@@ -92,7 +116,7 @@ export default function Navbar() {
             rel="noopener noreferrer"
             className="btn btn-secondary"
             style={{ padding: '8px 16px', fontSize: '0.875rem' }}
-            aria-label="View Resume"
+            aria-label="View Resume (PDF)"
           >
             <FileText size={16} />
             <span>Resume</span>
@@ -105,6 +129,7 @@ export default function Navbar() {
             rel="noopener noreferrer"
             className="btn-icon"
             aria-label="GitHub Profile"
+            title="GitHub Profile"
           >
             <Github size={18} />
           </a>
@@ -115,6 +140,7 @@ export default function Navbar() {
             rel="noopener noreferrer"
             className="btn-icon"
             aria-label="LinkedIn Profile"
+            title="LinkedIn Profile"
           >
             <Linkedin size={18} />
           </a>
@@ -126,32 +152,40 @@ export default function Navbar() {
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label={mobileMenuOpen ? 'Close Navigation Menu' : 'Open Navigation Menu'}
             aria-expanded={mobileMenuOpen}
+            aria-controls="mobile-nav-drawer"
           >
             {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
       </div>
 
-      {/* Mobile Navigation Drawer */}
-      <div className={`mobile-drawer ${mobileMenuOpen ? 'open' : ''}`}>
-        <ul className="mobile-nav-links">
-          {navItems.map((item) => {
-            const sectionId = item.href.substring(1);
-            const isActive = activeSection === sectionId;
-            return (
-              <li key={item.label}>
-                <a
-                  href={item.href}
-                  className={`mobile-nav-link ${isActive ? 'active' : ''}`}
-                  onClick={(e) => handleNavClick(e, item.href)}
-                >
-                  {item.label}
-                </a>
-              </li>
-            );
-          })}
-        </ul>
+      {/* Mobile Navigation Drawer with smooth animation & scroll-lock */}
+      <div 
+        id="mobile-nav-drawer"
+        className={`mobile-drawer ${mobileMenuOpen ? 'open' : ''}`}
+        aria-hidden={!mobileMenuOpen}
+      >
+        <nav aria-label="Mobile Navigation">
+          <ul className="mobile-nav-links">
+            {navItems.map((item) => {
+              const sectionId = item.href.substring(1);
+              const isActive = activeSection === sectionId;
+              return (
+                <li key={item.label}>
+                  <a
+                    href={item.href}
+                    className={`mobile-nav-link ${isActive ? 'active' : ''}`}
+                    onClick={(e) => handleNavClick(e, item.href)}
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
 
+        {/* Mobile Action Buttons (Resume, GitHub, LinkedIn) */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', marginTop: 'auto' }}>
           <a
             href={personalInfo.resumePath}
@@ -159,19 +193,23 @@ export default function Navbar() {
             rel="noopener noreferrer"
             className="btn btn-primary"
             style={{ width: '100%' }}
+            onClick={() => setMobileMenuOpen(false)}
+            aria-label="View Resume"
           >
             <FileText size={18} />
             <span>View Resume</span>
             <ArrowUpRight size={16} />
           </a>
 
-          <div style={{ display: 'flex', gap: '12px', justifyContent: 'center', marginTop: '8px' }}>
+          <div style={{ display: 'flex', gap: '12px', justifyContent: 'center', marginTop: '6px' }}>
             <a
               href={personalInfo.socialLinks.github}
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-secondary"
               style={{ flex: 1 }}
+              onClick={() => setMobileMenuOpen(false)}
+              aria-label="GitHub Profile"
             >
               <Github size={18} />
               <span>GitHub</span>
@@ -182,6 +220,8 @@ export default function Navbar() {
               rel="noopener noreferrer"
               className="btn btn-secondary"
               style={{ flex: 1 }}
+              onClick={() => setMobileMenuOpen(false)}
+              aria-label="LinkedIn Profile"
             >
               <Linkedin size={18} />
               <span>LinkedIn</span>

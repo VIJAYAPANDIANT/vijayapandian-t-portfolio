@@ -83,12 +83,12 @@ export default function Contact() {
         </div>
 
         <div className="contact-grid">
-          {/* Direct Channels */}
+          {/* Direct Communication Channels */}
           <div className="contact-info-panel">
             <div className="glass-card contact-direct-card">
               <h3 style={{ fontSize: '1.25rem', marginBottom: '8px' }}>Direct Communication</h3>
               <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', marginBottom: '24px', lineHeight: 1.6 }}>
-                Feel free to connect directly via email, check my latest repositories on GitHub, or expand your network on LinkedIn.
+                Feel free to connect directly via email, explore my repositories on GitHub, or expand your network on LinkedIn.
               </p>
 
               {/* Email */}
@@ -96,7 +96,7 @@ export default function Contact() {
                 <div className="contact-item-icon">
                   <Mail size={20} />
                 </div>
-                <div>
+                <div style={{ minWidth: 0 }}>
                   <div className="contact-label">Email</div>
                   <a
                     href={`mailto:${personalInfo.socialLinks.email}`}
@@ -113,7 +113,7 @@ export default function Contact() {
                 <div className="contact-item-icon">
                   <Github size={20} />
                 </div>
-                <div>
+                <div style={{ minWidth: 0 }}>
                   <div className="contact-label">GitHub</div>
                   <a
                     href={personalInfo.socialLinks.github}
@@ -133,7 +133,7 @@ export default function Contact() {
                 <div className="contact-item-icon">
                   <Linkedin size={20} />
                 </div>
-                <div>
+                <div style={{ minWidth: 0 }}>
                   <div className="contact-label">LinkedIn</div>
                   <a
                     href={personalInfo.socialLinks.linkedin}
@@ -147,10 +147,23 @@ export default function Contact() {
                   </a>
                 </div>
               </div>
+
+              {/* Dedicated "Email Me" Alternative CTA */}
+              <div style={{ marginTop: '28px', paddingTop: '20px', borderTop: '1px solid var(--border-subtle)' }}>
+                <a
+                  href={`mailto:${personalInfo.socialLinks.email}?subject=Project%20Inquiry`}
+                  className="btn btn-primary"
+                  style={{ width: '100%' }}
+                  aria-label="Email Vijayapandian directly"
+                >
+                  <Mail size={18} />
+                  <span>Email Me Directly</span>
+                </a>
+              </div>
             </div>
           </div>
 
-          {/* Contact Form */}
+          {/* Validated Contact Form */}
           <div className="glass-card contact-form-card">
             {submitted ? (
               <div className="form-success-banner">
@@ -160,14 +173,14 @@ export default function Contact() {
                     Message Form Validated!
                   </h4>
                   <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: 1.5 }}>
-                    Your message passed all frontend validations. In this Day 1 build, client-side handling is active. You can also write directly to{' '}
+                    Your message passed all frontend validations. In this build, client-side preview handling is active. You can also send an email directly to{' '}
                     <strong style={{ color: 'var(--text-primary)' }}>{personalInfo.socialLinks.email}</strong>.
                   </p>
                   <button
                     type="button"
                     className="btn btn-secondary"
                     onClick={() => setSubmitted(false)}
-                    style={{ marginTop: '16px', padding: '6px 16px', fontSize: '0.85rem' }}
+                    style={{ marginTop: '16px', padding: '8px 18px', fontSize: '0.875rem' }}
                   >
                     Send Another Message
                   </button>
@@ -188,6 +201,7 @@ export default function Contact() {
                     onChange={handleChange}
                     placeholder="e.g. Alex Johnson"
                     className={`form-input ${errors.name ? 'error' : ''}`}
+                    required
                   />
                   {errors.name && <span className="form-error-msg">{errors.name}</span>}
                 </div>
@@ -205,6 +219,7 @@ export default function Contact() {
                     onChange={handleChange}
                     placeholder="e.g. alex@example.com"
                     className={`form-input ${errors.email ? 'error' : ''}`}
+                    required
                   />
                   {errors.email && <span className="form-error-msg">{errors.email}</span>}
                 </div>
@@ -220,8 +235,9 @@ export default function Contact() {
                     name="subject"
                     value={formData.subject}
                     onChange={handleChange}
-                    placeholder="e.g. Full-Stack Engineering Role / Project Inquiry"
+                    placeholder="e.g. Full-Stack Role / Freelance Project Inquiry"
                     className={`form-input ${errors.subject ? 'error' : ''}`}
+                    required
                   />
                   {errors.subject && <span className="form-error-msg">{errors.subject}</span>}
                 </div>
@@ -237,28 +253,40 @@ export default function Contact() {
                     rows="5"
                     value={formData.message}
                     onChange={handleChange}
-                    placeholder="Write your message here..."
+                    placeholder="Tell me about your project goals or role opportunity..."
                     className={`form-textarea ${errors.message ? 'error' : ''}`}
+                    required
                   ></textarea>
                   {errors.message && <span className="form-error-msg">{errors.message}</span>}
                 </div>
 
-                {/* Submit Button */}
-                <button
-                  type="submit"
-                  className="btn btn-primary"
-                  disabled={isSubmitting}
-                  style={{ alignSelf: 'flex-start', minWidth: '160px' }}
-                >
-                  {isSubmitting ? (
-                    <span>Validating...</span>
-                  ) : (
-                    <>
-                      <span>Send Message</span>
-                      <Send size={16} />
-                    </>
-                  )}
-                </button>
+                {/* Action Row */}
+                <div style={{ display: 'flex', alignItems: 'center', gap: '14px', flexWrap: 'wrap' }}>
+                  <button
+                    type="submit"
+                    className="btn btn-primary"
+                    disabled={isSubmitting}
+                    style={{ minWidth: '160px' }}
+                  >
+                    {isSubmitting ? (
+                      <span>Validating...</span>
+                    ) : (
+                      <>
+                        <span>Send Message</span>
+                        <Send size={16} />
+                      </>
+                    )}
+                  </button>
+
+                  <a
+                    href={`mailto:${personalInfo.socialLinks.email}`}
+                    className="btn btn-secondary"
+                    aria-label="Open native email client"
+                  >
+                    <Mail size={16} />
+                    <span>Email Me Directly</span>
+                  </a>
+                </div>
               </form>
             )}
           </div>

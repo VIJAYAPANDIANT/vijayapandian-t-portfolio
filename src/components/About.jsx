@@ -28,9 +28,9 @@ export default function About() {
 
             {/* Resume Action Button */}
             {/*
-              NOTE: The resume is served statically from `/assets/resume/Vijayapandian_T_Resume.pdf`.
-              To update with your own resume, replace the file in `public/assets/resume/Vijayapandian_T_Resume.pdf`
-              or modify the `resumePath` property in `src/data/personalInfo.js`.
+              TODO: Place your official resume PDF at `public/assets/resume/Vijayapandian_T_Resume.pdf`.
+              The button is configured to serve and download directly from this path.
+              If you wish to change the resume filename or external link, update `resumePath` in `src/data/personalInfo.js`.
             */}
             <div>
               <a

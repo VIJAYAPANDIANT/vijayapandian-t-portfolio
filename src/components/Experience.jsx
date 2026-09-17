@@ -49,7 +49,7 @@ export default function Experience() {
 
                     <div className="timeline-role">{exp.role}</div>
 
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginTop: '4px' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginTop: '6px', flexWrap: 'wrap' }}>
                       <span className="timeline-duration" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
                         <Calendar size={13} />
                         <span>{exp.duration}</span>

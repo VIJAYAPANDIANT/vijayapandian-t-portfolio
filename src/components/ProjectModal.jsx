@@ -117,6 +117,7 @@ export default function ProjectModal({ project, onClose }) {
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-secondary"
+            aria-label={`View ${project.title} source code on GitHub`}
           >
             <Github size={16} />
             <span>Source Code</span>
@@ -127,6 +128,7 @@ export default function ProjectModal({ project, onClose }) {
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-primary"
+            aria-label={`Launch ${project.title} live demo`}
           >
             <span>Launch Live Demo</span>
             <ExternalLink size={16} />
