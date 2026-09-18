@@ -1,54 +1,62 @@
 import React, { useState, useMemo } from 'react';
+import { Wrench, Code2 } from 'lucide-react';
 import {
-  Code2,
-  Terminal,
-  FileCode,
-  Atom,
-  Layout,
-  Palette,
-  Braces,
-  Cpu,
-  Server,
-  Workflow,
-  Network,
-  Database,
-  Boxes,
-  Layers,
-  Sparkles,
-  Bot,
-  BrainCircuit,
-  GitBranch,
-  GitPullRequest,
-  Send,
-  Code,
-  PenTool,
-  Wrench
-} from 'lucide-react';
+  JavaIcon,
+  PythonIcon,
+  JavaScriptIcon,
+  ReactIcon,
+  Html5Icon,
+  Css3Icon,
+  SpringBootIcon,
+  NodejsIcon,
+  ExpressIcon,
+  RestApiIcon,
+  MysqlIcon,
+  PostgresqlIcon,
+  MongodbIcon,
+  GeminiIcon,
+  GitIcon,
+  GithubIcon,
+  PostmanIcon,
+  VsCodeIcon,
+  FigmaIcon
+} from './BrandIcons';
 import { skillCategories, skillsData } from '../data/skills';
 
-const iconMap = {
-  Code2,
-  Terminal,
-  FileCode,
-  Atom,
-  Layout,
-  Palette,
-  Braces,
-  Cpu,
-  Server,
-  Workflow,
-  Network,
-  Database,
-  Boxes,
-  Layers,
-  Sparkles,
-  Bot,
-  BrainCircuit,
-  GitBranch,
-  GitPullRequest,
-  Send,
-  Code,
-  PenTool
+const skillIconMap = {
+  // Programming
+  'Java': JavaIcon,
+  'Python': PythonIcon,
+  'JavaScript': JavaScriptIcon,
+
+  // Frontend
+  'React.js': ReactIcon,
+  'HTML5': Html5Icon,
+  'CSS3 / Modern CSS': Css3Icon,
+  'JavaScript (ES6+)': JavaScriptIcon,
+
+  // Backend
+  'Spring Boot': SpringBootIcon,
+  'Node.js': NodejsIcon,
+  'Express.js': ExpressIcon,
+  'REST API': RestApiIcon,
+
+  // Database
+  'MySQL': MysqlIcon,
+  'PostgreSQL': PostgresqlIcon,
+  'MongoDB': MongodbIcon,
+
+  // AI
+  'Generative AI': GeminiIcon,
+  'Gemini API': GeminiIcon,
+  'AI Application Development': GeminiIcon,
+
+  // Tools
+  'Git': GitIcon,
+  'GitHub': GithubIcon,
+  'Postman': PostmanIcon,
+  'VS Code': VsCodeIcon,
+  'Figma': FigmaIcon
 };
 
 export default function Skills() {
@@ -70,7 +78,7 @@ export default function Skills() {
   }, [activeCategory]);
 
   const renderSkillCard = (skill, isMarquee = false, keyPrefix = '') => {
-    const IconComponent = iconMap[skill.icon] || Code2;
+    const IconComponent = skillIconMap[skill.name] || Code2;
     return (
       <div
         key={`${keyPrefix}${skill.name}`}
