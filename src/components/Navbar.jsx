@@ -82,9 +82,7 @@ export default function Navbar() {
           onClick={(e) => handleNavClick(e, '#home')}
           aria-label="Portfolio - Home"
         >
-          <span className="nav-brand-bracket">&lt;</span>
-          <span>{personalInfo.brandName || 'Portfolio'}</span>
-          <span className="nav-brand-bracket">/&gt;</span>
+          <span className="gradient-text">Portfolio</span>
         </a>
 
         {/* Desktop Navigation Links */}

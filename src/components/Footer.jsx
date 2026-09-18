@@ -13,10 +13,8 @@ export default function Footer() {
         {/* Top Footer */}
         <div className="footer-top">
           <div className="footer-brand">
-            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '1.25rem', fontWeight: 800 }}>
-              <span style={{ color: 'var(--accent-sky)', fontFamily: 'var(--font-mono)' }}>&lt;</span>
-              <span>{personalInfo.brandName || 'Portfolio'}</span>
-              <span style={{ color: 'var(--accent-sky)', fontFamily: 'var(--font-mono)' }}>/&gt;</span>
+            <div style={{ display: 'flex', alignItems: 'center', fontSize: '1.25rem', fontWeight: 800 }}>
+              <span className="gradient-text">Portfolio</span>
             </div>
             <p className="footer-tagline">
               "Building software, learning continuously, and solving problems."
