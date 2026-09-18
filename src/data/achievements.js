@@ -23,7 +23,7 @@ export const achievementsData = [
   },
   {
     id: "hackathons",
-    title: "10+ Hackathons",
+    title: "15+ Hackathons",
     subtitle: "Rapid Prototyping",
     icon: "Trophy",
     description:

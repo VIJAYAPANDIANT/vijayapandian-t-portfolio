@@ -22,7 +22,7 @@ export const personalInfo = {
   stats: [
     { value: "300+", label: "DSA Problems Solved", sub: "LeetCode, CodeChef & GFG" },
     { value: "7+", label: "Projects Completed", sub: "Full-Stack & AI" },
-    { value: "10+", label: "Hackathons", sub: "Competitions & Ideathons" },
+    { value: "15+", label: "Hackathons", sub: "Competitions & Ideathons" },
     { value: "7+", label: "Internships & Exp", sub: "Industry Work" },
     { value: "1,600+", label: "GitHub Contributions", sub: "150-Day Streak" },
     { value: "18+", label: "Competitions Won", sub: "Weekly & Daily Quizzes" }
