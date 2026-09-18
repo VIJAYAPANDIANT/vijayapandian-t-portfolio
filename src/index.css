@@ -1155,6 +1155,89 @@ button {
 }
 
 /* 8. ACHIEVEMENTS SECTION */
+.achievement-showcase-banner {
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.08) 0%, rgba(99, 102, 241, 0.08) 100%);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  padding: clamp(24px, 4vw, 36px);
+  margin-bottom: clamp(32px, 5vw, 44px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(20px, 3vw, 32px);
+  position: relative;
+  overflow: hidden;
+  transition: all var(--transition-normal);
+}
+
+.achievement-showcase-banner:hover {
+  border-color: var(--accent-sky);
+  box-shadow: 0 16px 40px rgba(56, 189, 248, 0.12);
+  transform: translateY(-2px);
+}
+
+.showcase-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  max-width: 720px;
+}
+
+.showcase-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 12px;
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--accent-sky);
+  font-family: var(--font-mono);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.showcase-title {
+  font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.25;
+}
+
+.showcase-desc {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.showcase-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.showcase-action {
+  flex-shrink: 0;
+}
+
+.achievement-link-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-sky);
+  padding: 4px;
+  border-radius: var(--radius-sm);
+  transition: transform var(--transition-fast), color var(--transition-fast);
+}
+
+.achievement-link-icon:hover {
+  color: #fff;
+  transform: scale(1.15);
+}
+
 .achievements-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr));
@@ -1525,6 +1608,20 @@ button {
     flex-direction: column;
     text-align: center;
     align-items: center;
+  }
+
+  .achievement-showcase-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .showcase-action {
+    width: 100%;
+  }
+
+  .showcase-action .btn {
+    width: 100%;
+    justify-content: center;
   }
 }
 

@@ -3,6 +3,16 @@
  */
 export const achievementsData = [
   {
+    id: "universe",
+    title: "VJ Achievement Universe",
+    subtitle: "Interactive 3D Vault & Analytics",
+    icon: "Rocket",
+    description:
+      "Comprehensive interactive platform showcasing verified certificates, competition trophies, badge wall, engineering timeline, and live achievement analytics.",
+    badge: "Live Universe",
+    link: "https://vj-achievement-universe.vercel.app/"
+  },
+  {
     id: "dsa",
     title: "300+ DSA Problems Solved",
     subtitle: "Algorithmic Mastery",

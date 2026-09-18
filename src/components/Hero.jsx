@@ -1,5 +1,6 @@
 import React from 'react';
-import { ArrowRight, MessageSquare, Github, Linkedin, Code2, ChefHat, Trophy, Braces } from 'lucide-react';
+import { ArrowRight, MessageSquare, Github, Linkedin } from 'lucide-react';
+import { LeetCodeIcon, CodeChefIcon, GeeksforGeeksIcon, UnstopIcon } from './BrandIcons';
 import { personalInfo } from '../data/personalInfo';
 import HeroScene from './HeroScene';
 
@@ -89,7 +90,7 @@ export default function Hero() {
                 title="LeetCode Profile"
                 aria-label="LeetCode Profile"
               >
-                <Code2 size={18} />
+                <LeetCodeIcon size={18} />
               </a>
 
               <a
@@ -100,7 +101,7 @@ export default function Hero() {
                 title="CodeChef Profile"
                 aria-label="CodeChef Profile"
               >
-                <ChefHat size={18} />
+                <CodeChefIcon size={18} />
               </a>
 
               <a
@@ -111,7 +112,7 @@ export default function Hero() {
                 title="GeeksforGeeks Profile"
                 aria-label="GeeksforGeeks Profile"
               >
-                <Braces size={18} />
+                <GeeksforGeeksIcon size={18} />
               </a>
 
               <a
@@ -122,7 +123,7 @@ export default function Hero() {
                 title="Unstop Profile"
                 aria-label="Unstop Profile"
               >
-                <Trophy size={18} />
+                <UnstopIcon size={18} />
               </a>
             </div>
           </div>

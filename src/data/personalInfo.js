@@ -32,6 +32,7 @@ export const personalInfo = {
     codechef: "https://www.codechef.com/users/vijay_code07",
     geeksforgeeks: "https://www.geeksforgeeks.org/profile/vijayapandiant11",
     unstop: "https://unstop.com/u/vijayt90718",
+    achievementUniverse: "https://vj-achievement-universe.vercel.app/",
     email: "vijayapandian.dev@example.com"
   },
   resumePath: "/assets/resume/Vijayapandian_T_Resume.pdf"
