@@ -15,15 +15,15 @@ export const personalInfo = {
   heroDescription:
     "Computer Science Engineering student focused on software development, full-stack applications, AI-powered solutions, and problem-solving.",
   aboutParagraphs: [
-    "I am a Computer Science and Engineering student with an intense focus on software development, scalable full-stack applications, and cutting-edge AI integrations.",
-    "Driven by a strong foundation in core Computer Science fundamentals—from Data Structures & Algorithms to Object-Oriented Design and Database Architecture—I love turning complex problems into elegant, real-world digital products.",
-    "Continuously exploring Generative AI, Gemini APIs, modern frameworks, and cloud workflows to build high-performance software that creates tangible impact."
+    "I am a Computer Science and Engineering student focused on software development, full-stack applications, and AI-powered solutions.",
+    "With a strong foundation in Data Structures & Algorithms, Object-Oriented Programming, databases, and software engineering — including a #6 institute rank on GeeksforGeeks — I enjoy turning complex problems into practical, real-world applications.",
+    "I have hands-on experience across 7 internships, building full-stack and AI-driven projects using Java, Spring Boot, React, Python, and modern web technologies. I'm also exploring Generative AI, cloud technologies, and scalable backend development."
   ],
   stats: [
     { value: "300+", label: "DSA Problems Solved", sub: "LeetCode & Platforms" },
     { value: "7+", label: "Projects Completed", sub: "Full-Stack & AI" },
     { value: "10+", label: "Hackathons", sub: "Competitions & Ideathons" },
-    { value: "3+", label: "Internships & Exp", sub: "Industry Work" }
+    { value: "7+", label: "Internships & Exp", sub: "Industry Work" }
   ],
   socialLinks: {
     github: "https://github.com/VIJAYAPANDIANT",
