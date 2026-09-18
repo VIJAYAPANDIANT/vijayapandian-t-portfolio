@@ -59,7 +59,6 @@ export default function Hero() {
 
             {/* Secondary Profile Links */}
             <div className="hero-social-group">
-              <span className="hero-social-label">Profiles //</span>
               <a
                 href={personalInfo.socialLinks.github}
                 target="_blank"
