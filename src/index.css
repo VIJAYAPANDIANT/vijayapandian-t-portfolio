@@ -557,11 +557,12 @@ button {
 }
 
 .hero-role {
-  font-size: clamp(1.1rem, 2.4vw, 1.5rem);
+  font-size: clamp(0.92rem, 1.5vw, 1.15rem);
   font-weight: 600;
   color: var(--accent-sky);
   margin-bottom: 18px;
   font-family: var(--font-mono);
+  letter-spacing: -0.01em;
 }
 
 .hero-description {
