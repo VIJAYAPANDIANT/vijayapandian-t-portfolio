@@ -13,7 +13,7 @@ export default function Footer() {
         {/* Top Footer */}
         <div className="footer-top">
           <div className="footer-brand">
-            <div style={{ display: 'flex', alignItems: 'center', fontSize: '1.25rem', fontWeight: 800 }}>
+            <div style={{ display: 'flex', alignItems: 'center', fontSize: '1.5rem', fontWeight: 800 }}>
               <span className="gradient-text">Portfolio</span>
             </div>
             <p className="footer-tagline">
