@@ -6,7 +6,7 @@
 :root {
   /* Systematic Spacing System */
   --header-height: 72px;
-  --section-padding: clamp(64px, 8vw, 112px);
+  --section-padding: clamp(36px, 4.5vw, 56px);
   --container-padding: clamp(16px, 4vw, 32px);
   --gap-grid: clamp(16px, 2.5vw, 28px);
   --max-width: 1200px;
@@ -178,7 +178,7 @@ button {
 .section-header {
   text-align: center;
   max-width: 720px;
-  margin: 0 auto clamp(36px, 5vw, 56px) auto;
+  margin: 0 auto clamp(20px, 3.5vw, 36px) auto;
 }
 
 .section-tag {
@@ -520,13 +520,12 @@ button {
 
 /* 2. HERO SECTION */
 .hero-section {
-  min-height: 100vh;
-  min-height: 100dvh;
+  min-height: auto;
   display: flex;
   align-items: center;
   position: relative;
-  padding-top: calc(var(--header-height) + 24px);
-  padding-bottom: 48px;
+  padding-top: calc(var(--header-height) + clamp(24px, 3.5vw, 44px));
+  padding-bottom: clamp(28px, 4vw, 52px);
   overflow: hidden;
 }
 
@@ -590,7 +589,7 @@ button {
 /* 3D Hero Scene Canvas Container */
 .hero-scene-container {
   width: 100%;
-  height: clamp(320px, 45vw, 480px);
+  height: clamp(260px, 32vw, 390px);
   position: relative;
   display: flex;
   align-items: center;
