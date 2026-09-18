@@ -54,12 +54,60 @@ const iconMap = {
 export default function Skills() {
   const [activeCategory, setActiveCategory] = useState('All');
 
+  // Partition all 22 skills into 3 balanced rows for the train marquee
+  const { row1, row2, row3 } = useMemo(() => {
+    const r1 = skillsData.slice(0, 8);
+    const r2 = skillsData.slice(8, 15);
+    const r3 = skillsData.slice(15, 22);
+    return { row1: r1, row2: r2, row3: r3 };
+  }, []);
+
   const filteredSkills = useMemo(() => {
     if (activeCategory === 'All') {
       return skillsData;
     }
     return skillsData.filter((skill) => skill.category === activeCategory);
   }, [activeCategory]);
+
+  const renderSkillCard = (skill, isMarquee = false, keyPrefix = '') => {
+    const IconComponent = iconMap[skill.icon] || Code2;
+    return (
+      <div
+        key={`${keyPrefix}${skill.name}`}
+        className={`glass-card ${isMarquee ? 'skill-marquee-card' : 'skill-card'}`}
+      >
+        <div className="skill-icon-wrapper">
+          <IconComponent size={22} />
+        </div>
+        <div className="skill-info">
+          <div className="skill-name">{skill.name}</div>
+          <div className="skill-meta">
+            <span className="skill-category-tag">{skill.category}</span>
+          </div>
+        </div>
+      </div>
+    );
+  };
+
+  const renderMarqueeRow = (skills, duration = '30s', rowKey = '') => {
+    // Duplicate skills inside group for ultra-wide screen seamless loop
+    const doubled = [...skills, ...skills];
+    return (
+      <div className="skills-marquee-row">
+        <div
+          className="skills-marquee-track animate-marquee-ltr"
+          style={{ animationDuration: duration }}
+        >
+          <div className="skills-marquee-group">
+            {doubled.map((skill, idx) => renderSkillCard(skill, true, `${rowKey}-g1-${idx}-`))}
+          </div>
+          <div className="skills-marquee-group" aria-hidden="true">
+            {doubled.map((skill, idx) => renderSkillCard(skill, true, `${rowKey}-g2-${idx}-`))}
+          </div>
+        </div>
+      </div>
+    );
+  };
 
   return (
     <section id="skills" className="section">
@@ -94,25 +142,18 @@ export default function Skills() {
           })}
         </div>
 
-        {/* Skills Grid */}
-        <div className="skills-grid">
-          {filteredSkills.map((skill) => {
-            const IconComponent = iconMap[skill.icon] || Code2;
-            return (
-              <div key={skill.name} className="glass-card skill-card">
-                <div className="skill-icon-wrapper">
-                  <IconComponent size={22} />
-                </div>
-                <div className="skill-info">
-                  <div className="skill-name">{skill.name}</div>
-                  <div className="skill-meta">
-                    <span className="skill-category-tag">{skill.category}</span>
-                  </div>
-                </div>
-              </div>
-            );
-          })}
-        </div>
+        {/* Content: 3-Row Train Marquee for 'All' or Grid for Filtered Category */}
+        {activeCategory === 'All' ? (
+          <div className="skills-marquee-wrapper" aria-label="Animated Technical Skills Marquee">
+            {renderMarqueeRow(row1, '34s', 'row1')}
+            {renderMarqueeRow(row2, '28s', 'row2')}
+            {renderMarqueeRow(row3, '32s', 'row3')}
+          </div>
+        ) : (
+          <div className="skills-grid">
+            {filteredSkills.map((skill) => renderSkillCard(skill, false))}
+          </div>
+        )}
       </div>
     </section>
   );

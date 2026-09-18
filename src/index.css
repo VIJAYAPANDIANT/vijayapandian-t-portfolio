@@ -685,6 +685,76 @@ button {
 }
 
 /* 4. SKILLS SECTION */
+.skills-marquee-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding: 8px 0;
+  mask-image: linear-gradient(to right, transparent, black 4%, black 96%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 4%, black 96%, transparent);
+}
+
+.skills-marquee-row {
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  width: 100%;
+}
+
+.skills-marquee-track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+}
+
+.skills-marquee-group {
+  display: flex;
+  gap: 16px;
+  padding-right: 16px;
+  flex-shrink: 0;
+}
+
+.skill-marquee-card {
+  width: 240px;
+  flex-shrink: 0;
+  padding: 16px 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  position: relative;
+  overflow: hidden;
+  transition: all var(--transition-normal);
+}
+
+.skill-marquee-card:hover {
+  border-color: var(--accent-sky);
+  transform: translateY(-3px);
+  background: rgba(15, 23, 42, 0.85);
+  box-shadow: 0 8px 24px rgba(56, 189, 248, 0.15);
+}
+
+/* Left-to-right train animation */
+@keyframes marquee-ltr {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-marquee-ltr {
+  animation: marquee-ltr 30s linear infinite;
+}
+
+/* Pause train on row hover */
+.skills-marquee-row:hover .skills-marquee-track {
+  animation-play-state: paused;
+}
+
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr));
@@ -1634,6 +1704,21 @@ button {
 
   .stats-grid {
     grid-template-columns: 1fr;
+  }
+
+  .skill-marquee-card {
+    width: 190px;
+    padding: 12px 14px;
+    gap: 12px;
+  }
+
+  .skills-marquee-wrapper {
+    gap: 12px;
+  }
+
+  .skills-marquee-group {
+    gap: 12px;
+    padding-right: 12px;
   }
 
   .hero-cta-group {
