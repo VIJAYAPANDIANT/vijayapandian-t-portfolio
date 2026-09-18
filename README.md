@@ -86,4 +86,8 @@ Configured for continuous zero-config deployment with **Vercel**.
 * Aspiring Software Development Engineer | Full-Stack Developer | AI Enthusiast
 * **GitHub:** [github.com/VIJAYAPANDIANT](https://github.com/VIJAYAPANDIANT)
 * **LinkedIn:** [linkedin.com/in/vijayapandiant](https://linkedin.com/in/vijayapandiant)
+* **LeetCode:** [leetcode.com/u/hackervj18](https://leetcode.com/u/hackervj18/)
+* **CodeChef:** [codechef.com/users/vijay_code07](https://www.codechef.com/users/vijay_code07)
+* **GeeksforGeeks:** [geeksforgeeks.org/profile/vijayapandiant11](https://www.geeksforgeeks.org/profile/vijayapandiant11)
+* **Unstop:** [unstop.com/u/vijayt90718](https://unstop.com/u/vijayt90718)
 * **Email:** [vijayapandian.dev@example.com](mailto:vijayapandian.dev@example.com)

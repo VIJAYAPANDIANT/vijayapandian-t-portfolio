@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Linkedin, Code2, Mail, ArrowUp } from 'lucide-react';
+import { Github, Linkedin, Code2, ChefHat, Trophy, Braces, Mail, ArrowUp } from 'lucide-react';
 import { personalInfo } from '../data/personalInfo';
 
 export default function Footer() {
@@ -22,7 +22,7 @@ export default function Footer() {
           </div>
 
           {/* Social Links */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap', justifyContent: 'center' }}>
             <a
               href={personalInfo.socialLinks.github}
               target="_blank"
@@ -54,6 +54,39 @@ export default function Footer() {
               aria-label="LeetCode Profile"
             >
               <Code2 size={18} />
+            </a>
+
+            <a
+              href={personalInfo.socialLinks.codechef}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-icon"
+              title="CodeChef"
+              aria-label="CodeChef Profile"
+            >
+              <ChefHat size={18} />
+            </a>
+
+            <a
+              href={personalInfo.socialLinks.geeksforgeeks}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-icon"
+              title="GeeksforGeeks"
+              aria-label="GeeksforGeeks Profile"
+            >
+              <Braces size={18} />
+            </a>
+
+            <a
+              href={personalInfo.socialLinks.unstop}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-icon"
+              title="Unstop"
+              aria-label="Unstop Profile"
+            >
+              <Trophy size={18} />
             </a>
 
             <a

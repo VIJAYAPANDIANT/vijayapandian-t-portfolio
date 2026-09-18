@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, MessageSquare, Github, Linkedin, Code2 } from 'lucide-react';
+import { ArrowRight, MessageSquare, Github, Linkedin, Code2, ChefHat, Trophy, Braces } from 'lucide-react';
 import { personalInfo } from '../data/personalInfo';
 import HeroScene from './HeroScene';
 
@@ -91,6 +91,39 @@ export default function Hero() {
                 aria-label="LeetCode Profile"
               >
                 <Code2 size={18} />
+              </a>
+
+              <a
+                href={personalInfo.socialLinks.codechef}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-icon"
+                title="CodeChef Profile"
+                aria-label="CodeChef Profile"
+              >
+                <ChefHat size={18} />
+              </a>
+
+              <a
+                href={personalInfo.socialLinks.geeksforgeeks}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-icon"
+                title="GeeksforGeeks Profile"
+                aria-label="GeeksforGeeks Profile"
+              >
+                <Braces size={18} />
+              </a>
+
+              <a
+                href={personalInfo.socialLinks.unstop}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-icon"
+                title="Unstop Profile"
+                aria-label="Unstop Profile"
+              >
+                <Trophy size={18} />
               </a>
             </div>
           </div>
