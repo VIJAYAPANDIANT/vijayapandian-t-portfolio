@@ -13,7 +13,7 @@ export const personalInfo = {
     "Problem Solver"
   ],
   heroDescription:
-    "Computer Science Engineering student passionate about software development, full-stack applications, AI-powered solutions, and problem solving.",
+    "Computer Science Engineering student focused on software development, full-stack applications, AI-powered solutions, and problem-solving.",
   aboutParagraphs: [
     "I am a Computer Science and Engineering student with an intense focus on software development, scalable full-stack applications, and cutting-edge AI integrations.",
     "Driven by a strong foundation in core Computer Science fundamentals—from Data Structures & Algorithms to Object-Oriented Design and Database Architecture—I love turning complex problems into elegant, real-world digital products.",
