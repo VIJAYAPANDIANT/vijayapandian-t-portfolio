@@ -37,5 +37,5 @@ export const personalInfo = {
     achievementUniverse: "https://vj-achievement-universe.vercel.app/",
     email: "vijayapandian.dev@example.com"
   },
-  resumePath: "/assets/resume/Vijayapandian_T_Resume.pdf"
+  resumePath: "https://drive.google.com/file/d/1nRrqbiIwxStywyVKvkCbQTMS0RwOvdTT/view?usp=sharing"
 };
