@@ -107,7 +107,6 @@ export default function Skills() {
                   <div className="skill-name">{skill.name}</div>
                   <div className="skill-meta">
                     <span className="skill-category-tag">{skill.category}</span>
-                    <span className="skill-level-badge">{skill.level}</span>
                   </div>
                 </div>
               </div>
