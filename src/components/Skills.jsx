@@ -14,7 +14,9 @@ import {
   MysqlIcon,
   PostgresqlIcon,
   MongodbIcon,
+  OpenAiIcon,
   GeminiIcon,
+  AiDevIcon,
   GitIcon,
   GithubIcon,
   PostmanIcon,
@@ -47,9 +49,9 @@ const skillIconMap = {
   'MongoDB': MongodbIcon,
 
   // AI
-  'Generative AI': GeminiIcon,
+  'Generative AI': OpenAiIcon,
   'Gemini API': GeminiIcon,
-  'AI Application Development': GeminiIcon,
+  'AI Application Development': AiDevIcon,
 
   // Tools
   'Git': GitIcon,
