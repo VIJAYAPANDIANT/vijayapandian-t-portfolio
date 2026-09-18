@@ -17,13 +17,13 @@ export const personalInfo = {
   aboutParagraphs: [
     "I am a Computer Science and Engineering student focused on software development, full-stack applications, and AI-powered solutions.",
     "With a strong foundation in Data Structures & Algorithms, Object-Oriented Programming, databases, and software engineering — including a #6 institute rank on GeeksforGeeks — I enjoy turning complex problems into practical, real-world applications.",
-    "I have hands-on experience across 10+ internships, building full-stack and AI-driven projects using Java, Spring Boot, React, Python, and modern web technologies. I'm also exploring Generative AI, cloud technologies, and scalable backend development."
+    "I have hands-on experience across 7+ internships, building full-stack and AI-driven projects using Java, Spring Boot, React, Python, and modern web technologies. I'm also exploring Generative AI, cloud technologies, and scalable backend development."
   ],
   stats: [
     { value: "300+", label: "DSA Problems Solved", sub: "LeetCode, CodeChef & GFG" },
     { value: "7+", label: "Projects Completed", sub: "Full-Stack & AI" },
     { value: "15+", label: "Hackathons", sub: "Competitions & Ideathons" },
-    { value: "10+", label: "Internships & Exp", sub: "Industry Work" },
+    { value: "7+", label: "Internships & Exp", sub: "Industry Work" },
     { value: "1,600+", label: "GitHub Contributions", sub: "150-Day Streak" },
     { value: "18+", label: "Competitions Won", sub: "Weekly & Daily Quizzes" }
   ],
