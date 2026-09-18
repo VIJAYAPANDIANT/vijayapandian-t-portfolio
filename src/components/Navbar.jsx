@@ -80,10 +80,10 @@ export default function Navbar() {
           href="#home" 
           className="nav-brand"
           onClick={(e) => handleNavClick(e, '#home')}
-          aria-label="Vijayapandian T - Home"
+          aria-label="Portfolio - Home"
         >
           <span className="nav-brand-bracket">&lt;</span>
-          <span>{personalInfo.name}</span>
+          <span>{personalInfo.brandName || 'Portfolio'}</span>
           <span className="nav-brand-bracket">/&gt;</span>
         </a>
 

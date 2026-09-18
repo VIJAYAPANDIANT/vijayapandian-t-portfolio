@@ -15,7 +15,7 @@ export default function Footer() {
           <div className="footer-brand">
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '1.25rem', fontWeight: 800 }}>
               <span style={{ color: 'var(--accent-sky)', fontFamily: 'var(--font-mono)' }}>&lt;</span>
-              <span>{personalInfo.name}</span>
+              <span>{personalInfo.brandName || 'Portfolio'}</span>
               <span style={{ color: 'var(--accent-sky)', fontFamily: 'var(--font-mono)' }}>/&gt;</span>
             </div>
             <p className="footer-tagline">

@@ -4,6 +4,7 @@
  */
 export const personalInfo = {
   name: "Vijayapandian T",
+  brandName: "Portfolio",
   shortRole: "Aspiring Software Development Engineer",
   roles: [
     "Aspiring Software Development Engineer",
