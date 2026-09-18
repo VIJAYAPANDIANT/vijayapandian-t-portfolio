@@ -23,7 +23,7 @@ export default function Hero() {
             </div>
 
             <h1 className="hero-heading">
-              Hi, I'm <span className="gradient-text">{personalInfo.name}</span>
+              Hi, I'm <span className="gradient-text" style={{ whiteSpace: 'nowrap' }}>{personalInfo.name}</span>
             </h1>
 
             <div className="hero-role">
