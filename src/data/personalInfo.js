@@ -5,11 +5,11 @@
 export const personalInfo = {
   name: "Vijayapandian T",
   brandName: "Portfolio",
-  shortRole: "Aspiring Software Development Engineer",
+  shortRole: "Aspiring SDE | Full-Stack Developer & AI Engineer",
   roles: [
-    "Aspiring Software Development Engineer",
+    "Aspiring SDE | Full-Stack Developer & AI Engineer",
     "Full-Stack Developer",
-    "AI Enthusiast",
+    "AI Engineer",
     "Problem Solver"
   ],
   heroDescription:

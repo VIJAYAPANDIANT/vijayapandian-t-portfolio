@@ -414,17 +414,18 @@ button {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: clamp(16px, 2vw, 28px);
+  gap: clamp(8px, 1.3vw, 20px);
   list-style: none;
 }
 
 .nav-link {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 500;
   color: var(--text-secondary);
   position: relative;
   padding: 8px 0;
   transition: color var(--transition-fast);
+  white-space: nowrap;
 }
 
 .nav-link:hover {
@@ -1581,6 +1582,45 @@ button {
   color: var(--text-muted);
   flex-wrap: wrap;
   gap: 12px;
+}
+
+.footer-nav {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--border-subtle);
+  display: flex;
+  justify-content: center;
+}
+
+.footer-nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  list-style: none;
+}
+
+.footer-nav-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.footer-nav-link {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: color var(--transition-fast);
+}
+
+.footer-nav-link:hover {
+  color: var(--accent-sky);
+}
+
+.footer-nav-dot {
+  color: var(--text-muted);
+  font-weight: 700;
+  user-select: none;
 }
 
 /* ==========================================================================

@@ -3,9 +3,30 @@ import { Github, Linkedin, Mail, ArrowUp } from 'lucide-react';
 import { LeetCodeIcon, CodeChefIcon, GeeksforGeeksIcon, UnstopIcon } from './BrandIcons';
 import { personalInfo } from '../data/personalInfo';
 
+const navItems = [
+  { label: 'Home', href: '#home' },
+  { label: 'About', href: '#about' },
+  { label: 'Skills', href: '#skills' },
+  { label: 'Projects', href: '#projects' },
+  { label: 'Experience', href: '#experience' },
+  { label: 'Education', href: '#education' },
+  { label: 'Achievements', href: '#achievements' },
+  { label: 'Services', href: '#services' },
+  { label: 'Contact', href: '#contact' },
+];
+
 export default function Footer() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleNavClick = (e, href) => {
+    e.preventDefault();
+    const targetId = href.substring(1);
+    const targetEl = document.getElementById(targetId);
+    if (targetEl) {
+      targetEl.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
@@ -111,6 +132,26 @@ export default function Footer() {
             </button>
           </div>
         </div>
+
+        {/* Navigation Quick Links */}
+        <nav className="footer-nav" aria-label="Footer Navigation">
+          <ul className="footer-nav-links">
+            {navItems.map((item, idx) => (
+              <li key={item.label} className="footer-nav-item">
+                <a
+                  href={item.href}
+                  className="footer-nav-link"
+                  onClick={(e) => handleNavClick(e, item.href)}
+                >
+                  {item.label}
+                </a>
+                {idx < navItems.length - 1 && (
+                  <span className="footer-nav-dot" aria-hidden="true">·</span>
+                )}
+              </li>
+            ))}
+          </ul>
+        </nav>
 
         {/* Bottom Copyright */}
         <div className="footer-bottom">
