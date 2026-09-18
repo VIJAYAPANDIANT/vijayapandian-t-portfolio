@@ -20,10 +20,12 @@ export const personalInfo = {
     "I have hands-on experience across 7 internships, building full-stack and AI-driven projects using Java, Spring Boot, React, Python, and modern web technologies. I'm also exploring Generative AI, cloud technologies, and scalable backend development."
   ],
   stats: [
-    { value: "300+", label: "DSA Problems Solved", sub: "LeetCode & Platforms" },
+    { value: "300+", label: "DSA Problems Solved", sub: "LeetCode, CodeChef & GFG" },
     { value: "7+", label: "Projects Completed", sub: "Full-Stack & AI" },
     { value: "10+", label: "Hackathons", sub: "Competitions & Ideathons" },
-    { value: "7+", label: "Internships & Exp", sub: "Industry Work" }
+    { value: "7+", label: "Internships & Exp", sub: "Industry Work" },
+    { value: "1,600+", label: "GitHub Contributions", sub: "150-Day Streak" },
+    { value: "18+", label: "Competitions Won", sub: "Weekly & Daily Quizzes" }
   ],
   socialLinks: {
     github: "https://github.com/VIJAYAPANDIANT",
