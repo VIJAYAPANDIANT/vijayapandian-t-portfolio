@@ -1,99 +1,317 @@
-# Vijayapandian T — Portfolio
+<div align="center">
 
-<p align="left">
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=220&section=header&text=Vijayapandian%20T%20%7C%20Portfolio&fontSize=46&fontColor=38bdf8&animation=fadeIn&fontAlignY=38&desc=Full-Stack%20Developer%20%E2%80%A2%20AI%20Engineer%20%E2%80%A2%20Problem%20Solver&descAlignY=62&descColor=94a3b8&descSize=18" alt="Vijayapandian T Header"/>
+
+# Vijayapandian T — Engineering Portfolio & Freelance Hub
+
+<p align="center">
+  <a href="https://github.com/VIJAYAPANDIANT/vijayapandian-t-portfolio">
+    <img src="https://api.visitorbadge.io/api/visitors?path=VIJAYAPANDIANT.vijayapandian-t-portfolio&label=REPOSITORY%20VIEWS&labelColor=%230d1117&countColor=%2338bdf8&style=for-the-badge" alt="Repository Views" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/VIJAYAPANDIANT">
+    <img src="https://komarev.com/ghpvc/?username=VIJAYAPANDIANT&label=PROFILE+VIEWS&color=38bdf8&style=for-the-badge&labelColor=0d1117" alt="Profile Views" />
+  </a>
+  &nbsp;
   <a href="https://vijayapandian-t-portfolio.vercel.app">
-    <img src="https://img.shields.io/badge/Portfolio-Live_Demo-38bdf8?style=for-the-badge&labelColor=0d1117" alt="Live Portfolio" />
+    <img src="https://img.shields.io/badge/Live_Portfolio-38bdf8?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0d1117" alt="Live Portfolio" />
+  </a>
+  &nbsp;
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-38bdf8?style=for-the-badge&labelColor=0d1117" alt="License: MIT" />
   </a>
 </p>
 
-Modern, high-performance personal developer portfolio and freelance services website built for **Vijayapandian T** (Aspiring Software Development Engineer | Full-Stack Developer | AI Enthusiast).
+<p align="center">
+  <a href="https://react.dev/">
+    <img src="https://img.shields.io/badge/React_18-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React 18" />
+  </a>
+  &nbsp;
+  <a href="https://vitejs.dev/">
+    <img src="https://img.shields.io/badge/Vite_5-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite 5" />
+  </a>
+  &nbsp;
+  <a href="https://threejs.org/">
+    <img src="https://img.shields.io/badge/Three.js-WebGL-black?style=flat-square&logo=three.js&logoColor=white" alt="Three.js" />
+  </a>
+  &nbsp;
+  <a href="https://lucide.dev/">
+    <img src="https://img.shields.io/badge/Lucide-Icons-F56565?style=flat-square&logo=feather&logoColor=white" alt="Lucide Icons" />
+  </a>
+  &nbsp;
+  <a href="https://vercel.com/">
+    <img src="https://img.shields.io/badge/Deployed-Vercel-black?style=flat-square&logo=vercel&logoColor=white" alt="Vercel Deployment" />
+  </a>
+</p>
+
+<p align="center">
+  <strong>High-performance, responsive developer portfolio showcasing verified software engineering internships, production web applications, algorithmic milestones, and client freelance solutions.</strong>
+</p>
+
+<p align="center">
+  <a href="https://vijayapandian-t-portfolio.vercel.app"><strong>🌐 Explore Live Portfolio</strong></a> •
+  <a href="https://vj-achievement-universe.vercel.app/"><strong>🌌 VJ Achievement Universe</strong></a> •
+  <a href="https://drive.google.com/file/d/1nRrqbiIwxStywyVKvkCbQTMS0RwOvdTT/view?usp=sharing"><strong>📄 View Resume PDF</strong></a> •
+  <a href="https://github.com/VIJAYAPANDIANT"><strong>💻 GitHub Profile</strong></a>
+</p>
+
+</div>
 
 ---
 
-## Features
+## 📑 Table of Contents
 
-* **Responsive Portfolio**: Fully optimized across mobile (320px, 375px, 425px), tablet (768px), laptop (1024px), and ultra-wide desktops (1440px, 1920px) with zero horizontal overflow.
-* **React Architecture**: Clean, modular component structure with centralized data files for easy updates.
-* **Three.js & React Three Fiber**: Hardware-accelerated, interactive 3D hero visualization responding subtly to mouse movements and adapted for mobile performance.
-* **React Bits Micro-Interactions**: Subtle glow cards, fluid typography (`clamp()`), and accessible focus states with `prefers-reduced-motion` compliance.
-* **Interactive Projects Showcase**: Categorized filtering (All, Full Stack, AI, Frontend), live demo & code links, and a deep-dive architecture modal.
-* **Skills Filtering**: Instant categorization across Programming, Frontend, Backend, Database, AI, and Tools.
-* **Experience Timeline**: Interactive accordion displaying detailed internship responsibilities and technologies applied.
-* **Academic Highlights**: Education card displaying degree, coursework, and 8.49 CGPA.
-* **Freelance Services**: 6 distinct service offerings (Portfolio Websites, Frontend Websites, Website Bug Fixing, Responsive Design, GitHub Setup, Vercel Deployment) with a dedicated "Let's Work Together" CTA.
-* **Validated Contact Section**: Client-side form validation with accessible labels, error notifications, and a direct "Email Me" button.
-
----
-
-## Tech Stack
-
-* **React 18**
-* **Vite**
-* **JavaScript (ES6+)**
-* **Modern CSS** (Custom design system, glassmorphism, responsive CSS variables)
-* **Three.js**
-* **React Three Fiber (@react-three/fiber)**
-* **Drei (@react-three/drei)**
-* **Lucide React Icons**
+- [Overview](#-overview)
+- [Key Features & Architecture](#-key-features--architecture)
+- [9 Verified Internships & Deliverables](#-9-verified-internships--deliverables)
+- [Featured Projects Matrix](#-featured-projects-matrix)
+- [Project Architecture & Directory Structure](#-project-architecture--directory-structure)
+- [Technology Stack](#-technology-stack)
+- [Local Development & Setup](#-local-development--setup)
+- [Production Build & Deployment](#-production-build--deployment)
+- [Design System & Accessibility](#-design-system--accessibility)
+- [Author & Professional Connect](#-author--professional-connect)
+- [License](#-license)
 
 ---
 
-## Run Locally
+## 🌟 Overview
+
+This repository houses the modern personal portfolio and client engineering hub for **Vijayapandian T** — Pre-Final Year Computer Science Engineering student at SRM Easwari Engineering College, Aspiring Software Development Engineer (SDE), and Full-Stack / AI Developer.
+
+Engineered with **React 18**, **Vite**, **Three.js / React Three Fiber**, and modern **CSS custom properties**, the site delivers:
+* Hardware-accelerated 3D particle hero visualizer that smoothly responds to mouse movement and gyro orientation.
+* Interactive **Master-Detail Experience Hub** categorizing 9 verified internships with live repository deliverables.
+* Comprehensive project showcase featuring architecture deep-dive modals, categorized filtering, and instant code/demo links.
+* Fluid responsiveness spanning mobile (320px–425px), tablet, laptop, and ultra-wide desktops (1920px+) with zero horizontal scroll overflow.
+
+---
+
+## 🚀 Key Features & Architecture
+
+### 1. 🌌 Interactive 3D WebGL Hero
+- Engineered with `@react-three/fiber` and `@react-three/drei`.
+- Features an interactive rotating geometric particle sphere and ambient lighting.
+- Integrated cursor parallax tracking with touch-friendly fallbacks on mobile viewports.
+
+### 2. 💼 Master-Detail Experience Workspace
+- Replaces traditional long vertical scroll sections with a focused **Interactive Hub**:
+  - **Left Navigation Rail**: Displays roles with company name, duration, and uniform `[Internship]` status tags.
+  - **Right Stage**: Detailed executive summaries, key contributions with emerald checkmarks, technologies applied, and dedicated deliverable cards.
+  - **Domain Filter Pills**: Instant filtering across **All Roles**, **AI & GenAI**, **SQL & Databases**, and **Software & Cloud**.
+  - **Dual View Mode**: Toggle between **Interactive Master-Detail** workspace and **Overview Grid** view.
+
+### 3. 🛠️ Featured Project Deliverables & Modal Deep-Dives
+- Multi-project cards with **Explore Repository** and **Live Demo** direct launch actions.
+- Interactive modal with architectural problem statements, enterprise solutions, key technical features, and live production endpoints.
+
+### 4. 🏆 Academic & Competitive Achievements
+- **300+ DSA Problems Solved** with **Rank #6 in Institute** on GeeksforGeeks.
+- **1600+ GitHub Contributions** with an active **150+ day streak**.
+- **15+ Hackathons** and **18+ Online Quiz Podiums**.
+- Direct launchpad for the interactive **VJ Achievement Universe**.
+
+### 5. 🤝 Freelance Services & Verified Contact Channel
+- 6 client service offerings: Full-Stack Portfolios, Frontend Web Applications, Bug Fixing & Refactoring, Responsive UI/UX Systems, GitHub Infrastructure, and Vercel Cloud Deployments.
+- Client-side validated contact form with accessible field labels, error handling, and direct WhatsApp / email actions.
+
+---
+
+## 💼 9 Verified Internships & Deliverables
+
+| # | Organization | Role | Duration & Track | Key Deliverables & Codebases |
+|---|---|---|---|---|
+| **01** | **Career Solutions77** | Full-Stack Development Intern | Sep 2026 – Present · Offline | Full-stack web apps, REST API gateways, MongoDB persistence, and Git collaboration |
+| **02** | **Infosys Springboard** | Artificial Intelligence Intern | Aug 2026 – Present · Remote | AI coursework, ML prototypes, model evaluation, and prompt engineering |
+| **03** | **BharatCares® × IBM SkillsBuild** | Gen AI & Cloud Computing Intern | Jun 2026 – Jul 2026 · Remote | IBM SkillsBuild GenAI foundations, cloud resource deployment, and AICTE sessions |
+| **04** | **Elevate Labs** | SQL Developer Intern | Jan 2026 – Apr 2026 · Remote | [VIJAYAPANDIANT/sql-internship-portfolio](https://github.com/VIJAYAPANDIANT/sql-internship-portfolio) (20 SQL projects, query simulator) |
+| **05** | **1M1B (1 Million for 1 Billion)** | 1M1B Green Intern | Feb 2026 – Mar 2026 · Hybrid | [smart-waste-mapping-platform](https://github.com/VIJAYAPANDIANT/smart-waste-mapping-platform) • [Live App](https://smart-waste-mapping.vercel.app/) |
+| **06** | **1M1B (1 Million for 1 Billion)** | AI for Sustainability Virtual Intern | Dec 2025 – Jan 2026 · Remote | [ecowise-pro](https://github.com/VIJAYAPANDIANT/ecowise-pro) • [Live App](https://ecowise-pro.vercel.app/) (Explainable AI decision system) |
+| **07** | **Codec Technologies India** | Java Developer Intern | Jan 2026 – Feb 2026 · Remote | [student-management-system-java](https://github.com/VIJAYAPANDIANT/student-management-system-java) & [expense-tracker-java](https://github.com/VIJAYAPANDIANT/expense-tracker-java) |
+| **08** | **Codec Technologies India** | UI/UX & Frontend Developer Intern | Jan 2026 – Feb 2026 · Remote | [food-delivery-system](https://github.com/VIJAYAPANDIANT/food-delivery-system) (QuickEats) & [personal-finance-app](https://github.com/VIJAYAPANDIANT/personal-finance-app) (FinDash) |
+| **09** | **Zero2site** | Cloud Development Intern | May 2025 – Jun 2025 · Remote | [event-poll](https://github.com/VIJAYAPANDIANT/event-poll) • [Live](https://eventpoll-client-a2bl.vercel.app) & [task-master](https://github.com/VIJAYAPANDIANT/task-master) • [Live](https://task-master-chi-three.vercel.app/) |
+
+---
+
+## 📂 Project Architecture & Directory Structure
+
+```plaintext
+vijayapandian-t-portfolio/
+├── public/
+│   ├── assets/
+│   │   └── images/               # Scalable project SVG mockups & architectural assets
+│   ├── favicon.svg               # Vector brand favicon
+│   └── robots.txt                # Search engine crawlers directive
+├── src/
+│   ├── components/
+│   │   ├── About.jsx             # Bio narrative, resume action, and verified stats grid
+│   │   ├── Academic.jsx          # Education timeline, B.E CSE SRM Easwari, 8.49 CGPA
+│   │   ├── Achievements.jsx      # DSA rank, hackathons, quiz wins & 1600+ GitHub contributions
+│   │   ├── BrandIcons.jsx        # LeetCode, CodeChef, GeeksforGeeks, Unstop vector SVGs
+│   │   ├── Contact.jsx           # Validated contact form, direct email & WhatsApp actions
+│   │   ├── Experience.jsx        # Interactive Master-Detail Hub with 9 verified internships
+│   │   ├── Footer.jsx            # Social hub, navigation quick links & performance tagline
+│   │   ├── Hero.jsx              # Typing subtitles, CTA buttons & social links
+│   │   ├── HeroScene.jsx         # Three.js 3D WebGL particle sphere visualizer
+│   │   ├── Navbar.jsx            # Sticky blurred glass navbar with mobile drawer & theme toggle
+│   │   ├── ProjectModal.jsx      # Deep-dive architecture modal with problem/solution specs
+│   │   ├── Projects.jsx          # Categorized projects showcase with live & repo actions
+│   │   ├── Services.jsx          # 6 freelance engineering solutions & client CTAs
+│   │   └── Skills.jsx            # Domain-categorized technical skills with proficiency tags
+│   ├── data/
+│   │   ├── achievements.js       # Verified milestones, DSA rank, and GitHub contributions
+│   │   ├── education.js          # Academic history, coursework, and CGPA metrics
+│   │   ├── experience.js         # 9 verified internships with deliverable repos and demos
+│   │   ├── personalInfo.js       # Centralized personal info, social links, and contact handles
+│   │   ├── projects.js           # 9 flagship projects with full architecture breakdowns
+│   │   ├── services.js           # Freelance service offerings with deliverable features
+│   │   └── skills.js             # Categorized technical skill sets
+│   ├── App.jsx                   # Root application view orchestration & theme state
+│   ├── index.css                 # Systematic design system tokens, responsive glassmorphism
+│   └── main.jsx                  # React 18 DOM root mounting
+├── index.html                    # SEO optimized HTML5 entry template
+├── LICENSE                       # MIT License
+├── package.json                  # Dependencies, build scripts, and metadata
+├── vite.config.js                # Vite build optimizer, rollup manualChunks, and preview config
+└── README.md                     # Comprehensive technical documentation
+```
+
+---
+
+## 🛠️ Technology Stack
+
+| Domain | Technologies & Libraries |
+|---|---|
+| **Frontend Framework** | **React 18**, **JavaScript (ES6+)** |
+| **Build Tool & Bundler** | **Vite 5** (Fast HMR, dynamic chunk splitting, tree shaking) |
+| **3D Graphics & WebGL** | **Three.js**, **@react-three/fiber**, **@react-three/drei** |
+| **Styling & Design System** | **Vanilla CSS3** (Custom Properties, Glassmorphism, Flexbox, CSS Grid) |
+| **Typography & Sizing** | Fluid typography via `clamp()`, **Inter**, **JetBrains Mono** |
+| **Icons & Vectors** | **Lucide React**, Custom Handcrafted Brand SVGs (LeetCode, GfG, CodeChef, Unstop) |
+| **Live Telemetry & Counters** | **VisitorBadge.io** (Repository views), **Komarev PVC** (Profile views) |
+| **Cloud Hosting & CDN** | **Vercel** (Automated edge deployment, global CDN, SSL) |
+
+---
+
+## 💻 Local Development & Setup
+
+### Prerequisites
+* **Node.js**: v18.0.0 or higher
+* **npm**: v9.0.0 or higher (or pnpm / yarn)
+
+### Quickstart
 
 ```bash
-# Clone the repository
+# 1. Clone the repository
 git clone https://github.com/VIJAYAPANDIANT/vijayapandian-t-portfolio.git
 
-# Navigate into project directory
+# 2. Navigate into project directory
 cd vijayapandian-t-portfolio
 
-# Install dependencies
+# 3. Install dependencies
 npm install
 
-# Start development server
+# 4. Start local development server
 npm run dev
 ```
 
-Open your browser and visit `http://localhost:3000`.
+Visit `http://localhost:3000` in your web browser. Hot Module Replacement (HMR) is active by default.
 
 ---
 
-## Build
+## 📦 Production Build & Deployment
 
-To compile an optimized production bundle:
+### Compile Production Bundle
 
 ```bash
+# Run production build
 npm run build
 ```
 
-To preview the production build locally:
+This generates an optimized, minified production distribution under the `dist/` directory with separate vendor, icons, and Three.js chunking.
+
+### Preview Production Build
 
 ```bash
+# Preview production bundle locally
 npm run preview
 ```
 
----
+### Deploy to Vercel
 
-## Deployment
-
-Configured for continuous zero-config deployment with **Vercel**.
-
-1. Connect the GitHub repository `vijayapandian-t-portfolio` to Vercel.
-2. Preset: `Vite`.
-3. Build Command: `npm run build`.
-4. Output Directory: `dist`.
-5. Automatic SSL and CDN distribution.
+1. Push your changes to GitHub `main`.
+2. Connect `VIJAYAPANDIANT/vijayapandian-t-portfolio` in the [Vercel Dashboard](https://vercel.com).
+3. Framework Preset: **Vite**.
+4. Build Command: `npm run build`.
+5. Output Directory: `dist`.
+6. Automatic continuous deployments are triggered on every push.
 
 ---
 
-## Author
+## 🎨 Design System & Accessibility
+
+* **Color Palette**:
+  - Background Base: `#070a12` (Deep Obsidian)
+  - Background Surface: `#0c111e` (Night Slate)
+  - Primary Accent: `#38bdf8` (Sky Blue)
+  - Secondary Accent: `#10b981` (Emerald Green)
+  - Accent Indigo / Purple: `#818cf8` / `#c084fc`
+  - Text Primary: `#f8fafc` | Text Secondary: `#94a3b8`
+* **Accessibility**:
+  - Semantic HTML5 sectioning (`<header>`, `<main>`, `<section>`, `<nav>`, `<footer>`).
+  - WCAG AA compliant contrast ratios across dark mode surfaces.
+  - Comprehensive `aria-label`, `role`, and keyboard focus states on all interactive elements.
+  - Respects user `prefers-reduced-motion` settings.
+
+---
+
+## 👤 Author & Professional Connect
 
 **Vijayapandian T**  
-* Aspiring Software Development Engineer | Full-Stack Developer | AI Enthusiast
-* **GitHub:** [github.com/VIJAYAPANDIANT](https://github.com/VIJAYAPANDIANT)
-* **LinkedIn:** [linkedin.com/in/vijayapandiant](https://linkedin.com/in/vijayapandiant)
-* **LeetCode:** [leetcode.com/u/hackervj18](https://leetcode.com/u/hackervj18/)
-* **CodeChef:** [codechef.com/users/vijay_code07](https://www.codechef.com/users/vijay_code07)
-* **GeeksforGeeks:** [geeksforgeeks.org/profile/vijayapandiant11](https://www.geeksforgeeks.org/profile/vijayapandiant11)
-* **Unstop:** [unstop.com/u/vijayt90718](https://unstop.com/u/vijayt90718)
-* **Email:** [vijayapandian112007@gmail.com](mailto:vijayapandian112007@gmail.com)
+*Aspiring Software Development Engineer | Full-Stack & AI Developer*  
+*SRM Easwari Engineering College — Computer Science & Engineering*
+
+<p align="left">
+  <a href="https://github.com/VIJAYAPANDIANT" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-VIJAYAPANDIANT-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  </a>
+  &nbsp;
+  <a href="https://linkedin.com/in/vijayapandiant" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-vijayapandiant-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  &nbsp;
+  <a href="https://leetcode.com/u/hackervj18/" target="_blank">
+    <img src="https://img.shields.io/badge/LeetCode-hackervj18-FFA116?style=for-the-badge&logo=leetcode&logoColor=white" alt="LeetCode" />
+  </a>
+  &nbsp;
+  <a href="https://www.geeksforgeeks.org/profile/vijayapandiant11" target="_blank">
+    <img src="https://img.shields.io/badge/GeeksforGeeks-vijayapandiant11-2F8D46?style=for-the-badge&logo=geeksforgeeks&logoColor=white" alt="GeeksforGeeks" />
+  </a>
+  &nbsp;
+  <a href="https://www.codechef.com/users/vijay_code07" target="_blank">
+    <img src="https://img.shields.io/badge/CodeChef-vijay__code07-5B4638?style=for-the-badge&logo=codechef&logoColor=white" alt="CodeChef" />
+  </a>
+  &nbsp;
+  <a href="https://unstop.com/u/vijayt90718" target="_blank">
+    <img src="https://img.shields.io/badge/Unstop-vijayt90718-0052CC?style=for-the-badge" alt="Unstop" />
+  </a>
+</p>
+
+* 📧 **Email**: [vijayapandian112007@gmail.com](mailto:vijayapandian112007@gmail.com)
+* 💬 **WhatsApp**: [+91 8610554060](https://wa.me/918610554060)
+* 🌐 **Portfolio**: [vijayapandian-t-portfolio.vercel.app](https://vijayapandian-t-portfolio.vercel.app)
+* 🌌 **Milestones**: [vj-achievement-universe.vercel.app](https://vj-achievement-universe.vercel.app/)
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+
+```plaintext
+Copyright (c) 2026 Vijayapandian T
+```
+
+<div align="center">
+  <sub>Built with ❤️ by Vijayapandian T. Designed & engineered for performance.</sub>
+</div>
