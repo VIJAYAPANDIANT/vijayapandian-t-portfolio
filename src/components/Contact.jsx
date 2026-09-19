@@ -145,13 +145,13 @@ export default function Contact() {
                 <div style={{ minWidth: 0 }}>
                   <div className="contact-label">WhatsApp</div>
                   <a
-                    href="https://wa.me/918610554060"
+                    href={personalInfo.socialLinks.whatsapp}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="contact-val"
                     style={{ color: '#25D366', display: 'inline-flex', alignItems: 'center', gap: '4px' }}
                   >
-                    <span>+91 8610554060</span>
+                    <span>Connect on WhatsApp</span>
                     <ExternalLink size={14} style={{ color: 'var(--text-muted)' }} />
                   </a>
                 </div>
@@ -200,7 +200,7 @@ export default function Contact() {
               {/* Dedicated Alternative CTAs */}
               <div style={{ marginTop: '24px', paddingTop: '20px', borderTop: '1px solid var(--border-subtle)', display: 'flex', flexDirection: 'column', gap: '10px' }}>
                 <a
-                  href="https://wa.me/918610554060"
+                  href={personalInfo.socialLinks.whatsapp}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn"
@@ -214,7 +214,7 @@ export default function Contact() {
                   aria-label="Chat directly on WhatsApp"
                 >
                   <MessageCircle size={18} />
-                  <span>Chat on WhatsApp (+91 8610554060)</span>
+                  <span>Chat on WhatsApp</span>
                 </a>
 
                 <a
@@ -240,7 +240,7 @@ export default function Contact() {
                     Message Prepared for WhatsApp!
                   </h4>
                   <p style={{ color: 'var(--text-secondary)', fontSize: '0.92rem', lineHeight: 1.6 }}>
-                    WhatsApp has been opened with your message ready to send to <strong style={{ color: 'var(--text-primary)' }}>+91 8610554060</strong>. A backup notification was also sent to <strong style={{ color: 'var(--text-primary)' }}>{personalInfo.socialLinks.email}</strong>.
+                    WhatsApp has been opened with your message ready to send. A backup notification was also sent to <strong style={{ color: 'var(--text-primary)' }}>{personalInfo.socialLinks.email}</strong>.
                   </p>
                   <div style={{ display: 'flex', gap: '10px', marginTop: '16px', flexWrap: 'wrap' }}>
                     {lastWaUrl && (
