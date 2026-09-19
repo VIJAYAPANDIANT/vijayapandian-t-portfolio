@@ -153,46 +153,10 @@ export default function Footer() {
           </ul>
         </nav>
 
-        {/* Bottom Copyright & Profile Views */}
+        {/* Bottom Copyright */}
         <div className="footer-bottom">
-          <div style={{ display: 'flex', alignItems: 'center', gap: '14px', flexWrap: 'wrap' }}>
-            <span>© 2026 {personalInfo.name}. All rights reserved.</span>
-            <a
-              href="https://github.com/VIJAYAPANDIANT"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Live Profile Views"
-              aria-label="Live Profile Views"
-              style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                textDecoration: 'none',
-                borderRadius: '4px',
-                overflow: 'hidden',
-                border: '1px solid rgba(56, 189, 248, 0.35)',
-                boxShadow: '0 0 10px rgba(56, 189, 248, 0.12)',
-                transition: 'all 0.2s ease'
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = 'translateY(-1px)';
-                e.currentTarget.style.borderColor = 'rgba(56, 189, 248, 0.65)';
-                e.currentTarget.style.boxShadow = '0 0 14px rgba(56, 189, 248, 0.35)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = 'none';
-                e.currentTarget.style.borderColor = 'rgba(56, 189, 248, 0.35)';
-                e.currentTarget.style.boxShadow = '0 0 10px rgba(56, 189, 248, 0.12)';
-              }}
-            >
-              <img
-                src="https://komarev.com/ghpvc/?username=VIJAYAPANDIANT&label=PROFILE+VIEWS&color=38bdf8&style=flat-square"
-                alt="Profile Views"
-                style={{
-                  height: '20px',
-                  display: 'block'
-                }}
-              />
-            </a>
+          <div>
+            © 2026 {personalInfo.name}. All rights reserved.
           </div>
           <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8rem', color: 'var(--text-muted)' }}>
             Designed & Engineered for Performance
