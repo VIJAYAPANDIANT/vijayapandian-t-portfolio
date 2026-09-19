@@ -164,6 +164,19 @@ export const experienceData = [
     duration: "Jan 2026 – Feb 2026 · 2 mos",
     badge: "Internship",
     location: "Chennai, Tamil Nadu, India · Remote",
+    githubUrl: "https://github.com/VIJAYAPANDIANT/food-delivery-system",
+    featuredProjects: [
+      {
+        name: "QuickEats — Food Delivery Dashboard",
+        repoUrl: "https://github.com/VIJAYAPANDIANT/food-delivery-system",
+        description: "Responsive food delivery interface featuring dynamic restaurant listing, modal dining spot management, predictive form entry, and glassmorphic UI design."
+      },
+      {
+        name: "FinDash — Personal Finance Dashboard",
+        repoUrl: "https://github.com/VIJAYAPANDIANT/personal-finance-app",
+        description: "Glassmorphic personal finance dashboard with interactive Chart.js weekly analytics, dual-mode digital card wallet, and real-time transaction tracking."
+      }
+    ],
     description:
       "Designed and developed interactive web interfaces for the UI/UX & Frontend Developer track featuring modern, responsive UI/UX design with vanilla JavaScript, HTML, and CSS as part of an intensive double-track internship.",
     responsibilities: [
