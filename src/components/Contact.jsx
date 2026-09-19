@@ -152,7 +152,7 @@ export default function Contact() {
                     style={{ color: 'var(--accent-sky)', display: 'inline-flex', alignItems: 'center', gap: '4px' }}
                   >
                     <span>+91 8610554060</span>
-                    <ExternalLink size={14} style={{ color: 'var(--text-muted)' }} />
+                    <ExternalLink size={14} style={{ color: 'var(--accent-sky)', opacity: 0.8 }} />
                   </a>
                 </div>
               </div>
@@ -169,10 +169,10 @@ export default function Contact() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="contact-val"
-                    style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}
+                    style={{ color: 'var(--accent-sky)', display: 'inline-flex', alignItems: 'center', gap: '4px' }}
                   >
-                    <span>github.com/vijayapandiant</span>
-                    <ExternalLink size={14} style={{ color: 'var(--text-muted)' }} />
+                    <span>github.com/VIJAYAPANDIANT</span>
+                    <ExternalLink size={14} style={{ color: 'var(--accent-sky)', opacity: 0.8 }} />
                   </a>
                 </div>
               </div>
@@ -189,10 +189,10 @@ export default function Contact() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="contact-val"
-                    style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}
+                    style={{ color: 'var(--accent-sky)', display: 'inline-flex', alignItems: 'center', gap: '4px' }}
                   >
                     <span>linkedin.com/in/vijayapandiant</span>
-                    <ExternalLink size={14} style={{ color: 'var(--text-muted)' }} />
+                    <ExternalLink size={14} style={{ color: 'var(--accent-sky)', opacity: 0.8 }} />
                   </a>
                 </div>
               </div>
