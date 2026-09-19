@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Github, Linkedin, Send, MessageSquare, CheckCircle, ExternalLink } from 'lucide-react';
+import { Mail, Github, Linkedin, Send, MessageSquare, CheckCircle, ExternalLink, AlertCircle, Loader2 } from 'lucide-react';
 import { personalInfo } from '../data/personalInfo';
 
 export default function Contact() {
@@ -13,6 +13,7 @@ export default function Contact() {
   const [errors, setErrors] = useState({});
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState(null);
 
   const validate = () => {
     const errs = {};
@@ -48,7 +49,7 @@ export default function Contact() {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const validationErrors = validate();
 
@@ -58,14 +59,44 @@ export default function Contact() {
     }
 
     setIsSubmitting(true);
+    setSubmitError(null);
 
-    // Realistic client-side form validation handling
-    setTimeout(() => {
+    try {
+      const response = await fetch(`https://formsubmit.co/ajax/${personalInfo.socialLinks.email}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          _replyto: formData.email,
+          _subject: `[Portfolio Inquiry] ${formData.subject} - from ${formData.name}`,
+          subject: formData.subject,
+          message: formData.message,
+          _captcha: 'false',
+          _template: 'table'
+        })
+      });
+
+      const data = await response.json();
+
+      if (response.ok && (data.success === 'true' || data.success === true)) {
+        setSubmitted(true);
+        setFormData({ name: '', email: '', subject: '', message: '' });
+        setErrors({});
+      } else {
+        throw new Error(data.message || 'Failed to send message via form endpoint.');
+      }
+    } catch (err) {
+      console.error('Contact form submission error:', err);
+      setSubmitError(
+        `Unable to deliver message through the online form service. You can send it directly to ${personalInfo.socialLinks.email} using the button below.`
+      );
+    } finally {
       setIsSubmitting(false);
-      setSubmitted(true);
-      setFormData({ name: '', email: '', subject: '', message: '' });
-      setErrors({});
-    }, 600);
+    }
   };
 
   return (
@@ -167,19 +198,23 @@ export default function Contact() {
           <div className="glass-card contact-form-card">
             {submitted ? (
               <div className="form-success-banner">
-                <CheckCircle size={24} style={{ flexShrink: 0, marginTop: '2px' }} />
+                <CheckCircle size={24} style={{ flexShrink: 0, marginTop: '2px', color: '#10b981' }} />
                 <div>
-                  <h4 style={{ fontWeight: 700, marginBottom: '4px', color: '#10b981' }}>
-                    Message Form Validated!
+                  <h4 style={{ fontWeight: 700, marginBottom: '6px', color: '#10b981', fontSize: '1.05rem' }}>
+                    Message Sent Successfully!
                   </h4>
-                  <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: 1.5 }}>
-                    Your message passed all frontend validations. In this build, client-side preview handling is active. You can also send an email directly to{' '}
+                  <p style={{ color: 'var(--text-secondary)', fontSize: '0.92rem', lineHeight: 1.6 }}>
+                    Thank you! Your message has been sent directly to{' '}
                     <strong style={{ color: 'var(--text-primary)' }}>{personalInfo.socialLinks.email}</strong>.
+                    I will get back to you as soon as possible.
                   </p>
                   <button
                     type="button"
                     className="btn btn-secondary"
-                    onClick={() => setSubmitted(false)}
+                    onClick={() => {
+                      setSubmitted(false);
+                      setSubmitError(null);
+                    }}
                     style={{ marginTop: '16px', padding: '8px 18px', fontSize: '0.875rem' }}
                   >
                     Send Another Message
@@ -188,6 +223,35 @@ export default function Contact() {
               </div>
             ) : (
               <form className="contact-form" onSubmit={handleSubmit} noValidate>
+                {submitError && (
+                  <div
+                    style={{
+                      background: 'rgba(239, 68, 68, 0.1)',
+                      border: '1px solid rgba(239, 68, 68, 0.3)',
+                      borderRadius: 'var(--radius-sm)',
+                      padding: '12px 16px',
+                      color: '#fca5a5',
+                      fontSize: '0.875rem',
+                      display: 'flex',
+                      alignItems: 'flex-start',
+                      gap: '10px'
+                    }}
+                  >
+                    <AlertCircle size={18} style={{ flexShrink: 0, marginTop: '2px', color: '#ef4444' }} />
+                    <div>
+                      <p style={{ marginBottom: '8px' }}>{submitError}</p>
+                      <a
+                        href={`mailto:${personalInfo.socialLinks.email}?subject=${encodeURIComponent(formData.subject || 'Portfolio Inquiry')}&body=${encodeURIComponent(`Hi Vijayapandian,\n\n${formData.message}\n\nFrom: ${formData.name} (${formData.email})`)}`}
+                        className="btn btn-primary"
+                        style={{ display: 'inline-flex', padding: '6px 14px', fontSize: '0.8rem' }}
+                      >
+                        <Mail size={14} />
+                        <span>Send via Email Client</span>
+                      </a>
+                    </div>
+                  </div>
+                )}
+
                 {/* Name */}
                 <div className="form-group">
                   <label htmlFor="name" className="form-label">
@@ -269,7 +333,10 @@ export default function Contact() {
                     style={{ minWidth: '160px' }}
                   >
                     {isSubmitting ? (
-                      <span>Validating...</span>
+                      <>
+                        <Loader2 size={16} className="spin" />
+                        <span>Sending...</span>
+                      </>
                     ) : (
                       <>
                         <span>Send Message</span>
