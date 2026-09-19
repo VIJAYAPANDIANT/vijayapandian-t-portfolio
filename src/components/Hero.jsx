@@ -1,10 +1,69 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { ArrowRight, MessageSquare, Github, Linkedin } from 'lucide-react';
 import { LeetCodeIcon, CodeChefIcon, GeeksforGeeksIcon, UnstopIcon } from './BrandIcons';
 import { personalInfo } from '../data/personalInfo';
 import HeroScene from './HeroScene';
 
+const lines = [
+  "Pre-Final Year CSE @ SRM Easwari",
+  "Full-Stack Developer",
+  "Building Backend Systems with Java & Spring Boot",
+  "Exploring AI & Generative AI",
+  "300+ DSA Problems Solved",
+  "Building Real-World Software Projects",
+  "Open to Collaborate & Build"
+];
+
 export default function Hero() {
+  const typingTextRef = useRef(null);
+
+  useEffect(() => {
+    const typingText = typingTextRef.current || document.getElementById("typing-text");
+    if (!typingText) return;
+
+    let lineIndex = 0;
+    let charIndex = 0;
+    let deleting = false;
+    let timeoutId = null;
+
+    function typeText() {
+      const currentLine = lines[lineIndex];
+
+      if (!deleting) {
+        typingText.textContent = currentLine.substring(0, charIndex);
+        charIndex++;
+
+        if (charIndex > currentLine.length) {
+          deleting = true;
+          timeoutId = setTimeout(typeText, 1500);
+          return;
+        }
+
+        timeoutId = setTimeout(typeText, 60);
+      } else {
+        typingText.textContent = currentLine.substring(0, charIndex);
+        charIndex--;
+
+        if (charIndex < 0) {
+          deleting = false;
+          charIndex = 0;
+          lineIndex = (lineIndex + 1) % lines.length;
+
+          timeoutId = setTimeout(typeText, 400);
+          return;
+        }
+
+        timeoutId = setTimeout(typeText, 30);
+      }
+    }
+
+    typeText();
+
+    return () => {
+      if (timeoutId) clearTimeout(timeoutId);
+    };
+  }, []);
+
   const scrollTo = (id) => {
     const el = document.getElementById(id);
     if (el) {
@@ -27,9 +86,9 @@ export default function Hero() {
               Hi, I'm <span className="gradient-text" style={{ whiteSpace: 'nowrap' }}>{personalInfo.name}</span>
             </h1>
 
-            <div className="hero-role">
-              <span>{personalInfo.shortRole}</span>
-            </div>
+            <h2 className="typing-subtitle">
+              <span id="typing-text" ref={typingTextRef}></span><span className="cursor">|</span>
+            </h2>
 
             <p className="hero-description">
               {personalInfo.heroDescription}

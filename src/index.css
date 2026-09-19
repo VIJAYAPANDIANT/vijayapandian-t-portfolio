@@ -555,13 +555,34 @@ button {
   white-space: nowrap;
 }
 
-.hero-role {
-  font-size: clamp(0.92rem, 1.5vw, 1.15rem);
-  font-weight: 600;
-  color: var(--accent-sky);
+.typing-subtitle {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: clamp(1.1rem, 2.2vw, 1.4rem);
+  font-weight: 700;
+  color: #22d3ee;
   margin-bottom: 18px;
-  font-family: var(--font-mono);
+  min-height: 1.6em;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   letter-spacing: -0.01em;
+}
+
+.cursor {
+  animation: blink 0.8s infinite;
+  color: #22d3ee;
+  font-weight: 400;
+  margin-left: 2px;
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+
+  51%, 100% {
+    opacity: 0;
+  }
 }
 
 .hero-description {

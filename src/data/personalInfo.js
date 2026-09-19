@@ -7,10 +7,13 @@ export const personalInfo = {
   brandName: "Portfolio",
   shortRole: "Aspiring SDE | Full-Stack Developer & AI Engineer",
   roles: [
-    "Aspiring SDE | Full-Stack Developer & AI Engineer",
+    "Pre-Final Year CSE @ SRM Easwari",
     "Full-Stack Developer",
-    "AI Engineer",
-    "Problem Solver"
+    "Building Backend Systems with Java & Spring Boot",
+    "Exploring AI & Generative AI",
+    "300+ DSA Problems Solved",
+    "Building Real-World Software Projects",
+    "Open to Collaborate & Build"
   ],
   heroDescription:
     "Computer Science Engineering student focused on software development, full-stack applications, AI-powered solutions, and problem-solving.",
