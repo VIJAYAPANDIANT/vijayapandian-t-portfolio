@@ -1,24 +1,28 @@
 import React from 'react';
 import {
-  UserCheck,
-  LayoutDashboard,
+  Globe,
+  Atom,
   Bug,
+  MonitorSmartphone,
   Smartphone,
-  GitBranch,
-  UploadCloud,
+  Palette,
+  Image,
   ArrowRight,
   Sparkles,
-  Check
+  Check,
+  LayoutDashboard
 } from 'lucide-react';
 import { servicesData } from '../data/services';
 
 const iconMap = {
-  UserCheck,
-  LayoutDashboard,
+  Globe,
+  Atom,
   Bug,
+  MonitorSmartphone,
   Smartphone,
-  GitBranch,
-  UploadCloud
+  Palette,
+  Image,
+  LayoutDashboard
 };
 
 export default function Services() {
@@ -37,9 +41,9 @@ export default function Services() {
             <Sparkles size={14} />
             <span>Freelance Services</span>
           </div>
-          <h2 className="section-title">Need a Website?</h2>
+          <h2 className="section-title">Need a Website or Design?</h2>
           <p className="section-subtitle">
-            I build modern websites and help fix existing web applications. Available for freelance projects, custom frontend builds, and technical consultations.
+            I build modern websites, resolve frontend bugs, and create striking visual designs. Available for freelance web development and creative design projects.
           </p>
         </div>
 
@@ -73,10 +77,10 @@ export default function Services() {
         <div className="services-cta-banner">
           <div>
             <h3 style={{ fontSize: 'clamp(1.25rem, 3vw, 1.6rem)', fontWeight: 700, marginBottom: '8px' }}>
-              Ready to bring your web project to life?
+              Ready to bring your project to life?
             </h3>
             <p style={{ color: 'var(--text-secondary)', maxWidth: '640px', fontSize: '0.975rem' }}>
-              Whether you need a brand-new responsive portfolio, frontend feature engineering, or troubleshooting an existing codebase, let's collaborate.
+              Whether you need a brand-new responsive portfolio, frontend feature engineering, bug fixing, or custom logo & poster designs, let's collaborate.
             </p>
           </div>
 
