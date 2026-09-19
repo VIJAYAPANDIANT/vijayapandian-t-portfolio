@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Trophy, Binary, Award, Rocket, ExternalLink, Sparkles } from 'lucide-react';
+import { Trophy, Binary, Award, Rocket, ExternalLink, Sparkles, Shield, BarChart3 } from 'lucide-react';
 import { achievementsData } from '../data/achievements';
 
 const iconMap = {
@@ -40,10 +40,22 @@ export default function Achievements() {
               Explore my interactive 3D universe featuring verified certificate vaults, competitive trophy room, badge wall, engineering timeline, and live achievement analytics.
             </p>
             <div className="showcase-tags">
-              <span className="skill-tag">Certificate Vault</span>
-              <span className="skill-tag">Trophy Room</span>
-              <span className="skill-tag">Badge Wall</span>
-              <span className="skill-tag">Live Analytics</span>
+              <span className="showcase-tag showcase-tag--vault">
+                <Award size={13} />
+                <span>Certificate Vault</span>
+              </span>
+              <span className="showcase-tag showcase-tag--trophy">
+                <Trophy size={13} />
+                <span>Trophy Room</span>
+              </span>
+              <span className="showcase-tag showcase-tag--badges">
+                <Shield size={13} />
+                <span>Badge Wall</span>
+              </span>
+              <span className="showcase-tag showcase-tag--analytics">
+                <BarChart3 size={13} />
+                <span>Live Analytics</span>
+              </span>
             </div>
           </div>
           <div className="showcase-action">
