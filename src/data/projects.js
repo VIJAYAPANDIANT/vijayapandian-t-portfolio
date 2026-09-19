@@ -2,7 +2,7 @@
  * Featured projects with categories, detailed problem/solution descriptions,
  * tech stacks, key features, and live/code links for the modal.
  */
-export const projectCategories = ["All", "Full Stack", "AI", "Frontend"];
+export const projectCategories = ["All", "Full Stack", "AI", "Frontend", "Database"];
 
 export const projectsData = [
   {
@@ -47,6 +47,29 @@ export const projectsData = [
       "Automated code transpilation producing deterministic Playwright test suites",
       "Asynchronous worker execution with screenshot step diffs and video recordings",
       "MongoDB test run history, failure analytics, and regression trends"
+    ]
+  },
+  {
+    id: "sql-projects",
+    title: "SQL Projects Portfolio",
+    tagline: "Enterprise Database Architecture & Analytics Suite",
+    shortDescription:
+      "A comprehensive collection of 4 enterprise-grade relational database systems and data analytics projects featuring 3NF normalization, advanced SQL queries, and interactive dashboards.",
+    categories: ["Full Stack", "Database"],
+    technologies: ["SQL (PostgreSQL / MySQL)", "Database Normalization (3NF)", "Window Functions", "CTEs", "Chart.js"],
+    image: "/assets/images/sql-projects.svg",
+    githubUrl: "https://github.com/VIJAYAPANDIANT/sql-projects",
+    liveUrl: "https://covid-19-data-analytics.vercel.app/",
+    problem:
+      "Enterprise software systems face severe performance degradation, data redundancy anomalies, and inaccurate analytical reporting when relational database schemas lack proper normalization, indexing, and scalable query architecture.",
+    solution:
+      "Designed and optimized 4 enterprise database architectures (Airline Reservation, Online Retail 3NF, COVID-19 Analytics, Hospital Management) implementing 3NF normalization, CTEs, Window Functions, Stored Procedures, and dynamic Chart.js dashboards.",
+    keyFeatures: [
+      "✈️ Airline Reservation System: Complex aviation booking, seat configurations, and PNR generation",
+      "🛒 Online Retail Sales: Strict 3NF normalized schema, historical price tracking, and sales analytics views",
+      "📊 COVID-19 Data Analytics: Advanced SQL Window Functions & CTEs with live responsive web dashboard",
+      "🏥 Hospital Management: Enterprise medical records, doctor scheduling, treatment logs, and billing",
+      "Comprehensive documentation including complete schema scripts, ERD diagrams, and analytical queries"
     ]
   },
   {
