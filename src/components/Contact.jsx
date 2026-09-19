@@ -139,7 +139,7 @@ export default function Contact() {
 
               {/* WhatsApp */}
               <div className="contact-item">
-                <div className="contact-item-icon" style={{ color: '#25D366', background: 'rgba(37, 211, 102, 0.1)', borderColor: 'rgba(37, 211, 102, 0.25)' }}>
+                <div className="contact-item-icon">
                   <MessageCircle size={20} />
                 </div>
                 <div style={{ minWidth: 0 }}>
@@ -149,9 +149,9 @@ export default function Contact() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="contact-val"
-                    style={{ color: '#25D366', display: 'inline-flex', alignItems: 'center', gap: '4px' }}
+                    style={{ color: 'var(--accent-sky)', display: 'inline-flex', alignItems: 'center', gap: '4px' }}
                   >
-                    <span>Connect on WhatsApp</span>
+                    <span>+91 8610554060</span>
                     <ExternalLink size={14} style={{ color: 'var(--text-muted)' }} />
                   </a>
                 </div>
