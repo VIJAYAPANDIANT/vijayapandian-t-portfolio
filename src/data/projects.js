@@ -52,6 +52,30 @@ export const projectsData = [
     ]
   },
   {
+    id: "college-discovery-platform",
+    title: "UniScope College Discovery Platform",
+    tagline: "Full-Stack University Search, Comparison & Review Engine",
+    shortDescription:
+      "A premium, full-stack college search, discovery, and comparison platform helping students evaluate and compare 67+ top-tier global universities with interactive multi-selection comparison matrices and authentic student reviews.",
+    categories: ["Full Stack", "Frontend"],
+    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Prisma ORM", "PostgreSQL", "REST APIs"],
+    image: "/assets/images/college-discovery.svg",
+    githubUrl: "https://github.com/VIJAYAPANDIANT/college-discovery-platform",
+    liveUrl: "https://college-discovery-platform-mfqh.vercel.app/",
+    problem:
+      "Prospective students face fragmented information, misleading rankings, and cumbersome multi-tab research when attempting to evaluate and compare global higher education institutions.",
+    solution:
+      "Architected a unified search and comparison platform using Next.js, Prisma ORM, and PostgreSQL. Engineered an interactive matrix to evaluate tuition fees, placement averages, and student reviews side-by-side with live sorting and filtering.",
+    keyFeatures: [
+      "67+ comprehensive world-class university profiles with detailed tuition fees, ratings, and placement metrics",
+      "Interactive Side-by-Side Comparison Engine comparing up to 3 colleges simultaneously across 10+ criteria",
+      "Multi-criteria filtering & instant sorting by Rank, Rating, and Tuition Fee ranges",
+      "Authenticated student rating and qualitative review system with pre-seeded alumni accounts",
+      "Decoupled architecture with Next.js 16 Edge proxy, Prisma ORM, and PostgreSQL database",
+      "Deployed on Vercel with live client frontend and serverless REST API endpoints"
+    ]
+  },
+  {
     id: "testforge",
     title: "TESTFORGE",
     tagline: "No-Code Test Automation Platform",

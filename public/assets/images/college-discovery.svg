@@ -1,0 +1,100 @@
+﻿<svg width="600" height="360" viewBox="0 0 600 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="360" rx="16" fill="#0c1220"/>
+  <circle cx="300" cy="180" r="140" fill="url(#uniscope-glow)" opacity="0.18"/>
+  <defs>
+    <radialGradient id="uniscope-glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(300 180) rotate(90) scale(140)">
+      <stop stop-color="#10b981"/>
+      <stop offset="0.6" stop-color="#06b6d4" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="compass-badge" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#10b981"/>
+      <stop offset="1" stop-color="#0d9488"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Left: Side-by-Side University Comparison Window -->
+  <rect x="60" y="55" width="235" height="250" rx="10" fill="#131d33" stroke="#253754" stroke-width="1.5"/>
+  <rect x="60" y="55" width="235" height="32" rx="10" fill="#0f172a"/>
+  <circle cx="80" cy="71" r="4.5" fill="#ef4444"/>
+  <circle cx="95" cy="71" r="4.5" fill="#f59e0b"/>
+  <circle cx="110" cy="71" r="4.5" fill="#10b981"/>
+  <text x="132" y="75" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="10">uniscope.app/compare</text>
+
+  <!-- Search & Filter Bar -->
+  <rect x="76" y="98" width="203" height="32" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <circle cx="90" cy="114" r="5" fill="none" stroke="#64748b" stroke-width="1.5"/>
+  <line x1="94" y1="117.5" x2="98" y2="121.5" stroke="#64748b" stroke-width="1.5"/>
+  <text x="106" y="118" fill="#94a3b8" font-family="sans-serif" font-size="9">Search 67+ Universities...</text>
+  <rect x="236" y="104" width="36" height="20" rx="4" fill="#059669" opacity="0.3"/>
+  <text x="254" y="117" fill="#34d399" font-family="sans-serif" font-size="8.5" font-weight="bold" text-anchor="middle">LIVE</text>
+
+  <!-- Comparison Columns (MIT vs Stanford) -->
+  <g transform="translate(76, 140)">
+    <!-- Column 1: MIT -->
+    <rect x="0" y="0" width="98" height="106" rx="6" fill="#1e293b" stroke="#059669" stroke-width="1"/>
+    <text x="8" y="16" fill="#34d399" font-family="sans-serif" font-size="9.5" font-weight="bold">MIT</text>
+    <text x="8" y="27" fill="#64748b" font-family="sans-serif" font-size="7.5">Rank #1 Global</text>
+    <line x1="8" y1="33" x2="90" y2="33" stroke="#334155" stroke-width="0.8"/>
+    <text x="8" y="46" fill="#94a3b8" font-family="sans-serif" font-size="7.5">Avg Package</text>
+    <text x="8" y="58" fill="#f8fafc" font-family="sans-serif" font-size="9" font-weight="bold">$154,000</text>
+    <text x="8" y="72" fill="#94a3b8" font-family="sans-serif" font-size="7.5">Placement Rate</text>
+    <text x="8" y="84" fill="#38bdf8" font-family="sans-serif" font-size="9" font-weight="bold">98.5%</text>
+    <text x="8" y="98" fill="#fbbf24" font-family="sans-serif" font-size="8">★★★★★ 4.9</text>
+
+    <!-- Column 2: Stanford -->
+    <rect x="105" y="0" width="98" height="106" rx="6" fill="#1e293b" stroke="#0284c7" stroke-width="1"/>
+    <text x="113" y="16" fill="#38bdf8" font-family="sans-serif" font-size="9.5" font-weight="bold">Stanford</text>
+    <text x="113" y="27" fill="#64748b" font-family="sans-serif" font-size="7.5">Rank #2 Global</text>
+    <line x1="113" y1="33" x2="195" y2="33" stroke="#334155" stroke-width="0.8"/>
+    <text x="113" y="46" fill="#94a3b8" font-family="sans-serif" font-size="7.5">Avg Package</text>
+    <text x="113" y="58" fill="#f8fafc" font-family="sans-serif" font-size="9" font-weight="bold">$150,000</text>
+    <text x="113" y="72" fill="#94a3b8" font-family="sans-serif" font-size="7.5">Placement Rate</text>
+    <text x="113" y="84" fill="#38bdf8" font-family="sans-serif" font-size="9" font-weight="bold">97.8%</text>
+    <text x="113" y="98" fill="#fbbf24" font-family="sans-serif" font-size="8">★★★★★ 4.9</text>
+  </g>
+
+  <!-- Tags under left window -->
+  <rect x="76" y="258" width="60" height="20" rx="4" fill="#0f172a" stroke="#10b981" stroke-width="0.8"/>
+  <text x="106" y="272" fill="#34d399" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="bold" text-anchor="middle">Prisma ORM</text>
+
+  <rect x="142" y="258" width="66" height="20" rx="4" fill="#0f172a" stroke="#38bdf8" stroke-width="0.8"/>
+  <text x="175" y="272" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="bold" text-anchor="middle">Next.js 16</text>
+
+  <rect x="214" y="258" width="65" height="20" rx="4" fill="#0f172a" stroke="#a855f7" stroke-width="0.8"/>
+  <text x="246.5" y="272" fill="#c084fc" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="bold" text-anchor="middle">PostgreSQL</text>
+
+  <!-- Right: Featured Hub Card -->
+  <rect x="310" y="55" width="230" height="250" rx="10" fill="#111827" stroke="#374151" stroke-width="1.5"/>
+  
+  <!-- UniScope Compass Logo Badge -->
+  <rect x="328" y="72" width="38" height="38" rx="6" fill="url(#compass-badge)"/>
+  <circle cx="347" cy="91" r="11" fill="none" stroke="#ffffff" stroke-width="1.6"/>
+  <polygon points="347,84 350,91 347,98 344,91" fill="#ffffff"/>
+  <circle cx="347" cy="91" r="2" fill="#10b981"/>
+
+  <text x="375" y="87" fill="#f8fafc" font-family="sans-serif" font-size="12.5" font-weight="bold">UniScope Platform</text>
+  <text x="375" y="101" fill="#94a3b8" font-family="sans-serif" font-size="9.5">67+ Global Universities</text>
+
+  <!-- Feature Rows -->
+  <g transform="translate(328, 118)">
+    <rect x="0" y="0" width="195" height="32" rx="6" fill="#1f2937"/>
+    <text x="10" y="15" fill="#e2e8f0" font-family="sans-serif" font-size="9" font-weight="600">🔍 College Discovery Engine</text>
+    <text x="10" y="26" fill="#64748b" font-family="sans-serif" font-size="7.5">67+ University Profiles, Fees &amp; Ranks</text>
+
+    <rect x="0" y="36" width="195" height="32" rx="6" fill="#1f2937"/>
+    <text x="10" y="51" fill="#34d399" font-family="sans-serif" font-size="9" font-weight="600">📊 3-Way Comparison Matrix</text>
+    <text x="10" y="62" fill="#64748b" font-family="sans-serif" font-size="7.5">Side-by-side Tuitions, Packages &amp; ROI</text>
+
+    <rect x="0" y="72" width="195" height="32" rx="6" fill="#1f2937"/>
+    <text x="10" y="87" fill="#e2e8f0" font-family="sans-serif" font-size="9" font-weight="600">💬 Authentic Student Reviews</text>
+    <text x="10" y="98" fill="#64748b" font-family="sans-serif" font-size="7.5">Verified Alumni Ratings &amp; Perspectives</text>
+
+    <rect x="0" y="108" width="195" height="32" rx="6" fill="#1f2937"/>
+    <text x="10" y="123" fill="#38bdf8" font-family="sans-serif" font-size="9" font-weight="600">🌐 Live Vercel Deployment</text>
+    <text x="10" y="134" fill="#64748b" font-family="sans-serif" font-size="7.5">Production Frontend &amp; API Server</text>
+  </g>
+
+  <!-- Bottom subtitle -->
+  <text x="300" y="335" fill="#94a3b8" font-family="sans-serif" font-size="11.5" font-weight="600" text-anchor="middle">Next.js 16 • React • TypeScript • Prisma ORM • PostgreSQL • Vercel</text>
+</svg>
