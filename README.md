@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=220&section=header&text=Vijayapandian%20T%20%7C%20Portfolio&fontSize=46&fontColor=38bdf8&animation=fadeIn&fontAlignY=38&desc=Full-Stack%20Developer%20%E2%80%A2%20AI%20Engineer%20%E2%80%A2%20Problem%20Solver&descAlignY=62&descColor=94a3b8&descSize=18" alt="Vijayapandian T Header"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=220&section=header&text=Vijayapandian%20T&fontSize=46&fontColor=38bdf8&animation=fadeIn&fontAlignY=38&desc=Full-Stack%20Developer%20%E2%80%A2%20AI%20Engineer%20%E2%80%A2%20Problem%20Solver&descAlignY=62&descColor=94a3b8&descSize=18" alt="Vijayapandian T Header"/>
 
 # Vijayapandian T — Engineering Portfolio & Freelance Hub
 
@@ -13,8 +13,8 @@
     <img src="https://komarev.com/ghpvc/?username=VIJAYAPANDIANT&label=PROFILE+VIEWS&color=38bdf8&style=for-the-badge&labelColor=0d1117" alt="Profile Views" />
   </a>
   &nbsp;
-  <a href="https://vijayapandian-t-portfolio.vercel.app">
-    <img src="https://img.shields.io/badge/Live_Portfolio-38bdf8?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0d1117" alt="Live Portfolio" />
+  <a href="https://github.com/VIJAYAPANDIANT/vijayapandian-t-portfolio/stargazers">
+    <img src="https://img.shields.io/github/stars/VIJAYAPANDIANT/vijayapandian-t-portfolio?style=for-the-badge&logo=github&color=38bdf8&labelColor=0d1117" alt="Repository Stars" />
   </a>
   &nbsp;
   <a href="LICENSE">
