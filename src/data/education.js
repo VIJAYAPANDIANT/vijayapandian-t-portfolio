@@ -11,17 +11,16 @@ export const educationData = {
   highlights: [
     "Consistent strong academic standing with a current cumulative CGPA of 8.49.",
     "Active participant in technical symposiums, hackathons, and algorithm design workshops.",
-    "Member of student developer societies, actively organizing peer coding bootcamps."
+    "Active member of the Indian Society for Technical Education (ISTE) student chapter."
   ],
   coreCoursework: [
-    "Data Structures & Algorithms",
-    "Design & Analysis of Algorithms",
-    "Object-Oriented Programming (Java/C++)",
+    "Data Structures & Algorithms (DSA)",
+    "Design & Analysis of Algorithms (DAA)",
+    "Object-Oriented Programming (Java)",
     "Database Management Systems (DBMS)",
-    "Operating Systems & Systems Programming",
-    "Computer Networks & Protocols",
-    "Software Engineering Methodologies",
-    "Artificial Intelligence & Machine Learning"
+    "Operating Systems (OS)",
+    "Computer Networks",
+    "Artificial Intelligence & Machine Learning (AI/ML)"
   ],
   honors: [
     "Dean's Merit List for Academic Performance",
