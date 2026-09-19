@@ -280,29 +280,61 @@ export default function Experience() {
                   <Terminal size={14} style={{ color: '#c084fc' }} />
                   <span style={{ textTransform: 'capitalize' }}>{activeExp.category} Domain</span>
                 </span>
-                {activeExp.githubUrl && (
-                  <a
-                    href={activeExp.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="exp-meta-item"
-                    style={{
-                      color: 'var(--accent-sky)',
-                      background: 'rgba(56, 189, 248, 0.1)',
-                      border: '1px solid rgba(56, 189, 248, 0.3)',
-                      borderRadius: 'var(--radius-full)',
-                      padding: '2px 10px',
-                      textDecoration: 'none',
-                      display: 'inline-flex',
-                      alignItems: 'center',
-                      gap: '5px',
-                      fontSize: '0.78rem'
-                    }}
-                  >
-                    <Github size={13} />
-                    <span>GitHub Repo</span>
-                    <ExternalLink size={11} style={{ opacity: 0.8 }} />
-                  </a>
+                {activeExp.featuredProjects && activeExp.featuredProjects.length > 0 ? (
+                  activeExp.featuredProjects.map((proj, pIdx) => (
+                    <React.Fragment key={pIdx}>
+                      {proj.repoUrl && (
+                        <a
+                          href={proj.repoUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="exp-meta-item"
+                          style={{
+                            color: 'var(--accent-sky)',
+                            background: 'rgba(56, 189, 248, 0.1)',
+                            border: '1px solid rgba(56, 189, 248, 0.3)',
+                            borderRadius: 'var(--radius-full)',
+                            padding: '2px 10px',
+                            textDecoration: 'none',
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: '5px',
+                            fontSize: '0.78rem'
+                          }}
+                          title={`GitHub: ${proj.name}`}
+                        >
+                          <Github size={13} />
+                          <span>{proj.name.split('—')[0].trim()}</span>
+                          <ExternalLink size={11} style={{ opacity: 0.8 }} />
+                        </a>
+                      )}
+                    </React.Fragment>
+                  ))
+                ) : (
+                  activeExp.githubUrl && (
+                    <a
+                      href={activeExp.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="exp-meta-item"
+                      style={{
+                        color: 'var(--accent-sky)',
+                        background: 'rgba(56, 189, 248, 0.1)',
+                        border: '1px solid rgba(56, 189, 248, 0.3)',
+                        borderRadius: 'var(--radius-full)',
+                        padding: '2px 10px',
+                        textDecoration: 'none',
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '5px',
+                        fontSize: '0.78rem'
+                      }}
+                    >
+                      <Github size={13} />
+                      <span>GitHub Repo</span>
+                      <ExternalLink size={11} style={{ opacity: 0.8 }} />
+                    </a>
+                  )
                 )}
               </div>
 
@@ -341,72 +373,183 @@ export default function Experience() {
                 </div>
               </div>
 
-              {/* Featured Repository Callout (Added Last) */}
-              {activeExp.githubUrl && (
-                <div
-                  style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'space-between',
-                    gap: '14px',
-                    padding: '14px 18px',
-                    borderRadius: 'var(--radius-lg)',
-                    background: 'linear-gradient(135deg, rgba(56, 189, 248, 0.08), rgba(15, 23, 42, 0.75))',
-                    border: '1px solid rgba(56, 189, 248, 0.3)',
-                    flexWrap: 'wrap',
-                    marginTop: '8px'
-                  }}
-                >
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '12px', minWidth: '240px', flex: 1 }}>
-                    <div
-                      style={{
-                        width: '36px',
-                        height: '36px',
-                        borderRadius: 'var(--radius-md)',
-                        background: 'rgba(56, 189, 248, 0.15)',
-                        border: '1px solid rgba(56, 189, 248, 0.35)',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        color: 'var(--accent-sky)',
-                        flexShrink: 0
-                      }}
-                    >
-                      <Github size={19} />
-                    </div>
-                    <div>
-                      <div style={{ fontSize: '0.9rem', fontWeight: 700, color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '8px' }}>
-                        <span>{activeExp.repoName || 'Internship Project Repository'}</span>
-                      </div>
-                      <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', marginTop: '2px', lineHeight: 1.45 }}>
-                        {activeExp.repoDescription || 'Interactive project repository with source code, documentation, and live simulation.'}
-                      </div>
-                    </div>
-                  </div>
+              {/* Featured Project Deliverables & Repositories (Placed Last after Tech Stack) */}
+              {((activeExp.featuredProjects && activeExp.featuredProjects.length > 0) || activeExp.githubUrl) && (
+                <div className="exp-stage-section" style={{ borderTop: '1px solid var(--border-subtle)', paddingTop: '16px', marginTop: '10px' }}>
+                  <h4 className="exp-subhead" style={{ color: 'var(--accent-sky)', display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '12px' }}>
+                    <Github size={15} />
+                    <span>FEATURED DELIVERABLES & REPOSITORIES</span>
+                  </h4>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                    {activeExp.featuredProjects && activeExp.featuredProjects.length > 0 ? (
+                      activeExp.featuredProjects.map((proj, pIdx) => (
+                        <div
+                          key={pIdx}
+                          style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'space-between',
+                            gap: '14px',
+                            padding: '14px 18px',
+                            borderRadius: 'var(--radius-lg)',
+                            background: 'linear-gradient(135deg, rgba(56, 189, 248, 0.08), rgba(15, 23, 42, 0.75))',
+                            border: '1px solid rgba(56, 189, 248, 0.3)',
+                            flexWrap: 'wrap'
+                          }}
+                        >
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '12px', minWidth: '240px', flex: 1 }}>
+                            <div
+                              style={{
+                                width: '38px',
+                                height: '38px',
+                                borderRadius: 'var(--radius-md)',
+                                background: 'rgba(56, 189, 248, 0.15)',
+                                border: '1px solid rgba(56, 189, 248, 0.35)',
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                color: 'var(--accent-sky)',
+                                flexShrink: 0
+                              }}
+                            >
+                              <Github size={19} />
+                            </div>
+                            <div>
+                              <div style={{ fontSize: '0.92rem', fontWeight: 700, color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                                <span>{proj.name}</span>
+                              </div>
+                              {proj.description && (
+                                <div style={{ fontSize: '0.82rem', color: 'var(--text-secondary)', marginTop: '2px', lineHeight: 1.45 }}>
+                                  {proj.description}
+                                </div>
+                              )}
+                            </div>
+                          </div>
 
-                  <a
-                    href={activeExp.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-sm"
-                    style={{
-                      display: 'inline-flex',
-                      alignItems: 'center',
-                      gap: '6px',
-                      padding: '8px 16px',
-                      fontSize: '0.82rem',
-                      fontWeight: 600,
-                      borderRadius: 'var(--radius-full)',
-                      background: 'rgba(56, 189, 248, 0.18)',
-                      border: '1px solid rgba(56, 189, 248, 0.45)',
-                      color: 'var(--accent-sky)',
-                      whiteSpace: 'nowrap',
-                      transition: 'all 0.2s ease'
-                    }}
-                  >
-                    <span>Explore Repository</span>
-                    <ExternalLink size={13} />
-                  </a>
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+                            {proj.repoUrl && (
+                              <a
+                                href={proj.repoUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="btn btn-sm"
+                                style={{
+                                  display: 'inline-flex',
+                                  alignItems: 'center',
+                                  gap: '6px',
+                                  padding: '8px 14px',
+                                  fontSize: '0.82rem',
+                                  fontWeight: 600,
+                                  borderRadius: 'var(--radius-full)',
+                                  background: 'rgba(56, 189, 248, 0.15)',
+                                  border: '1px solid rgba(56, 189, 248, 0.4)',
+                                  color: 'var(--accent-sky)',
+                                  whiteSpace: 'nowrap',
+                                  textDecoration: 'none',
+                                  transition: 'all 0.2s ease'
+                                }}
+                              >
+                                <Github size={13} />
+                                <span>Explore Repository</span>
+                                <ExternalLink size={12} />
+                              </a>
+                            )}
+                            {proj.liveUrl && (
+                              <a
+                                href={proj.liveUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="btn btn-sm"
+                                style={{
+                                  display: 'inline-flex',
+                                  alignItems: 'center',
+                                  gap: '6px',
+                                  padding: '8px 14px',
+                                  fontSize: '0.82rem',
+                                  fontWeight: 700,
+                                  borderRadius: 'var(--radius-full)',
+                                  background: 'linear-gradient(135deg, rgba(56, 189, 248, 0.9), rgba(37, 99, 235, 0.9))',
+                                  border: '1px solid rgba(56, 189, 248, 0.6)',
+                                  color: '#0b1120',
+                                  whiteSpace: 'nowrap',
+                                  textDecoration: 'none',
+                                  transition: 'all 0.2s ease'
+                                }}
+                              >
+                                <span>Live Demo</span>
+                                <ExternalLink size={12} />
+                              </a>
+                            )}
+                          </div>
+                        </div>
+                      ))
+                    ) : (
+                      <div
+                        style={{
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'space-between',
+                          gap: '14px',
+                          padding: '14px 18px',
+                          borderRadius: 'var(--radius-lg)',
+                          background: 'linear-gradient(135deg, rgba(56, 189, 248, 0.08), rgba(15, 23, 42, 0.75))',
+                          border: '1px solid rgba(56, 189, 248, 0.3)',
+                          flexWrap: 'wrap'
+                        }}
+                      >
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', minWidth: '240px', flex: 1 }}>
+                          <div
+                            style={{
+                              width: '36px',
+                              height: '36px',
+                              borderRadius: 'var(--radius-md)',
+                              background: 'rgba(56, 189, 248, 0.15)',
+                              border: '1px solid rgba(56, 189, 248, 0.35)',
+                              display: 'flex',
+                              alignItems: 'center',
+                              justifyContent: 'center',
+                              color: 'var(--accent-sky)',
+                              flexShrink: 0
+                            }}
+                          >
+                            <Github size={19} />
+                          </div>
+                          <div>
+                            <div style={{ fontSize: '0.9rem', fontWeight: 700, color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                              <span>{activeExp.repoName || 'Internship Project Repository'}</span>
+                            </div>
+                            <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', marginTop: '2px', lineHeight: 1.45 }}>
+                              {activeExp.repoDescription || 'Interactive project repository with source code, documentation, and live simulation.'}
+                            </div>
+                          </div>
+                        </div>
+
+                        <a
+                          href={activeExp.githubUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="btn btn-sm"
+                          style={{
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: '6px',
+                            padding: '8px 16px',
+                            fontSize: '0.82rem',
+                            fontWeight: 600,
+                            borderRadius: 'var(--radius-full)',
+                            background: 'rgba(56, 189, 248, 0.18)',
+                            border: '1px solid rgba(56, 189, 248, 0.45)',
+                            color: 'var(--accent-sky)',
+                            whiteSpace: 'nowrap',
+                            transition: 'all 0.2s ease'
+                          }}
+                        >
+                          <span>Explore Repository</span>
+                          <ExternalLink size={13} />
+                        </a>
+                      </div>
+                    )}
+                  </div>
                 </div>
               )}
             </div>
@@ -466,7 +609,7 @@ export default function Experience() {
 
                 <div className="exp-grid-footer">
                   <span>View Details</span>
-                  {exp.githubUrl && (
+                  {(exp.githubUrl || exp.featuredProjects?.length > 0) && (
                     <span style={{ marginLeft: 'auto', marginRight: '6px', display: 'inline-flex', alignItems: 'center', gap: '4px', opacity: 0.85, color: 'var(--accent-sky)' }}>
                       <Github size={12} />
                       <span style={{ fontSize: '0.72rem' }}>Repo</span>

@@ -75,6 +75,13 @@ export const experienceData = [
     githubUrl: "https://github.com/VIJAYAPANDIANT/sql-internship-portfolio",
     repoName: "sql-internship-portfolio",
     repoDescription: "Interactive Database Engineering & SQL Internship Portfolio showcasing 20 database system projects with syntax-highlighted SQL script explorer and terminal query simulator.",
+    featuredProjects: [
+      {
+        name: "sql-internship-portfolio",
+        repoUrl: "https://github.com/VIJAYAPANDIANT/sql-internship-portfolio",
+        description: "Interactive Database Engineering & SQL Internship Portfolio showcasing 20 database system projects with syntax-highlighted SQL script explorer and terminal query simulator."
+      }
+    ],
     description:
       "Built 4 database-driven projects — an Airline Reservation System, COVID-19 Data Analytics, Hospital Management Database, and Online Retail Sales Database Design — completing 16 tasks using joins, subqueries, and aggregate functions. Applied query optimization techniques to improve performance across all four schemas.",
     responsibilities: [
@@ -94,6 +101,15 @@ export const experienceData = [
     duration: "Feb 2026 – Mar 2026 · 2 mos",
     badge: "Internship",
     location: "Chennai, Tamil Nadu, India · Hybrid",
+    githubUrl: "https://github.com/VIJAYAPANDIANT/smart-waste-mapping-platform",
+    featuredProjects: [
+      {
+        name: "Smart Waste Mapping Platform",
+        repoUrl: "https://github.com/VIJAYAPANDIANT/smart-waste-mapping-platform",
+        liveUrl: "https://smart-waste-mapping.vercel.app/",
+        description: "AI-Powered geospatial waste mapping platform integrating MERN stack with a Python Flask microservice and Random Forest risk prediction."
+      }
+    ],
     description:
       "Completed a Green Internship with 1M1B (1 Million for 1 Billion). Designed and built an AI-Powered Smart Waste Mapping Platform (MERN stack + Python Flask AI microservice) to track waste hotspots and optimize cleanup routes using real-time geospatial data.",
     responsibilities: [
@@ -166,6 +182,21 @@ export const experienceData = [
     duration: "May 2025 – Jun 2025 · 2 mos",
     badge: "Internship",
     location: "Chennai, Tamil Nadu, India · Remote",
+    githubUrl: "https://github.com/VIJAYAPANDIANT/event-poll",
+    featuredProjects: [
+      {
+        name: "VoteSync (Event Poll)",
+        repoUrl: "https://github.com/VIJAYAPANDIANT/event-poll",
+        liveUrl: "https://eventpoll-client-a2bl.vercel.app",
+        description: "Real-time cloud event polling platform with live voting, dynamic chart visualizers, and scalable cloud state synchronization."
+      },
+      {
+        name: "Task Master",
+        repoUrl: "https://github.com/VIJAYAPANDIANT/task-master",
+        liveUrl: "https://task-master-chi-three.vercel.app/",
+        description: "Cosmic glassmorphic productivity application featuring real-time task workflows, board sync, and live activity tracking."
+      }
+    ],
     description:
       "Built cloud-based web applications (Event Poll, Task Management modules) using JavaScript and Firebase for the Cloud Development track, gaining hands-on experience with real-time cloud services and deployment.",
     responsibilities: [
