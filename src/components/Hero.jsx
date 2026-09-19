@@ -6,11 +6,8 @@ import HeroScene from './HeroScene';
 
 const lines = [
   "Pre-Final Year CSE @ SRM Easwari",
-  "Full-Stack Developer",
-  "Building Backend Systems with Java & Spring Boot",
-  "Exploring AI & Generative AI",
-  "300+ DSA Problems Solved",
-  "Building Real-World Software Projects",
+  "Aspiring Software Development Engineer",
+  "Exploring AI & Cloud Technologies",
   "Open to Collaborate & Build"
 ];
 
