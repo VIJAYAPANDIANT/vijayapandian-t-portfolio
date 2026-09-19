@@ -28,6 +28,30 @@ export const projectsData = [
     ]
   },
   {
+    id: "placement-portal-application",
+    title: "Placement Portal Application",
+    tagline: "Enterprise Campus Recruitment & AI Resume Screening Platform",
+    shortDescription:
+      "A comprehensive, decoupled full-stack platform streamlining campus placements with automated CGPA/Branch filtering, Groq AI ATS resume parsing, and multi-role workflows.",
+    categories: ["Full Stack", "AI"],
+    technologies: ["Flask", "Python", "React", "Groq AI (LLaMA-3.3)", "SQLAlchemy ORM", "Redis", "Celery", "JWT Auth"],
+    image: "/assets/images/placement-portal.svg",
+    githubUrl: "https://github.com/VIJAYAPANDIANT/placement-portal-application",
+    liveUrl: "https://github.com/VIJAYAPANDIANT/placement-portal-application",
+    problem:
+      "Traditional university placement drives suffer from manual resume screening bottlenecks, disjointed student-company communications, administrative grading overhead, and a lack of real-time application tracking.",
+    solution:
+      "Engineered a production-ready decoupled architecture with a Python/Flask backend and React frontend. Integrated Groq AI (llama-3.3-70b-versatile) for real-time PDF resume ATS parsing, Redis query caching, Celery workers for async background reporting, and 30-day persistent JWT role-based security across Student, Recruiter, and Admin portals.",
+    keyFeatures: [
+      "Groq AI LLaMA-3.3-70B automated PDF resume parsing with instant ATS compatibility scoring",
+      "Multi-role portal for Students (applications & tracking), Corporate Recruiters (drive publishing & screening), and Placement Cell Admins",
+      "High-performance caching with Redis (300s/600s TTLs) and asynchronous CSV reports via Celery workers",
+      "Persistent 30-day JWT authentication with zero raw SQL vulnerabilities via strict SQLAlchemy ORM",
+      "Unified topbar notification drawer and Chart.js placement analytics telemetry",
+      "Pre-seeded database with 16+ enterprise corporate profiles (Google, Microsoft, Amazon) for immediate verification"
+    ]
+  },
+  {
     id: "testforge",
     title: "TESTFORGE",
     tagline: "No-Code Test Automation Platform",

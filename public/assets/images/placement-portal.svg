@@ -1,0 +1,88 @@
+﻿<svg width="600" height="360" viewBox="0 0 600 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="360" rx="16" fill="#0c1220"/>
+  <circle cx="300" cy="180" r="140" fill="url(#portal-glow)" opacity="0.18"/>
+  <defs>
+    <radialGradient id="portal-glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(300 180) rotate(90) scale(140)">
+      <stop stop-color="#3b82f6"/>
+      <stop offset="0.6" stop-color="#6366f1" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#6366f1" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cap-badge" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#1d4ed8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Left: Dashboard & AI Resume Screening Window -->
+  <rect x="60" y="55" width="235" height="250" rx="10" fill="#131d33" stroke="#253754" stroke-width="1.5"/>
+  <rect x="60" y="55" width="235" height="32" rx="10" fill="#0f172a"/>
+  <circle cx="80" cy="71" r="4.5" fill="#ef4444"/>
+  <circle cx="95" cy="71" r="4.5" fill="#f59e0b"/>
+  <circle cx="110" cy="71" r="4.5" fill="#10b981"/>
+  <text x="132" y="75" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="10">placement-portal.app</text>
+
+  <!-- AI Resume Analysis Widget -->
+  <rect x="76" y="98" width="203" height="52" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
+  <text x="88" y="116" fill="#60a5fa" font-family="sans-serif" font-size="10.5" font-weight="bold">AI ATS Screening (Groq LLaMA-3.3)</text>
+  <text x="88" y="130" fill="#94a3b8" font-family="sans-serif" font-size="8.5">Real-Time PDF Resume Parsing</text>
+  <rect x="228" y="108" width="42" height="20" rx="4" fill="#1d4ed8" opacity="0.3"/>
+  <text x="249" y="122" fill="#60a5fa" font-family="sans-serif" font-size="9" font-weight="bold" text-anchor="middle">94% ATS</text>
+
+  <!-- Recruitment Drive Pipeline Mini-Cards -->
+  <rect x="76" y="158" width="203" height="42" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="88" y="174" fill="#f8fafc" font-family="sans-serif" font-size="10" font-weight="bold">Google Software Engineering</text>
+  <text x="88" y="188" fill="#94a3b8" font-family="sans-serif" font-size="8.5">CGPA ≥ 8.5 • CSE / IT / ECE</text>
+  <circle cx="260" cy="179" r="6" fill="#10b981" opacity="0.2"/>
+  <circle cx="260" cy="179" r="3" fill="#10b981"/>
+
+  <rect x="76" y="206" width="203" height="42" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="88" y="222" fill="#f8fafc" font-family="sans-serif" font-size="10" font-weight="bold">Microsoft Cloud &amp; AI Drive</text>
+  <text x="88" y="236" fill="#94a3b8" font-family="sans-serif" font-size="8.5">16+ Corporate Recruitment Drives</text>
+  <circle cx="260" cy="227" r="6" fill="#60a5fa" opacity="0.2"/>
+  <circle cx="260" cy="227" r="3" fill="#60a5fa"/>
+
+  <!-- System Feature Chips -->
+  <rect x="76" y="258" width="60" height="20" rx="4" fill="#0f172a" stroke="#3b82f6" stroke-width="0.8"/>
+  <text x="106" y="272" fill="#60a5fa" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="bold" text-anchor="middle">JWT Auth</text>
+
+  <rect x="142" y="258" width="66" height="20" rx="4" fill="#0f172a" stroke="#10b981" stroke-width="0.8"/>
+  <text x="175" y="272" fill="#34d399" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="bold" text-anchor="middle">Celery &amp; Redis</text>
+
+  <rect x="214" y="258" width="65" height="20" rx="4" fill="#0f172a" stroke="#a855f7" stroke-width="0.8"/>
+  <text x="246.5" y="272" fill="#c084fc" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="bold" text-anchor="middle">Chart.js</text>
+
+  <!-- Right: Featured Portal Hub Card -->
+  <rect x="310" y="55" width="230" height="250" rx="10" fill="#111827" stroke="#374151" stroke-width="1.5"/>
+  
+  <!-- Graduation Cap Icon Badge -->
+  <rect x="328" y="72" width="38" height="38" rx="6" fill="url(#cap-badge)"/>
+  <path d="M347 80 L359 86 L347 92 L335 86 Z" fill="#ffffff"/>
+  <path d="M339 90 V96 C339 99 342.5 101.5 347 101.5 C351.5 101.5 355 99 355 96 V90" fill="none" stroke="#ffffff" stroke-width="1.6"/>
+  <path d="M358 87 V97" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="358" cy="98" r="1.5" fill="#facc15"/>
+
+  <text x="375" y="87" fill="#f8fafc" font-family="sans-serif" font-size="12" font-weight="bold">Placement Portal</text>
+  <text x="375" y="101" fill="#94a3b8" font-family="sans-serif" font-size="9.5">Campus Recruitment Platform</text>
+
+  <!-- Role Modules Preview -->
+  <g transform="translate(328, 118)">
+    <rect x="0" y="0" width="195" height="32" rx="6" fill="#1f2937"/>
+    <text x="10" y="15" fill="#e2e8f0" font-family="sans-serif" font-size="9" font-weight="600">🎓 Student Career Portal</text>
+    <text x="10" y="26" fill="#64748b" font-family="sans-serif" font-size="7.5">Resume Upload, CGPA Filter &amp; Live Status</text>
+
+    <rect x="0" y="36" width="195" height="32" rx="6" fill="#1f2937"/>
+    <text x="10" y="51" fill="#e2e8f0" font-family="sans-serif" font-size="9" font-weight="600">🏢 Corporate Recruiter Hub</text>
+    <text x="10" y="62" fill="#64748b" font-family="sans-serif" font-size="7.5">Drive Creation, Screening &amp; Interviews</text>
+
+    <rect x="0" y="72" width="195" height="32" rx="6" fill="#1f2937"/>
+    <text x="10" y="87" fill="#60a5fa" font-family="sans-serif" font-size="9" font-weight="600">⚡ AI Resume Screening Engine</text>
+    <text x="10" y="98" fill="#34d399" font-family="sans-serif" font-size="7.5">Groq LLaMA-3.3-70B Automated ATS Scores</text>
+
+    <rect x="0" y="108" width="195" height="32" rx="6" fill="#1f2937"/>
+    <text x="10" y="123" fill="#e2e8f0" font-family="sans-serif" font-size="9" font-weight="600">🛡️ Placement Cell Admin</text>
+    <text x="10" y="134" fill="#64748b" font-family="sans-serif" font-size="7.5">Analytics Telemetry &amp; Approval Funnels</text>
+  </g>
+
+  <!-- Bottom subtitle -->
+  <text x="300" y="335" fill="#94a3b8" font-family="sans-serif" font-size="11.5" font-weight="600" text-anchor="middle">Full-Stack Decoupled Architecture • Flask • React • Groq AI • Redis • Celery</text>
+</svg>
