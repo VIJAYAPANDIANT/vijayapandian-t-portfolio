@@ -90,4 +90,4 @@ Configured for continuous zero-config deployment with **Vercel**.
 * **CodeChef:** [codechef.com/users/vijay_code07](https://www.codechef.com/users/vijay_code07)
 * **GeeksforGeeks:** [geeksforgeeks.org/profile/vijayapandiant11](https://www.geeksforgeeks.org/profile/vijayapandiant11)
 * **Unstop:** [unstop.com/u/vijayt90718](https://unstop.com/u/vijayt90718)
-* **Email:** [vijayapandian.dev@example.com](mailto:vijayapandian.dev@example.com)
+* **Email:** [vijayapandian112007@gmail.com](mailto:vijayapandian112007@gmail.com)

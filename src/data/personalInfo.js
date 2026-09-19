@@ -35,7 +35,7 @@ export const personalInfo = {
     geeksforgeeks: "https://www.geeksforgeeks.org/profile/vijayapandiant11",
     unstop: "https://unstop.com/u/vijayt90718",
     achievementUniverse: "https://vj-achievement-universe.vercel.app/",
-    email: "vijayapandian.dev@example.com"
+    email: "vijayapandian112007@gmail.com"
   },
   resumePath: "https://drive.google.com/file/d/1nRrqbiIwxStywyVKvkCbQTMS0RwOvdTT/view?usp=sharing"
 };
