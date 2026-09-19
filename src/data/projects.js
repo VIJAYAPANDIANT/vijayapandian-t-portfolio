@@ -28,6 +28,30 @@ export const projectsData = [
     ]
   },
   {
+    id: "ai-test-case-agent",
+    title: "TestGen AI - Test Generation Agent",
+    tagline: "Autonomous AI Multi-Framework Test Suite Generator",
+    shortDescription:
+      "An autonomous AI test engineering agent powered by Google Gemini API that analyzes source code, API schemas, and functional specifications to instantly generate copy-paste ready unit, integration, edge-case, and vulnerability test suites across Jest, PyTest, Mocha, Playwright, and Cypress.",
+    categories: ["AI", "Full Stack"],
+    technologies: ["Google Gemini AI", "Next.js 15", "React 19", "TypeScript", "Node.js", "Express", "Tailwind CSS", "Vercel"],
+    image: "/assets/images/ai-test-case-agent.svg",
+    githubUrl: "https://github.com/VIJAYAPANDIANT/ai-test-case-generation-agent",
+    liveUrl: "https://ai-test-case-generation-agent.vercel.app",
+    problem:
+      "Software engineering teams spend up to 40% of sprint capacity manually writing boilerplate assertions, edge cases, and vulnerability mock tests, leading to brittle test suites and delayed release cycles.",
+    solution:
+      "Engineered an autonomous AI testing agent utilizing Google Gemini 1.5 with progressive thinking sequencers. Automatically structures comprehensive test suites including unit assertions, boundary checks, SQL injection/XSS safety tests, and performance benchmarks with single-click PDF/JSON export.",
+    keyFeatures: [
+      "Google Gemini API (gemini-1.5-flash) automated reasoning engine producing multi-framework test suites (Jest, PyTest, Mocha, Playwright)",
+      "Comprehensive Test Matrix generation: Unit tests, Integration pipelines, Vulnerability & Security checks, and Edge cases",
+      "Progressive 0–99% real-time AI thinking sequencer with instant syntax-highlighted code output cards",
+      "One-click export capabilities for PDF reports, structured JSON test suites, and direct clipboard copying",
+      "Pre-built sample prompt templates for fast test suite bootstrapping across REST APIs and frontend components",
+      "Full-stack decoupled architecture deployed on Vercel with Next.js 15 App Router and Express API Gateway"
+    ]
+  },
+  {
     id: "placement-portal-application",
     title: "Placement Portal Application",
     tagline: "Enterprise Campus Recruitment & AI Resume Screening Platform",
