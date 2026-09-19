@@ -15,11 +15,10 @@ export const educationData = {
   ],
   coreCoursework: [
     "Data Structures & Algorithms (DSA)",
-    "Design & Analysis of Algorithms (DAA)",
     "Object-Oriented Programming (Java)",
     "Database Management Systems (DBMS)",
     "Operating Systems (OS)",
-    "Computer Networks",
+    "Computer Networks (CN)",
     "Artificial Intelligence & Machine Learning (AI/ML)"
   ],
   honors: [
