@@ -215,6 +215,30 @@ export const projectsData = [
     ]
   },
   {
+    id: "premium-weather-dashboard",
+    title: "Atmosphere Weather Dashboard",
+    tagline: "Glassmorphic Weather Analytics & Forecast Station",
+    shortDescription:
+      "A sleek, responsive single-page weather analytics dashboard engineered with Vanilla JavaScript, HTML5, and CSS3. Features real-time Open-Meteo API integrations, dynamic weather atmospheric gradient theming, 24-hour hourly timelines, 7-day daily trends, and unit conversion.",
+    categories: ["Frontend"],
+    technologies: ["JavaScript (ES6+)", "HTML5", "CSS3 (Glassmorphism)", "Open-Meteo REST APIs", "DOM Manipulation"],
+    image: "/assets/images/weather-dashboard.svg",
+    githubUrl: "https://github.com/VIJAYAPANDIANT/premium-weather-dashboard",
+    liveUrl: "https://github.com/VIJAYAPANDIANT/premium-weather-dashboard",
+    problem:
+      "Most weather web applications are bloated with ads, require paid API keys with restrictive rate limits, and lack modern, responsive glassmorphism visual design systems.",
+    solution:
+      "Built a zero-dependency, ultra-fast weather station using Vanilla JavaScript and Open-Meteo APIs. Implemented real-time geocoding, 24-hour scrollable hourly predictions, 7-day forecasting, dynamic atmospheric ambient gradient shifting, and instant °C/°F unit toggling.",
+    keyFeatures: [
+      "Live atmospheric data, 24-hour scrollable timeline, and 7-day forecast via free Open-Meteo REST APIs",
+      "Dynamic Weather Theming adapting background gradients to current sky conditions (Clear, Rain, Snow, Thunderstorm)",
+      "Smart City & Regional Geocoding filter with administrative suffix matching (e.g. 'Miami, FL', 'Chennai, IN')",
+      "Instant Metric/Imperial unit switching (°C/km/h vs °F/mph) with synchronized DOM state",
+      "Persistent localStorage search history with rapid city recall and deletion controls",
+      "Pure Vanilla Web Technologies (zero external JS/CSS dependencies) with frosty backdrop-filter glassmorphism"
+    ]
+  },
+  {
     id: "javascript-mini-projects",
     title: "JavaScript Mini Projects Collection",
     tagline: "13 Interactive Vanilla JS Web Applications",

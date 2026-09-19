@@ -1,0 +1,91 @@
+﻿<svg width="600" height="360" viewBox="0 0 600 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="360" rx="16" fill="#0c1220"/>
+  <circle cx="300" cy="180" r="140" fill="url(#weather-glow)" opacity="0.2"/>
+  <defs>
+    <radialGradient id="weather-glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(300 180) rotate(90) scale(140)">
+      <stop stop-color="#0284c7"/>
+      <stop offset="0.5" stop-color="#38bdf8" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sun-badge" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f59e0b"/>
+      <stop offset="1" stop-color="#0284c7"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Left: Atmosphere Weather Dashboard Preview Window -->
+  <rect x="60" y="55" width="235" height="250" rx="10" fill="#131d33" stroke="#253754" stroke-width="1.5"/>
+  <rect x="60" y="55" width="235" height="32" rx="10" fill="#0f172a"/>
+  <circle cx="80" cy="71" r="4.5" fill="#ef4444"/>
+  <circle cx="95" cy="71" r="4.5" fill="#f59e0b"/>
+  <circle cx="110" cy="71" r="4.5" fill="#10b981"/>
+  <text x="132" y="75" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="10">atmosphere.app/weather</text>
+
+  <!-- City Search & Temperature Hero -->
+  <rect x="76" y="96" width="203" height="56" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+  <text x="88" y="114" fill="#38bdf8" font-family="sans-serif" font-size="11" font-weight="bold">Chennai, IN</text>
+  <text x="88" y="127" fill="#94a3b8" font-family="sans-serif" font-size="8.5">Partly Cloudy • Humidity 68%</text>
+  <text x="88" y="142" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="8">Wind: 14 km/h • UV Index: 6</text>
+  <text x="248" y="128" fill="#f8fafc" font-family="sans-serif" font-size="22" font-weight="900" text-anchor="middle">28°C</text>
+  <rect x="232" y="134" width="32" height="12" rx="3" fill="#0284c7" opacity="0.3"/>
+  <text x="248" y="143" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="7.5" font-weight="bold" text-anchor="middle">°C | °F</text>
+
+  <!-- 24-Hour Timeline Bar -->
+  <rect x="76" y="160" width="203" height="42" rx="6" fill="#090e1a" stroke="#1e293b" stroke-width="1"/>
+  <text x="86" y="174" fill="#94a3b8" font-family="sans-serif" font-size="7.5" font-weight="bold">24-HOUR HOURLY TIMELINE</text>
+  <g transform="translate(86, 180)">
+    <text x="0" y="12" fill="#cbd5e1" font-family="'JetBrains Mono', monospace" font-size="7.5">12 PM 28°</text>
+    <text x="48" y="12" fill="#f59e0b" font-family="'JetBrains Mono', monospace" font-size="7.5">3 PM 30°</text>
+    <text x="96" y="12" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="7.5">6 PM 26°</text>
+    <text x="144" y="12" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="7.5">9 PM 24°</text>
+  </g>
+
+  <!-- 7-Day Forecast Mini Row -->
+  <rect x="76" y="210" width="203" height="38" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="86" y="226" fill="#cbd5e1" font-family="sans-serif" font-size="8" font-weight="bold">Mon: ☀️ 31° / 24°</text>
+  <text x="146" y="226" fill="#cbd5e1" font-family="sans-serif" font-size="8" font-weight="bold">Tue: ⛅ 29° / 23°</text>
+  <text x="86" y="240" fill="#94a3b8" font-family="sans-serif" font-size="7.5">Open-Meteo Geocoding &amp; Forecast REST API</text>
+
+  <!-- Tags under left window -->
+  <rect x="76" y="258" width="60" height="20" rx="4" fill="#0f172a" stroke="#38bdf8" stroke-width="0.8"/>
+  <text x="106" y="272" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="bold" text-anchor="middle">Vanilla JS</text>
+
+  <rect x="142" y="258" width="66" height="20" rx="4" fill="#0f172a" stroke="#f59e0b" stroke-width="0.8"/>
+  <text x="175" y="272" fill="#fbbf24" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="bold" text-anchor="middle">Open-Meteo</text>
+
+  <rect x="214" y="258" width="65" height="20" rx="4" fill="#0f172a" stroke="#10b981" stroke-width="0.8"/>
+  <text x="246.5" y="272" fill="#34d399" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="bold" text-anchor="middle">Glassmorphic</text>
+
+  <!-- Right: Featured Hub Card -->
+  <rect x="310" y="55" width="230" height="250" rx="10" fill="#111827" stroke="#374151" stroke-width="1.5"/>
+  
+  <!-- Weather Sun / Cloud Logo Badge -->
+  <rect x="328" y="72" width="38" height="38" rx="6" fill="url(#sun-badge)"/>
+  <circle cx="347" cy="91" r="7" fill="#ffffff"/>
+  <path d="M347 80 V78 M347 104 V102 M336 91 H334 M360 91 H358 M339 83 L337 81 M355 99 L357 101 M339 99 L337 101 M355 83 L357 81" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+
+  <text x="375" y="87" fill="#f8fafc" font-family="sans-serif" font-size="12.5" font-weight="bold">Atmosphere Weather</text>
+  <text x="375" y="101" fill="#94a3b8" font-family="sans-serif" font-size="9.5">Glassmorphic Forecast Hub</text>
+
+  <!-- Feature Rows -->
+  <g transform="translate(328, 118)">
+    <rect x="0" y="0" width="195" height="32" rx="6" fill="#1f2937"/>
+    <text x="10" y="15" fill="#e2e8f0" font-family="sans-serif" font-size="9" font-weight="600">🌦️ Dynamic Condition Theming</text>
+    <text x="10" y="26" fill="#64748b" font-family="sans-serif" font-size="7.5">Adaptive Gradients for Rain, Clear &amp; Storms</text>
+
+    <rect x="0" y="36" width="195" height="32" rx="6" fill="#1f2937"/>
+    <text x="10" y="51" fill="#38bdf8" font-family="sans-serif" font-size="9" font-weight="600">⏱️ 24h Hourly &amp; 7-Day Outlook</text>
+    <text x="10" y="62" fill="#64748b" font-family="sans-serif" font-size="7.5">Scrollable Timeline &amp; Max/Min Temp Bands</text>
+
+    <rect x="0" y="72" width="195" height="32" rx="6" fill="#1f2937"/>
+    <text x="10" y="87" fill="#e2e8f0" font-family="sans-serif" font-size="9" font-weight="600">🌐 Free Keyless Open-Meteo API</text>
+    <text x="10" y="98" fill="#64748b" font-family="sans-serif" font-size="7.5">High-Precision Geocoding &amp; Atmospheric Metrics</text>
+
+    <rect x="0" y="108" width="195" height="32" rx="6" fill="#1f2937"/>
+    <text x="10" y="123" fill="#fbbf24" font-family="sans-serif" font-size="9" font-weight="600">⚡ Zero External Dependencies</text>
+    <text x="10" y="134" fill="#64748b" font-family="sans-serif" font-size="7.5">Pure Vanilla JS, Semantic HTML5 &amp; CSS3</text>
+  </g>
+
+  <!-- Bottom subtitle -->
+  <text x="300" y="335" fill="#94a3b8" font-family="sans-serif" font-size="11.5" font-weight="600" text-anchor="middle">Vanilla JavaScript • HTML5 • CSS3 Glassmorphism • Open-Meteo REST APIs</text>
+</svg>
