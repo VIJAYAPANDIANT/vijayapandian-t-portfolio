@@ -41,9 +41,9 @@ export default function Services() {
             <Sparkles size={14} />
             <span>Freelance Services</span>
           </div>
-          <h2 className="section-title">Need a Website or Design?</h2>
+          <h2 className="section-title">Need a Website or Frontend Help?</h2>
           <p className="section-subtitle">
-            I build modern websites, resolve frontend bugs, and create striking visual designs. Available for freelance web development and creative design projects.
+            I build modern, responsive websites, develop frontend interfaces, and fix website issues. I also provide creative design services for portfolios, projects, events, and personal brands.
           </p>
         </div>
 
@@ -77,10 +77,10 @@ export default function Services() {
         <div className="services-cta-banner">
           <div>
             <h3 style={{ fontSize: 'clamp(1.25rem, 3vw, 1.6rem)', fontWeight: 700, marginBottom: '8px' }}>
-              Ready to bring your project to life?
+              Ready to Build Your Project?
             </h3>
             <p style={{ color: 'var(--text-secondary)', maxWidth: '640px', fontSize: '0.975rem' }}>
-              Whether you need a brand-new responsive portfolio, frontend feature engineering, bug fixing, or custom logo & poster designs, let's collaborate.
+              Have a website idea, frontend issue, or design requirement? Let's discuss your project and turn your idea into a working result.
             </p>
           </div>
 
