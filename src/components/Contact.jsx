@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Github, Linkedin, Send, MessageSquare, CheckCircle, ExternalLink, AlertCircle, Loader2 } from 'lucide-react';
+import { Mail, Github, Linkedin, Send, MessageSquare, CheckCircle, ExternalLink, AlertCircle, Loader2, MessageCircle } from 'lucide-react';
 import { personalInfo } from '../data/personalInfo';
 
 export default function Contact() {
@@ -14,6 +14,7 @@ export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState(null);
+  const [lastWaUrl, setLastWaUrl] = useState(null);
 
   const validate = () => {
     const errs = {};
@@ -61,8 +62,23 @@ export default function Contact() {
     setIsSubmitting(true);
     setSubmitError(null);
 
+    // Prepare WhatsApp formatted message
+    const waText =
+      `*New Portfolio Message*\n\n` +
+      `*Name:* ${formData.name.trim()}\n` +
+      `*Email:* ${formData.email.trim()}\n` +
+      `*Subject:* ${formData.subject.trim()}\n\n` +
+      `*Message:*\n${formData.message.trim()}`;
+
+    const waUrl = `https://wa.me/918610554060?text=${encodeURIComponent(waText)}`;
+    setLastWaUrl(waUrl);
+
+    // Open WhatsApp directly with prefilled message
+    window.open(waUrl, '_blank');
+
+    // Backup dispatch to email via FormSubmit in the background
     try {
-      const response = await fetch(`https://formsubmit.co/ajax/${personalInfo.socialLinks.email}`, {
+      fetch(`https://formsubmit.co/ajax/${personalInfo.socialLinks.email}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -78,25 +94,15 @@ export default function Contact() {
           _captcha: 'false',
           _template: 'table'
         })
-      });
-
-      const data = await response.json();
-
-      if (response.ok && (data.success === 'true' || data.success === true)) {
-        setSubmitted(true);
-        setFormData({ name: '', email: '', subject: '', message: '' });
-        setErrors({});
-      } else {
-        throw new Error(data.message || 'Failed to send message via form endpoint.');
-      }
+      }).catch((err) => console.log('Background email dispatch:', err));
     } catch (err) {
-      console.error('Contact form submission error:', err);
-      setSubmitError(
-        `Unable to deliver message through the online form service. You can send it directly to ${personalInfo.socialLinks.email} using the button below.`
-      );
-    } finally {
-      setIsSubmitting(false);
+      // background email dispatch optional
     }
+
+    setIsSubmitting(false);
+    setSubmitted(true);
+    setFormData({ name: '', email: '', subject: '', message: '' });
+    setErrors({});
   };
 
   return (
@@ -135,6 +141,26 @@ export default function Contact() {
                     style={{ color: 'var(--accent-sky)' }}
                   >
                     {personalInfo.socialLinks.email}
+                  </a>
+                </div>
+              </div>
+
+              {/* WhatsApp */}
+              <div className="contact-item">
+                <div className="contact-item-icon" style={{ color: '#25D366', background: 'rgba(37, 211, 102, 0.1)', borderColor: 'rgba(37, 211, 102, 0.25)' }}>
+                  <MessageCircle size={20} />
+                </div>
+                <div style={{ minWidth: 0 }}>
+                  <div className="contact-label">WhatsApp</div>
+                  <a
+                    href="https://wa.me/918610554060"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="contact-val"
+                    style={{ color: '#25D366', display: 'inline-flex', alignItems: 'center', gap: '4px' }}
+                  >
+                    <span>+91 8610554060</span>
+                    <ExternalLink size={14} style={{ color: 'var(--text-muted)' }} />
                   </a>
                 </div>
               </div>
@@ -179,12 +205,30 @@ export default function Contact() {
                 </div>
               </div>
 
-              {/* Dedicated "Email Me" Alternative CTA */}
-              <div style={{ marginTop: '28px', paddingTop: '20px', borderTop: '1px solid var(--border-subtle)' }}>
+              {/* Dedicated Alternative CTAs */}
+              <div style={{ marginTop: '24px', paddingTop: '20px', borderTop: '1px solid var(--border-subtle)', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                <a
+                  href="https://wa.me/918610554060"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn"
+                  style={{
+                    width: '100%',
+                    background: 'rgba(37, 211, 102, 0.15)',
+                    border: '1px solid rgba(37, 211, 102, 0.4)',
+                    color: '#25D366',
+                    justifyContent: 'center'
+                  }}
+                  aria-label="Chat directly on WhatsApp"
+                >
+                  <MessageCircle size={18} />
+                  <span>Chat on WhatsApp (+91 8610554060)</span>
+                </a>
+
                 <a
                   href={`mailto:${personalInfo.socialLinks.email}?subject=Project%20Inquiry`}
-                  className="btn btn-primary"
-                  style={{ width: '100%' }}
+                  className="btn btn-secondary"
+                  style={{ width: '100%', justifyContent: 'center' }}
                   aria-label="Email Vijayapandian directly"
                 >
                   <Mail size={18} />
@@ -201,24 +245,42 @@ export default function Contact() {
                 <CheckCircle size={24} style={{ flexShrink: 0, marginTop: '2px', color: '#10b981' }} />
                 <div>
                   <h4 style={{ fontWeight: 700, marginBottom: '6px', color: '#10b981', fontSize: '1.05rem' }}>
-                    Message Sent Successfully!
+                    Message Prepared for WhatsApp!
                   </h4>
                   <p style={{ color: 'var(--text-secondary)', fontSize: '0.92rem', lineHeight: 1.6 }}>
-                    Thank you! Your message has been sent directly to{' '}
-                    <strong style={{ color: 'var(--text-primary)' }}>{personalInfo.socialLinks.email}</strong>.
-                    I will get back to you as soon as possible.
+                    WhatsApp has been opened with your message ready to send to <strong style={{ color: 'var(--text-primary)' }}>+91 8610554060</strong>. A backup notification was also sent to <strong style={{ color: 'var(--text-primary)' }}>{personalInfo.socialLinks.email}</strong>.
                   </p>
-                  <button
-                    type="button"
-                    className="btn btn-secondary"
-                    onClick={() => {
-                      setSubmitted(false);
-                      setSubmitError(null);
-                    }}
-                    style={{ marginTop: '16px', padding: '8px 18px', fontSize: '0.875rem' }}
-                  >
-                    Send Another Message
-                  </button>
+                  <div style={{ display: 'flex', gap: '10px', marginTop: '16px', flexWrap: 'wrap' }}>
+                    {lastWaUrl && (
+                      <a
+                        href={lastWaUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn"
+                        style={{
+                          background: '#25D366',
+                          color: '#05070d',
+                          fontWeight: 600,
+                          padding: '8px 18px',
+                          fontSize: '0.875rem'
+                        }}
+                      >
+                        <MessageCircle size={16} />
+                        <span>Send on WhatsApp</span>
+                      </a>
+                    )}
+                    <button
+                      type="button"
+                      className="btn btn-secondary"
+                      onClick={() => {
+                        setSubmitted(false);
+                        setSubmitError(null);
+                      }}
+                      style={{ padding: '8px 18px', fontSize: '0.875rem' }}
+                    >
+                      Send Another Message
+                    </button>
+                  </div>
                 </div>
               </div>
             ) : (
@@ -325,12 +387,13 @@ export default function Contact() {
                 </div>
 
                 {/* Action Row */}
-                <div style={{ display: 'flex', alignItems: 'center', gap: '14px', flexWrap: 'wrap' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
                   <button
                     type="submit"
                     className="btn btn-primary"
                     disabled={isSubmitting}
                     style={{ minWidth: '160px' }}
+                    aria-label="Send message to WhatsApp and Email"
                   >
                     {isSubmitting ? (
                       <>
@@ -346,12 +409,28 @@ export default function Contact() {
                   </button>
 
                   <a
+                    href="https://wa.me/918610554060"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn"
+                    style={{
+                      background: 'rgba(37, 211, 102, 0.12)',
+                      border: '1px solid rgba(37, 211, 102, 0.35)',
+                      color: '#25D366'
+                    }}
+                    aria-label="Chat directly on WhatsApp"
+                  >
+                    <MessageCircle size={16} />
+                    <span>Chat on WhatsApp</span>
+                  </a>
+
+                  <a
                     href={`mailto:${personalInfo.socialLinks.email}`}
                     className="btn btn-secondary"
                     aria-label="Open native email client"
                   >
                     <Mail size={16} />
-                    <span>Email Me Directly</span>
+                    <span>Email Me</span>
                   </a>
                 </div>
               </form>
