@@ -153,10 +153,28 @@ export default function Footer() {
           </ul>
         </nav>
 
-        {/* Bottom Copyright */}
+        {/* Bottom Copyright & Profile Views */}
         <div className="footer-bottom">
-          <div>
-            © 2026 {personalInfo.name}. All rights reserved.
+          <div style={{ display: 'flex', alignItems: 'center', gap: '14px', flexWrap: 'wrap' }}>
+            <span>© 2026 {personalInfo.name}. All rights reserved.</span>
+            <a
+              href="https://github.com/VIJAYAPANDIANT"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Live Profile Views"
+              aria-label="Live Profile Views"
+              style={{ display: 'inline-flex', alignItems: 'center', textDecoration: 'none' }}
+            >
+              <img
+                src="https://komarev.com/ghpvc/?username=VIJAYAPANDIANT&label=PROFILE+VIEWS&color=00FFFF&style=flat-square&labelColor=0d1117"
+                alt="Profile Views"
+                style={{
+                  height: '20px',
+                  borderRadius: '4px',
+                  border: '1px solid rgba(0, 255, 255, 0.25)'
+                }}
+              />
+            </a>
           </div>
           <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8rem', color: 'var(--text-muted)' }}>
             Designed & Engineered for Performance
