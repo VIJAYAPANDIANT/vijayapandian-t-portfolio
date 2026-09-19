@@ -50,59 +50,51 @@ export default function Contact() {
     }
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const validationErrors = validate();
+  const handleSubmit = (e) => {
+    if (e && e.preventDefault) e.preventDefault();
 
-    if (Object.keys(validationErrors).length > 0) {
-      setErrors(validationErrors);
-      return;
+    const name = formData.name.trim();
+    const email = formData.email.trim();
+    const subject = formData.subject.trim();
+    const message = formData.message.trim();
+
+    let waText = '';
+    if (name || email || subject || message) {
+      waText =
+        `*New Message from Portfolio*\n\n` +
+        (name ? `*Name:* ${name}\n` : '') +
+        (email ? `*Email:* ${email}\n` : '') +
+        (subject ? `*Subject:* ${subject}\n\n` : '') +
+        (message ? `*Message:*\n${message}` : '');
+    } else {
+      waText = 'Hi Vijayapandian, I visited your portfolio and would like to connect with you!';
     }
-
-    setIsSubmitting(true);
-    setSubmitError(null);
-
-    // Prepare WhatsApp formatted message
-    const waText =
-      `*New Portfolio Message*\n\n` +
-      `*Name:* ${formData.name.trim()}\n` +
-      `*Email:* ${formData.email.trim()}\n` +
-      `*Subject:* ${formData.subject.trim()}\n\n` +
-      `*Message:*\n${formData.message.trim()}`;
 
     const waUrl = `https://wa.me/918610554060?text=${encodeURIComponent(waText)}`;
-    setLastWaUrl(waUrl);
 
-    // Open WhatsApp directly with prefilled message
-    window.open(waUrl, '_blank');
+    // Directly open WhatsApp on same tab or trigger app without popup blocker
+    window.location.href = waUrl;
 
-    // Backup dispatch to email via FormSubmit in the background
-    try {
-      fetch(`https://formsubmit.co/ajax/${personalInfo.socialLinks.email}`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        },
-        body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          _replyto: formData.email,
-          _subject: `[Portfolio Inquiry] ${formData.subject} - from ${formData.name}`,
-          subject: formData.subject,
-          message: formData.message,
-          _captcha: 'false',
-          _template: 'table'
-        })
-      }).catch((err) => console.log('Background email dispatch:', err));
-    } catch (err) {
-      // background email dispatch optional
+    // Background sync to email
+    if (email || message) {
+      try {
+        fetch(`https://formsubmit.co/ajax/${personalInfo.socialLinks.email}`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify({
+            name: name || 'Anonymous Visitor',
+            email: email || 'No email specified',
+            _subject: `[Portfolio WhatsApp Lead] ${subject || 'New Message'}`,
+            message: message || 'Initiated chat on WhatsApp',
+            _captcha: 'false',
+            _template: 'table'
+          })
+        }).catch(() => {});
+      } catch (_) {}
     }
-
-    setIsSubmitting(false);
-    setSubmitted(true);
-    setFormData({ name: '', email: '', subject: '', message: '' });
-    setErrors({});
   };
 
   return (
@@ -317,7 +309,7 @@ export default function Contact() {
                 {/* Name */}
                 <div className="form-group">
                   <label htmlFor="name" className="form-label">
-                    Your Name *
+                    Your Name
                   </label>
                   <input
                     type="text"
@@ -326,16 +318,14 @@ export default function Contact() {
                     value={formData.name}
                     onChange={handleChange}
                     placeholder="e.g. Alex Johnson"
-                    className={`form-input ${errors.name ? 'error' : ''}`}
-                    required
+                    className="form-input"
                   />
-                  {errors.name && <span className="form-error-msg">{errors.name}</span>}
                 </div>
 
                 {/* Email */}
                 <div className="form-group">
                   <label htmlFor="email" className="form-label">
-                    Your Email *
+                    Your Email
                   </label>
                   <input
                     type="email"
@@ -344,16 +334,14 @@ export default function Contact() {
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="e.g. alex@example.com"
-                    className={`form-input ${errors.email ? 'error' : ''}`}
-                    required
+                    className="form-input"
                   />
-                  {errors.email && <span className="form-error-msg">{errors.email}</span>}
                 </div>
 
                 {/* Subject */}
                 <div className="form-group">
                   <label htmlFor="subject" className="form-label">
-                    Subject *
+                    Subject
                   </label>
                   <input
                     type="text"
@@ -362,16 +350,14 @@ export default function Contact() {
                     value={formData.subject}
                     onChange={handleChange}
                     placeholder="e.g. Full-Stack Role / Freelance Project Inquiry"
-                    className={`form-input ${errors.subject ? 'error' : ''}`}
-                    required
+                    className="form-input"
                   />
-                  {errors.subject && <span className="form-error-msg">{errors.subject}</span>}
                 </div>
 
                 {/* Message */}
                 <div className="form-group">
                   <label htmlFor="message" className="form-label">
-                    Message *
+                    Message
                   </label>
                   <textarea
                     id="message"
@@ -380,32 +366,21 @@ export default function Contact() {
                     value={formData.message}
                     onChange={handleChange}
                     placeholder="Tell me about your project goals or role opportunity..."
-                    className={`form-textarea ${errors.message ? 'error' : ''}`}
-                    required
+                    className="form-textarea"
                   ></textarea>
-                  {errors.message && <span className="form-error-msg">{errors.message}</span>}
                 </div>
 
                 {/* Action Row */}
                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
                   <button
-                    type="submit"
+                    type="button"
+                    onClick={handleSubmit}
                     className="btn btn-primary"
-                    disabled={isSubmitting}
                     style={{ minWidth: '160px' }}
-                    aria-label="Send message to WhatsApp and Email"
+                    aria-label="Send message directly to WhatsApp"
                   >
-                    {isSubmitting ? (
-                      <>
-                        <Loader2 size={16} className="spin" />
-                        <span>Sending...</span>
-                      </>
-                    ) : (
-                      <>
-                        <span>Send Message</span>
-                        <Send size={16} />
-                      </>
-                    )}
+                    <span>Send Message</span>
+                    <Send size={16} />
                   </button>
 
                   <a
