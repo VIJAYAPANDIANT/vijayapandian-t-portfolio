@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
-import { Trophy, Binary, Award, Rocket, ExternalLink, Sparkles, Shield, BarChart3 } from 'lucide-react';
+import { Trophy, Binary, Award, Rocket, ExternalLink, Sparkles, Shield, BarChart3, Github, GitCommit } from 'lucide-react';
 import { achievementsData } from '../data/achievements';
 
 const iconMap = {
   Binary,
   Trophy,
   Award,
-  Rocket
+  Rocket,
+  Github,
+  GitCommit
 };
 
 export default function Achievements() {

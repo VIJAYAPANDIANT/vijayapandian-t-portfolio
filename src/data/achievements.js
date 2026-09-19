@@ -30,12 +30,12 @@ export const achievementsData = [
     badge: "Competition"
   },
   {
-    id: "projects",
-    title: "Multiple Full-Stack & AI Projects",
-    subtitle: "Production Ready",
-    icon: "Rocket",
+    id: "github-contributions",
+    title: "1600+ GitHub Contributions",
+    subtitle: "150-Day Active Streak",
+    icon: "Github",
     description:
-      "Designed and deployed real-world full-stack web applications integrating modern React frontends, robust backends, database persistence, and Gemini AI.",
+      "Maintained a continuous 150+ day active coding streak, authoring 1,600+ contributions across full-stack web applications, open-source repositories, and algorithmic problem-solving.",
     badge: "Engineering"
   }
 ];
