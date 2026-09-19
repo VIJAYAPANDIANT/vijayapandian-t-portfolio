@@ -49,28 +49,30 @@ export default function ProjectCard({ project, onOpenModal }) {
 
         {/* Action Buttons */}
         <div className="project-actions" onClick={(e) => e.stopPropagation()}>
-          <a
-            href={project.liveUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn btn-primary"
-            style={{ padding: '8px 16px', fontSize: '0.85rem' }}
-            aria-label={`Live Demo for ${project.title}`}
-          >
-            <span>Live Demo</span>
-            <ExternalLink size={14} />
-          </a>
+          {project.liveUrl && project.liveUrl !== project.githubUrl ? (
+            <a
+              href={project.liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary"
+              style={{ padding: '8px 16px', fontSize: '0.85rem' }}
+              aria-label={`Live Demo for ${project.title}`}
+            >
+              <span>Live Demo</span>
+              <ExternalLink size={14} />
+            </a>
+          ) : null}
 
           <a
             href={project.githubUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn-secondary"
-            style={{ padding: '8px 14px', fontSize: '0.85rem' }}
+            className={project.liveUrl && project.liveUrl !== project.githubUrl ? "btn btn-secondary" : "btn btn-primary"}
+            style={{ padding: '8px 16px', fontSize: '0.85rem' }}
             aria-label={`GitHub Repository for ${project.title}`}
           >
             <Github size={15} />
-            <span>GitHub</span>
+            <span>{project.liveUrl && project.liveUrl !== project.githubUrl ? "GitHub" : "View on GitHub"}</span>
           </a>
         </div>
       </div>

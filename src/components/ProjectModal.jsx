@@ -116,23 +116,25 @@ export default function ProjectModal({ project, onClose }) {
             href={project.githubUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn-secondary"
+            className={project.liveUrl && project.liveUrl !== project.githubUrl ? "btn btn-secondary" : "btn btn-primary"}
             aria-label={`View ${project.title} source code on GitHub`}
           >
             <Github size={16} />
-            <span>Source Code</span>
+            <span>{project.liveUrl && project.liveUrl !== project.githubUrl ? "Source Code" : "View on GitHub"}</span>
           </a>
 
-          <a
-            href={project.liveUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn btn-primary"
-            aria-label={`Launch ${project.title} live demo`}
-          >
-            <span>Launch Live Demo</span>
-            <ExternalLink size={16} />
-          </a>
+          {project.liveUrl && project.liveUrl !== project.githubUrl && (
+            <a
+              href={project.liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary"
+              aria-label={`Launch ${project.title} live demo`}
+            >
+              <span>Launch Live Demo</span>
+              <ExternalLink size={16} />
+            </a>
+          )}
         </div>
       </div>
     </div>
