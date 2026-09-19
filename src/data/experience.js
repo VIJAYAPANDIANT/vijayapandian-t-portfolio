@@ -146,6 +146,19 @@ export const experienceData = [
     duration: "Jan 2026 – Feb 2026 · 2 mos",
     badge: "Internship",
     location: "Chennai, Tamil Nadu, India · Remote",
+    githubUrl: "https://github.com/VIJAYAPANDIANT/student-management-system-java",
+    featuredProjects: [
+      {
+        name: "Student Management System — Java CRUD Suite",
+        repoUrl: "https://github.com/VIJAYAPANDIANT/student-management-system-java",
+        description: "Console-based CRUD application implementing core OOP principles, modular model-controller architecture, and dynamic persistence via the Java Collections Framework (ArrayList)."
+      },
+      {
+        name: "Expense Tracker — Java CLI Application",
+        repoUrl: "https://github.com/VIJAYAPANDIANT/expense-tracker-java",
+        description: "Menu-driven CLI application designed to log daily expenses, categorize transactions, and calculate real-time expenditure summaries utilizing Java Collections."
+      }
+    ],
     description:
       "Delivered backend application development for the Java Developer track using core Java, Object-Oriented Programming (OOP) principles, and the Java Collections Framework as part of an intensive double-track internship.",
     responsibilities: [
