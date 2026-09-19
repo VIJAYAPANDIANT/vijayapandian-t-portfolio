@@ -128,6 +128,15 @@ export const experienceData = [
     duration: "Dec 2025 – Jan 2026 · 2 mos",
     badge: "Internship",
     location: "Rajapalaiyam, Tamil Nadu, India · Remote",
+    githubUrl: "https://github.com/VIJAYAPANDIANT/ecowise-pro",
+    featuredProjects: [
+      {
+        name: "EcoWise Pro++ — Explainable AI Sustainability System",
+        repoUrl: "https://github.com/VIJAYAPANDIANT/ecowise-pro",
+        liveUrl: "https://ecowise-pro.vercel.app/",
+        description: "Explainable AI decision support and sustainability intelligence system providing transparent rule-based reasoning, waste toxicity calibration, and quantifiable CO2 impact reduction."
+      }
+    ],
     description:
       "Completed an AI for Sustainability Virtual Internship with 1M1B (1 Million for 1 Billion). Built EcoWise Pro, an AI-powered sustainability tool addressing real-world environmental challenges, applying AI concepts to design technology-driven solutions with measurable social impact.",
     responsibilities: [
