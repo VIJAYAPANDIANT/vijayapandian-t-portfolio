@@ -74,43 +74,9 @@ export default function Hero() {
         <div className="hero-grid">
           {/* Left Text / CTAs */}
           <div className="hero-content">
-            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap', marginBottom: '24px' }}>
-              <div className="status-pill" style={{ marginBottom: 0 }}>
-                <span className="status-dot"></span>
-                <span>Available for Software Engineering Roles</span>
-              </div>
-              <a
-                href="https://github.com/VIJAYAPANDIANT"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Live Profile Views"
-                aria-label="Live Profile Views"
-                style={{
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  textDecoration: 'none',
-                  transition: 'transform 0.2s ease, filter 0.2s ease'
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = 'translateY(-2px)';
-                  e.currentTarget.style.filter = 'drop-shadow(0 0 8px rgba(0, 255, 255, 0.4))';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = 'none';
-                  e.currentTarget.style.filter = 'none';
-                }}
-              >
-                <img
-                  src="https://komarev.com/ghpvc/?username=VIJAYAPANDIANT&label=PROFILE+VIEWS&color=00FFFF&style=flat-square&labelColor=0d1117"
-                  alt="Profile Views"
-                  style={{
-                    height: '28px',
-                    borderRadius: 'var(--radius-sm, 6px)',
-                    border: '1px solid rgba(0, 255, 255, 0.3)',
-                    boxShadow: '0 0 14px rgba(0, 255, 255, 0.15)'
-                  }}
-                />
-              </a>
+            <div className="status-pill">
+              <span className="status-dot"></span>
+              <span>Available for Software Engineering Roles</span>
             </div>
 
             <h1 className="hero-heading">

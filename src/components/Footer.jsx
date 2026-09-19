@@ -163,15 +163,33 @@ export default function Footer() {
               rel="noopener noreferrer"
               title="Live Profile Views"
               aria-label="Live Profile Views"
-              style={{ display: 'inline-flex', alignItems: 'center', textDecoration: 'none' }}
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                textDecoration: 'none',
+                borderRadius: '4px',
+                overflow: 'hidden',
+                border: '1px solid rgba(56, 189, 248, 0.35)',
+                boxShadow: '0 0 10px rgba(56, 189, 248, 0.12)',
+                transition: 'all 0.2s ease'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-1px)';
+                e.currentTarget.style.borderColor = 'rgba(56, 189, 248, 0.65)';
+                e.currentTarget.style.boxShadow = '0 0 14px rgba(56, 189, 248, 0.35)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'none';
+                e.currentTarget.style.borderColor = 'rgba(56, 189, 248, 0.35)';
+                e.currentTarget.style.boxShadow = '0 0 10px rgba(56, 189, 248, 0.12)';
+              }}
             >
               <img
-                src="https://komarev.com/ghpvc/?username=VIJAYAPANDIANT&label=PROFILE+VIEWS&color=00FFFF&style=flat-square&labelColor=0d1117"
+                src="https://komarev.com/ghpvc/?username=VIJAYAPANDIANT&label=PROFILE+VIEWS&color=38bdf8&style=flat-square"
                 alt="Profile Views"
                 style={{
                   height: '20px',
-                  borderRadius: '4px',
-                  border: '1px solid rgba(0, 255, 255, 0.25)'
+                  display: 'block'
                 }}
               />
             </a>

@@ -2,11 +2,11 @@
 
 <p align="left">
   <a href="https://github.com/VIJAYAPANDIANT">
-    <img src="https://komarev.com/ghpvc/?username=VIJAYAPANDIANT&label=PROFILE+VIEWS&color=00FFFF&style=for-the-badge&labelColor=0d1117" alt="Profile Views" />
+    <img src="https://komarev.com/ghpvc/?username=VIJAYAPANDIANT&label=PROFILE+VIEWS&color=38bdf8&style=for-the-badge&labelColor=0d1117" alt="Profile Views" />
   </a>
   &nbsp;
   <a href="https://vijayapandian-t-portfolio.vercel.app">
-    <img src="https://img.shields.io/badge/Portfolio-Live_Demo-00FFFF?style=for-the-badge&labelColor=0d1117" alt="Live Portfolio" />
+    <img src="https://img.shields.io/badge/Portfolio-Live_Demo-38bdf8?style=for-the-badge&labelColor=0d1117" alt="Live Portfolio" />
   </a>
 </p>
 
