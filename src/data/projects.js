@@ -76,6 +76,30 @@ export const projectsData = [
     ]
   },
   {
+    id: "online-examination-system",
+    title: "Online Examination System with AI Proctoring",
+    tagline: "Full-Stack Remote Assessment & AI Proctoring Platform",
+    shortDescription:
+      "A cutting-edge, full-stack examination platform with integrated AI proctoring, multi-language real-time code compiler, RabbitMQ concurrent submission queues, and automated anti-cheat violation tracking.",
+    categories: ["Full Stack", "AI"],
+    technologies: ["Spring Boot", "React", "Docker", "RabbitMQ", "Redis", "MySQL", "WebSocket", "Vite"],
+    image: "/assets/images/online-examination.svg",
+    githubUrl: "https://github.com/VIJAYAPANDIANT/online-examination-system",
+    liveUrl: "https://online-examination-system-m6sf.vercel.app/",
+    problem:
+      "Remote academic examinations face widespread cheating risks such as tab switching, unauthorized copy-pasting, and systemic backend latency during simultaneous candidate submissions.",
+    solution:
+      "Built an enterprise-grade testing architecture using Spring Boot microservices, RabbitMQ for high-throughput asynchronous submission queues, Redis for real-time leaderboards, and an AI proctoring restriction suite with WebSocket live alerts.",
+    keyFeatures: [
+      "AI Proctoring Suite with point-based violation tracking, tab switching detection, and auto-termination",
+      "In-browser Multi-Language Code Compiler supporting JavaScript, Python, Java, C, and C++",
+      "High-throughput asynchronous submission queues powered by RabbitMQ to prevent concurrency spikes",
+      "Redis caching for instant real-time global leaderboard and score computation",
+      "Administrator monitoring dashboard with WebSocket alerts and full CRUD exam content authoring",
+      "Containerized deployment using Docker Compose, Nginx reverse proxy, and live Vercel frontend"
+    ]
+  },
+  {
     id: "testforge",
     title: "TESTFORGE",
     tagline: "No-Code Test Automation Platform",
