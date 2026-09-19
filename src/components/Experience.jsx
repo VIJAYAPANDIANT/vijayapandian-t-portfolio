@@ -10,7 +10,6 @@ import {
   Layers,
   LayoutGrid,
   Building2,
-  Terminal,
   ExternalLink,
   Github
 } from 'lucide-react';
@@ -275,10 +274,6 @@ export default function Experience() {
                 <span className="exp-meta-item">
                   <MapPin size={14} style={{ color: 'var(--accent-emerald)' }} />
                   <span>{activeExp.location}</span>
-                </span>
-                <span className="exp-meta-item">
-                  <Terminal size={14} style={{ color: '#c084fc' }} />
-                  <span style={{ textTransform: 'capitalize' }}>{activeExp.category} Domain</span>
                 </span>
                 {activeExp.featuredProjects && activeExp.featuredProjects.length > 0 ? (
                   activeExp.featuredProjects.map((proj, pIdx) => (
