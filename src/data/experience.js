@@ -1,56 +1,179 @@
 /**
- * Professional experiences and internships with expandable timeline details
+ * Professional experiences and internships data
+ * Loaded directly from Vijayapandian's verified LinkedIn background
  */
+export const experienceCategories = [
+  { id: "all", label: "All Roles" },
+  { id: "ai", label: "AI & GenAI" },
+  { id: "data", label: "SQL & Databases" },
+  { id: "fullstack", label: "Software & Cloud" }
+];
+
 export const experienceData = [
   {
-    id: "infosys",
-    company: "Infosys Springboard",
-    role: "AI Intern",
-    duration: "Aug 2026 – Present",
-    badge: "Current",
-    location: "Remote",
+    id: "career-solutions77",
+    company: "Career Solutions77",
+    role: "Full-Stack Development Intern",
+    category: "fullstack",
+    duration: "Sep 2026 – Present",
+    badge: "Internship",
+    location: "Chennai, Tamil Nadu, India · Offline",
     description:
-      "Engaging in cutting-edge generative AI research, large language model integrations, and building production-ready intelligent software systems.",
+      "Currently working as a Full-Stack Development Intern at Career Solutions77 (Offline, Chennai). Developing and enhancing full-stack web applications using modern frontend and backend technologies, integrating REST APIs, and engineering database-driven features.",
     responsibilities: [
-      "Building generative AI-driven application prototypes utilizing modern LLMs and intelligent agent architectures.",
-      "Developing structured prompt workflows, embeddings pipelines, and context-augmented retrieval systems.",
-      "Collaborating with industry technical mentors to test, benchmark, and evaluate AI response quality and latency.",
-      "Integrating AI endpoints into full-stack React applications with secure authentication and state management."
+      "Developed and enhanced production-ready full-stack web applications leveraging React.js, Node.js, and Express.js.",
+      "Built responsive, accessible user interfaces and integrated secure REST APIs for seamless client-server interaction.",
+      "Worked with database-driven application features using MongoDB, implementing scalable schemas and data persistence.",
+      "Applied hands-on debugging, performance tuning, and Git-based collaborative development in an on-site engineering environment."
     ],
-    technologies: ["Generative AI", "Python", "React", "REST APIs", "LLMs", "Prompt Engineering"]
+    technologies: ["Full-Stack Development", "React.js", "Node.js", "Express.js", "REST APIs", "MongoDB", "Git"]
+  },
+  {
+    id: "infosys-springboard",
+    company: "Infosys Springboard",
+    role: "Artificial Intelligence Intern",
+    category: "ai",
+    duration: "Aug 2026 – Present · 2 mos",
+    badge: "Internship",
+    location: "Chennai, Tamil Nadu, India · Remote",
+    description:
+      "Currently completing an 8-week virtual internship in the AI domain through Infosys Springboard, applying artificial intelligence concepts to structured, industry-aligned coursework and hands-on projects.",
+    responsibilities: [
+      "Engaging in structured, industry-aligned AI coursework covering core artificial intelligence and machine learning principles.",
+      "Building practical project prototypes integrating intelligent algorithms and modern AI architectures.",
+      "Evaluating model performance, response quality, and latency benchmarks under mentorship from industry professionals.",
+      "Integrating AI endpoints into full-stack application workflows with secure API authentication."
+    ],
+    technologies: ["Artificial Intelligence (AI)", "Machine Learning", "Python", "LLMs", "Prompt Engineering"]
+  },
+  {
+    id: "bharatcares-ibm",
+    company: "BharatCares® × IBM SkillsBuild",
+    role: "Gen AI & Cloud Computing Intern",
+    category: "ai",
+    duration: "Jun 2026 – Jul 2026 · 2 mos",
+    badge: "Internship",
+    location: "Chennai, Tamil Nadu, India · Remote",
+    description:
+      "Completed a 6-week Gen AI & Cloud Computing internship through IBM SkillsBuild, in collaboration with BharatCares and in association with AICTE (All India Council for Technical Education). Gained hands-on training in generative AI concepts and cloud computing fundamentals as part of a structured, industry-aligned program.",
+    responsibilities: [
+      "Mastered generative AI foundations, prompt engineering architectures, and large language model capabilities via IBM SkillsBuild.",
+      "Explored core cloud computing models (IaaS, PaaS, SaaS) and virtualized infrastructure environments.",
+      "Participated in specialized technical sessions organized in collaboration with BharatCares and AICTE.",
+      "Delivered real-world problem-solving modules demonstrating automated AI pipelines and cloud resource deployment."
+    ],
+    technologies: ["Generative AI", "Cloud Computing", "IBM SkillsBuild", "AICTE", "Prompt Engineering"]
   },
   {
     id: "elevate-labs",
     company: "Elevate Labs",
     role: "SQL Developer Intern",
-    duration: "Jan 2026 – Apr 2026",
+    category: "data",
+    duration: "Jan 2026 – Apr 2026 · 4 mos",
     badge: "Internship",
-    location: "Remote",
+    location: "Chennai, Tamil Nadu, India · Remote",
+    githubUrl: "https://github.com/VIJAYAPANDIANT/sql-internship-portfolio",
+    repoName: "sql-internship-portfolio",
+    repoDescription: "Interactive Database Engineering & SQL Internship Portfolio showcasing 20 database system projects with syntax-highlighted SQL script explorer and terminal query simulator.",
     description:
-      "Focused on advanced SQL database architecture, query optimization, data warehousing, and backend data services.",
+      "Built 4 database-driven projects — an Airline Reservation System, COVID-19 Data Analytics, Hospital Management Database, and Online Retail Sales Database Design — completing 16 tasks using joins, subqueries, and aggregate functions. Applied query optimization techniques to improve performance across all four schemas.",
     responsibilities: [
-      "Engineered complex SQL queries, analytical aggregations, and stored procedures for business reporting systems.",
-      "Profiled database execution plans and optimized indices, improving query turnaround times by over 35%.",
-      "Designed normalized relational schemas ensuring transactional consistency and high data integrity.",
-      "Collaborated with backend engineers to streamline ORM integrations and relational data migrations."
+      "Engineered 4 production-grade database systems: Airline Reservation, COVID-19 Analytics, Hospital Management, and Online Retail Sales.",
+      "Completed 16 complex database tasks utilizing advanced multi-table joins, nested subqueries, and analytical aggregations.",
+      "Profiled database execution plans and optimized indices, significantly improving query performance across all four schemas.",
+      "Designed normalized relational schemas (3NF) ensuring transactional consistency, foreign key constraints, and high data integrity.",
+      "Authored and published the interactive SQL Internship Portfolio showcasing 20 database projects with live markdown docs and SQL simulator."
     ],
-    technologies: ["PostgreSQL", "MySQL", "SQL Optimization", "Relational Schemas", "Indexing", "ETL"]
+    technologies: ["SQL", "DBMS", "MySQL", "Database Design", "Query Optimization", "Schema Normalization"]
   },
   {
-    id: "1m1b",
-    company: "1M1B",
-    role: "Smart Waste Mapping",
-    duration: "Feb 2026 – Mar 2026",
-    badge: "Project Fellowship",
-    location: "Hybrid",
+    id: "1m1b-green",
+    company: "1M1B (1 Million for 1 Billion)",
+    role: "1M1B Green Intern",
+    category: "ai",
+    duration: "Feb 2026 – Mar 2026 · 2 mos",
+    badge: "Internship",
+    location: "Chennai, Tamil Nadu, India · Hybrid",
     description:
-      "Developed interactive GIS and data visualization solutions to map urban waste collection patterns supporting environmental sustainability.",
+      "Completed a Green Internship with 1M1B (1 Million for 1 Billion). Designed and built an AI-Powered Smart Waste Mapping Platform (MERN stack + Python Flask AI microservice) to track waste hotspots and optimize cleanup routes using real-time geospatial data.",
     responsibilities: [
-      "Built interactive web mapping interfaces displaying geo-tagged waste distribution nodes in real-time.",
-      "Implemented responsive dashboards enabling field teams to log collection status and coordinates directly.",
-      "Analyzed hotspot density data to facilitate route efficiency for local sanitation and recycling units.",
+      "Architected an AI-Powered Smart Waste Mapping Platform integrating a MERN stack web app with a Python Flask AI microservice.",
+      "Implemented interactive geospatial mapping with Leaflet and GeoJSON to track waste collection hotspots in real time.",
+      "Trained a Random Forest risk model to predict waste overflow density and optimize municipal collection routes.",
       "Presented project outcomes in alignment with the United Nations Sustainable Development Goals (SDGs)."
     ],
-    technologies: ["JavaScript", "Interactive Maps", "React", "Data Visualization", "Leaflet/GeoJSON"]
+    technologies: ["Artificial Intelligence (AI)", "Data Analysis", "MERN Stack", "Python Flask", "Geospatial GIS", "Leaflet"]
+  },
+  {
+    id: "1m1b-sustainability",
+    company: "1M1B (1 Million for 1 Billion)",
+    role: "AI for Sustainability Virtual Intern",
+    category: "ai",
+    duration: "Dec 2025 – Jan 2026 · 2 mos",
+    badge: "Internship",
+    location: "Rajapalaiyam, Tamil Nadu, India · Remote",
+    description:
+      "Completed an AI for Sustainability Virtual Internship with 1M1B (1 Million for 1 Billion). Built EcoWise Pro, an AI-powered sustainability tool addressing real-world environmental challenges, applying AI concepts to design technology-driven solutions with measurable social impact.",
+    responsibilities: [
+      "Engineered EcoWise Pro, an AI-powered sustainability tool addressing real-world environmental challenges.",
+      "Applied artificial intelligence concepts to design technology-driven solutions with measurable social and ecological impact.",
+      "Synthesized environmental data into actionable intelligence dashboards for community sustainability tracking.",
+      "Demonstrated end-to-end prototyping and presented technical architecture to program evaluators."
+    ],
+    technologies: ["Artificial Intelligence (AI)", "Python", "Sustainability Tech", "Data Analytics", "Web Solutions"]
+  },
+  {
+    id: "codec-java",
+    company: "Codec Technologies India",
+    role: "Java Developer Intern",
+    category: "fullstack",
+    duration: "Jan 2026 – Feb 2026 · 2 mos",
+    badge: "Internship",
+    location: "Chennai, Tamil Nadu, India · Remote",
+    description:
+      "Delivered backend application development for the Java Developer track using core Java, Object-Oriented Programming (OOP) principles, and the Java Collections Framework as part of an intensive double-track internship.",
+    responsibilities: [
+      "Built a robust Student Management System implementing OOP principles, encapsulation, and modular class hierarchies.",
+      "Developed an Expense Tracker application utilizing the Java Collections Framework (ArrayList, HashMap, LinkedList) for structured persistence.",
+      "Implemented comprehensive input validation, custom exception handling, and clean console-driven user navigation.",
+      "Strengthened core computer science foundations, algorithm efficiency, and object-oriented software design."
+    ],
+    technologies: ["Java", "OOP", "Java Collections Framework", "Data Structures", "Backend Development"]
+  },
+  {
+    id: "codec-uiux",
+    company: "Codec Technologies India",
+    role: "UI/UX & Frontend Developer Intern",
+    category: "fullstack",
+    duration: "Jan 2026 – Feb 2026 · 2 mos",
+    badge: "Internship",
+    location: "Chennai, Tamil Nadu, India · Remote",
+    description:
+      "Designed and developed interactive web interfaces for the UI/UX & Frontend Developer track featuring modern, responsive UI/UX design with vanilla JavaScript, HTML, and CSS as part of an intensive double-track internship.",
+    responsibilities: [
+      "Designed and developed a modern glassmorphic Personal Finance Dashboard with interactive Chart.js analytics.",
+      "Built QuickEats, a Food Delivery System featuring dynamic restaurant listings, intuitive catalog navigation, and cart management.",
+      "Crafted responsive UI/UX layouts utilizing modern CSS3 flexbox/grid, smooth hover states, and dark aesthetic design tokens.",
+      "Conducted user experience (UX) flow analysis to eliminate UI friction and improve user interaction fidelity."
+    ],
+    technologies: ["User Experience (UX)", "UI Design", "JavaScript", "Chart.js", "HTML5 & CSS3"]
+  },
+  {
+    id: "zero2site",
+    company: "Zero2site",
+    role: "Cloud Development Intern",
+    category: "fullstack",
+    duration: "May 2025 – Jun 2025 · 2 mos",
+    badge: "Internship",
+    location: "Chennai, Tamil Nadu, India · Remote",
+    description:
+      "Built cloud-based web applications (Event Poll, Task Management modules) using JavaScript and Firebase for the Cloud Development track, gaining hands-on experience with real-time cloud services and deployment.",
+    responsibilities: [
+      "Built cloud-based web applications including interactive Event Poll and real-time Task Management modules.",
+      "Leveraged JavaScript and Google Firebase for real-time data synchronization, cloud database persistence, and user sessions.",
+      "Gained hands-on experience with cloud deployment, asset hosting, and live state synchronization across distributed clients.",
+      "Collaborated on feature rollouts and tested application responsiveness across varied device viewports."
+    ],
+    technologies: ["JavaScript", "Cloud Development", "Firebase", "Realtime Database", "Cloud Deployment"]
   }
 ];

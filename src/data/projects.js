@@ -134,7 +134,7 @@ export const projectsData = [
     categories: ["Full Stack", "Database"],
     technologies: ["SQL (PostgreSQL / MySQL)", "Database Normalization (3NF)", "Window Functions", "CTEs", "Chart.js"],
     image: "/assets/images/sql-projects.svg",
-    githubUrl: "https://github.com/VIJAYAPANDIANT/sql-projects",
+    githubUrl: "https://github.com/VIJAYAPANDIANT/sql-internship-portfolio",
     liveUrl: "https://covid-19-data-analytics.vercel.app/",
     problem:
       "Enterprise software systems face severe performance degradation, data redundancy anomalies, and inaccurate analytical reporting when relational database schemas lack proper normalization, indexing, and scalable query architecture.",
