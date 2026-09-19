@@ -153,11 +153,11 @@ export const projectsData = [
     title: "AI Resume Builder",
     tagline: "Smart ATS-Optimized Resume Engine",
     shortDescription:
-      "AI-powered resume builder designed to help users create structured and ATS-friendly resumes.",
+      "An intelligent, ATS-optimized resume builder powered by Google Gemini AI that transforms candidate draft experiences into high-impact, quantified achievement bullet points. Features real-time keyword gap analysis against target job descriptions, multiple recruiter-vetted modern templates, and instant client-side high-resolution PDF export.",
     categories: ["AI", "Frontend"],
-    technologies: ["React", "JavaScript", "Gemini AI", "CSS3"],
+    technologies: ["React", "JavaScript", "Gemini AI", "CSS3", "jspdf", "HTML5"],
     image: "/assets/images/ai-resume-builder.svg",
-    githubUrl: "https://github.com/vijayapandiant/ai-resume-builder",
+    githubUrl: "https://github.com/VIJAYAPANDIANT/ai-resume-builder",
     liveUrl: "https://ai-resume-builder-demo.vercel.app",
     problem:
       "Candidates frequently get filtered out by automated Applicant Tracking Systems (ATS) due to improper formatting, missing role keywords, and poorly phrased impact metrics.",
