@@ -1,0 +1,89 @@
+﻿<svg width="600" height="360" viewBox="0 0 600 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="360" rx="16" fill="#0c1220"/>
+  <circle cx="300" cy="180" r="140" fill="url(#eco-glow)" opacity="0.18"/>
+  <defs>
+    <radialGradient id="eco-glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(300 180) rotate(90) scale(140)">
+      <stop stop-color="#10b981"/>
+      <stop offset="0.6" stop-color="#059669" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#10b981" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="leaf-badge" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#10b981"/>
+      <stop offset="1" stop-color="#047857"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Left: Geospatial Map & AI Prediction HUD Window -->
+  <rect x="60" y="55" width="235" height="250" rx="10" fill="#131d33" stroke="#253754" stroke-width="1.5"/>
+  <rect x="60" y="55" width="235" height="32" rx="10" fill="#0f172a"/>
+  <circle cx="80" cy="71" r="4.5" fill="#ef4444"/>
+  <circle cx="95" cy="71" r="4.5" fill="#f59e0b"/>
+  <circle cx="110" cy="71" r="4.5" fill="#10b981"/>
+  <text x="132" y="75" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="10">smartwaste-map.ai</text>
+
+  <!-- Geospatial Map View Box with Route Vectors -->
+  <rect x="76" y="98" width="203" height="96" rx="6" fill="#09131f" stroke="#1e293b" stroke-width="1"/>
+  <!-- Map Grid Roads -->
+  <path d="M76 130 H279 M76 160 H279 M130 98 V194 M190 98 V194 M240 98 V194" stroke="#1e293b" stroke-width="1"/>
+  
+  <!-- Optimized Route Polyline -->
+  <path d="M100 170 L140 130 L200 130 L230 115 L255 145" fill="none" stroke="#10b981" stroke-width="2.5" stroke-dasharray="4 2"/>
+  <circle cx="100" cy="170" r="5" fill="#10b981"/>
+  <circle cx="140" cy="130" r="4" fill="#38bdf8"/>
+  <circle cx="200" cy="130" r="4" fill="#f59e0b"/>
+  <circle cx="255" cy="145" r="5" fill="#ef4444"/>
+
+  <!-- Map overlay badge -->
+  <rect x="84" y="104" width="92" height="18" rx="4" fill="#0f172a" opacity="0.9"/>
+  <text x="130" y="116" fill="#34d399" font-family="sans-serif" font-size="8" font-weight="bold" text-anchor="middle">Route Optimized • -28% Fuel</text>
+
+  <!-- AI Prediction Card: Random Forest -->
+  <rect x="76" y="202" width="203" height="46" rx="6" fill="#1e293b" stroke="#10b981" stroke-width="1"/>
+  <text x="86" y="218" fill="#34d399" font-family="sans-serif" font-size="9.5" font-weight="bold">AI Volume &amp; Risk Inference</text>
+  <text x="86" y="232" fill="#cbd5e1" font-family="'JetBrains Mono', monospace" font-size="8.5">Est: 3.4 Tons • High Priority</text>
+  <rect x="228" y="210" width="42" height="20" rx="4" fill="#047857" opacity="0.4"/>
+  <text x="249" y="224" fill="#34d399" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="bold" text-anchor="middle">ML-RF</text>
+
+  <!-- Tags under left window -->
+  <rect x="76" y="258" width="62" height="20" rx="4" fill="#0f172a" stroke="#10b981" stroke-width="0.8"/>
+  <text x="107" y="272" fill="#34d399" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="bold" text-anchor="middle">GeoJSON</text>
+
+  <rect x="144" y="258" width="62" height="20" rx="4" fill="#0f172a" stroke="#38bdf8" stroke-width="0.8"/>
+  <text x="175" y="272" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="bold" text-anchor="middle">Socket.io</text>
+
+  <rect x="212" y="258" width="67" height="20" rx="4" fill="#0f172a" stroke="#f59e0b" stroke-width="0.8"/>
+  <text x="245.5" y="272" fill="#fbbf24" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="bold" text-anchor="middle">Eco Points</text>
+
+  <!-- Right: Featured Hub Card -->
+  <rect x="310" y="55" width="230" height="250" rx="10" fill="#111827" stroke="#374151" stroke-width="1.5"/>
+  
+  <!-- Eco Leaf / Recycle Logo Badge -->
+  <rect x="328" y="72" width="38" height="38" rx="6" fill="url(#leaf-badge)"/>
+  <path d="M347 79 C341 83 338 88 339 94 C342 101 352 101 355 96 C357 88 353 82 347 79 Z" fill="#ffffff"/>
+  <path d="M347 84 C348 89 349 94 345 98" stroke="#10b981" stroke-width="1.4" stroke-linecap="round"/>
+
+  <text x="375" y="87" fill="#f8fafc" font-family="sans-serif" font-size="12" font-weight="bold">Smart Waste Mapping</text>
+  <text x="375" y="101" fill="#94a3b8" font-family="sans-serif" font-size="9.5">AI Spatial Waste Platform</text>
+
+  <!-- Feature Rows -->
+  <g transform="translate(328, 118)">
+    <rect x="0" y="0" width="195" height="32" rx="6" fill="#1f2937"/>
+    <text x="10" y="15" fill="#e2e8f0" font-family="sans-serif" font-size="9" font-weight="600">🗺️ Spatial Hotspot Mapping</text>
+    <text x="10" y="26" fill="#64748b" font-family="sans-serif" font-size="7.5">React Leaflet + MongoDB 2dsphere GeoJSON</text>
+
+    <rect x="0" y="36" width="195" height="32" rx="6" fill="#1f2937"/>
+    <text x="10" y="51" fill="#34d399" font-family="sans-serif" font-size="9" font-weight="600">🤖 Random Forest AI Prediction</text>
+    <text x="10" y="62" fill="#64748b" font-family="sans-serif" font-size="7.5">Waste Volume Tonnage &amp; Dynamic Risk Scoring</text>
+
+    <rect x="0" y="72" width="195" height="32" rx="6" fill="#1f2937"/>
+    <text x="10" y="87" fill="#e2e8f0" font-family="sans-serif" font-size="9" font-weight="600">🛣️ Shortest-Path Route Solver</text>
+    <text x="10" y="98" fill="#64748b" font-family="sans-serif" font-size="7.5">Nearest-Neighbor Transit &amp; Fuel Optimization</text>
+
+    <rect x="0" y="108" width="195" height="32" rx="6" fill="#1f2937"/>
+    <text x="10" y="123" fill="#fbbf24" font-family="sans-serif" font-size="9" font-weight="600">🏆 Gamified Eco-Rewards</text>
+    <text x="10" y="134" fill="#64748b" font-family="sans-serif" font-size="7.5">Community Cleanups, Leaderboards &amp; Badges</text>
+  </g>
+
+  <!-- Bottom subtitle -->
+  <text x="300" y="335" fill="#94a3b8" font-family="sans-serif" font-size="11.5" font-weight="600" text-anchor="middle">React • Node.js • MongoDB • Flask AI Microservice • Scikit-Learn • Leaflet</text>
+</svg>

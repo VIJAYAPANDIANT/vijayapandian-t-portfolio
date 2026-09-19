@@ -100,6 +100,30 @@ export const projectsData = [
     ]
   },
   {
+    id: "smart-waste-mapping",
+    title: "AI-Powered Smart Waste Mapping Platform",
+    tagline: "Geospatial AI Waste Prediction & Municipal Route Optimization Engine",
+    shortDescription:
+      "A community-driven, gamified full-stack platform combining React, Node.js, MongoDB GeoJSON indexing, and a Python Flask AI microservice (Random Forest) for real-time waste hotspot mapping, risk prediction, and truck route optimization.",
+    categories: ["AI", "Full Stack"],
+    technologies: ["React", "Node.js", "Express", "MongoDB (GeoJSON)", "Python (Flask)", "Scikit-Learn", "Socket.io", "Leaflet"],
+    image: "/assets/images/smart-waste-mapping.svg",
+    githubUrl: "https://github.com/VIJAYAPANDIANT/ai-powered-smart-waste-mapping-platform",
+    liveUrl: "https://github.com/VIJAYAPANDIANT/ai-powered-smart-waste-mapping-platform",
+    problem:
+      "Urban municipalities face uncoordinated waste collection, severe vehicle routing inefficiencies resulting in excess fuel consumption, and delayed responses to hazardous illegal dumping.",
+    solution:
+      "Engineered an interactive geospatial mapping client with React Leaflet and MongoDB 2dsphere indexing, backed by a Python AI microservice predicting waste tonnage via Random Forest and optimizing truck routes via shortest-path algorithms.",
+    keyFeatures: [
+      "Geospatial Waste Mapping with React Leaflet & MongoDB 2dsphere indexing for real-time GPS reports",
+      "Machine Learning Waste Volume & Risk Predictor using Scikit-Learn Random Forest Regressor",
+      "Shortest-Path Municipal Route Solver reducing vehicle transit distance and carbon emissions",
+      "Automated Priority Classification tagging hazardous or pathway-blocking incidents",
+      "Gamified Eco-Points Marketplace with Socket.io live alerts, community cleanup events, and leaderboards",
+      "Multi-tier decoupled architecture: React frontend, Node/Express backend, and Python Flask AI microservice"
+    ]
+  },
+  {
     id: "testforge",
     title: "TESTFORGE",
     tagline: "No-Code Test Automation Platform",
