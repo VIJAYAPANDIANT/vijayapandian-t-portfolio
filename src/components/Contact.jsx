@@ -371,7 +371,7 @@ export default function Contact() {
                 </div>
 
                 {/* Action Row */}
-                <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '14px', flexWrap: 'wrap' }}>
                   <button
                     type="button"
                     onClick={handleSubmit}
@@ -382,22 +382,6 @@ export default function Contact() {
                     <span>Send Message</span>
                     <Send size={16} />
                   </button>
-
-                  <a
-                    href="https://wa.me/918610554060"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn"
-                    style={{
-                      background: 'rgba(37, 211, 102, 0.12)',
-                      border: '1px solid rgba(37, 211, 102, 0.35)',
-                      color: '#25D366'
-                    }}
-                    aria-label="Chat directly on WhatsApp"
-                  >
-                    <MessageCircle size={16} />
-                    <span>Chat on WhatsApp</span>
-                  </a>
 
                   <a
                     href={`mailto:${personalInfo.socialLinks.email}`}
