@@ -18,15 +18,25 @@ export const experienceData = [
     duration: "Sep 2026 – Present",
     badge: "Internship",
     location: "Chennai, Tamil Nadu, India · Offline",
+    githubUrl: "https://github.com/VIJAYAPANDIANT/fsd-intern-task-and-project",
+    featuredProjects: [
+      {
+        name: "Smart Digital Museum",
+        repoUrl: "https://github.com/VIJAYAPANDIANT/fsd-intern-task-and-project",
+        liveUrl: "https://fsd-intern-task-and-project.vercel.app/",
+        description: "Interactive Smart Digital Museum web app featuring 12 curated historical artifacts (including 8 Tamil Nadu heritage items), real-time search, category/period filtering, side-by-side artifact comparison, virtual room tours, formatted CE/BCE badges, and localStorage persistence."
+      }
+    ],
     description:
       "Currently working as a Full-Stack Development Intern at Career Solutions77 (Offline, Chennai). Developing and enhancing full-stack web applications using modern frontend and backend technologies, integrating REST APIs, and engineering database-driven features.",
     responsibilities: [
       "Developed and enhanced production-ready full-stack web applications leveraging React.js, Node.js, and Express.js.",
-      "Built responsive, accessible user interfaces and integrated secure REST APIs for seamless client-server interaction.",
+      "Architected and deployed the Smart Digital Museum web app with React 18, Vite, Tailwind CSS, and LocalStorage state synchronization.",
+      "Built responsive, accessible user interfaces with dynamic filters, side-by-side artifact comparison, and image fallback recovery.",
       "Worked with database-driven application features using MongoDB, implementing scalable schemas and data persistence.",
       "Applied hands-on debugging, performance tuning, and Git-based collaborative development in an on-site engineering environment."
     ],
-    technologies: ["Full-Stack Development", "React.js", "Node.js", "Express.js", "REST APIs", "MongoDB", "Git"]
+    technologies: ["Full-Stack Development", "React.js", "Vite", "Tailwind CSS", "Node.js", "Express.js", "REST APIs", "MongoDB", "Git"]
   },
   {
     id: "infosys-springboard",

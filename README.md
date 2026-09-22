@@ -121,7 +121,7 @@ Engineered with **React 18**, **Vite**, **Three.js / React Three Fiber**, and mo
 
 | # | Organization | Role | Duration & Track | Key Deliverables & Codebases |
 |---|---|---|---|---|
-| **01** | **Career Solutions77** | Full-Stack Development Intern | Sep 2026 – Present · Offline | Full-stack web apps, REST API gateways, MongoDB persistence, and Git collaboration |
+| **01** | **Career Solutions77** | Full-Stack Development Intern | Sep 2026 – Present · Offline | [fsd-intern-task-and-project](https://github.com/VIJAYAPANDIANT/fsd-intern-task-and-project) (Smart Digital Museum) • [Live App](https://fsd-intern-task-and-project.vercel.app/) |
 | **02** | **Infosys Springboard** | Artificial Intelligence Intern | Aug 2026 – Present · Remote | AI coursework, ML prototypes, model evaluation, and prompt engineering |
 | **03** | **BharatCares® × IBM SkillsBuild** | Gen AI & Cloud Computing Intern | Jun 2026 – Jul 2026 · Remote | IBM SkillsBuild GenAI foundations, cloud resource deployment, and AICTE sessions |
 | **04** | **Elevate Labs** | SQL Developer Intern | Jan 2026 – Apr 2026 · Remote | [VIJAYAPANDIANT/sql-internship-portfolio](https://github.com/VIJAYAPANDIANT/sql-internship-portfolio) (20 SQL projects, query simulator) |
