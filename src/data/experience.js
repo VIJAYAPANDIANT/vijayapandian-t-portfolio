@@ -15,7 +15,7 @@ export const experienceData = [
     company: "Career Solutions77",
     role: "Full-Stack Development Intern",
     category: "fullstack",
-    duration: "Sep 2026 – Present",
+    duration: "Sep 2026 – Present · 1 mo",
     badge: "Internship",
     location: "Chennai, Tamil Nadu, India · Offline",
     githubUrl: "https://github.com/VIJAYAPANDIANT/fsd-intern-task-and-project",

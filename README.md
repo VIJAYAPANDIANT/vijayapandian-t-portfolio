@@ -1,4 +1,4 @@
-<div align="center">
+﻿<div align="center">
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=220&section=header&text=Vijayapandian%20T&fontSize=46&fontColor=38bdf8&animation=fadeIn&fontAlignY=38&desc=Full-Stack%20Developer%20%E2%80%A2%20AI%20Engineer%20%E2%80%A2%20Problem%20Solver&descAlignY=62&descColor=94a3b8&descSize=18" alt="Vijayapandian T Header"/>
 
@@ -80,21 +80,24 @@
 This repository houses the modern personal portfolio and client engineering hub for **Vijayapandian T** — Pre-Final Year Computer Science Engineering student at SRM Easwari Engineering College, Aspiring Software Development Engineer (SDE), and Full-Stack / AI Developer.
 
 Engineered with **React 18**, **Vite**, **Three.js / React Three Fiber**, and modern **CSS custom properties**, the site delivers:
-* Hardware-accelerated 3D particle hero visualizer that smoothly responds to mouse movement and gyro orientation.
-* Interactive **Master-Detail Experience Hub** categorizing 9 verified internships with live repository deliverables.
-* Comprehensive project showcase featuring architecture deep-dive modals, categorized filtering, and instant code/demo links.
-* Fluid responsiveness spanning mobile (320px–425px), tablet, laptop, and ultra-wide desktops (1920px+) with zero horizontal scroll overflow.
+
+- Hardware-accelerated 3D particle hero visualizer that smoothly responds to mouse movement and gyro orientation.
+- Interactive **Master-Detail Experience Hub** categorizing 9 verified internships with live repository deliverables.
+- Comprehensive project showcase featuring architecture deep-dive modals, categorized filtering, and instant code/demo links.
+- Fluid responsiveness spanning mobile (320px–425px), tablet, laptop, and ultra-wide desktops (1920px+) with zero horizontal scroll overflow.
 
 ---
 
 ## 🚀 Key Features & Architecture
 
 ### 1. 🌌 Interactive 3D WebGL Hero
+
 - Engineered with `@react-three/fiber` and `@react-three/drei`.
 - Features an interactive rotating geometric particle sphere and ambient lighting.
 - Integrated cursor parallax tracking with touch-friendly fallbacks on mobile viewports.
 
 ### 2. 💼 Master-Detail Experience Workspace
+
 - Replaces traditional long vertical scroll sections with a focused **Interactive Hub**:
   - **Left Navigation Rail**: Displays roles with company name, duration, and uniform `[Internship]` status tags.
   - **Right Stage**: Detailed executive summaries, key contributions with emerald checkmarks, technologies applied, and dedicated deliverable cards.
@@ -102,16 +105,19 @@ Engineered with **React 18**, **Vite**, **Three.js / React Three Fiber**, and mo
   - **Dual View Mode**: Toggle between **Interactive Master-Detail** workspace and **Overview Grid** view.
 
 ### 3. 🛠️ Featured Project Deliverables & Modal Deep-Dives
+
 - Multi-project cards with **Explore Repository** and **Live Demo** direct launch actions.
 - Interactive modal with architectural problem statements, enterprise solutions, key technical features, and live production endpoints.
 
 ### 4. 🏆 Academic & Competitive Achievements
+
 - **300+ DSA Problems Solved** with **Rank #6 in Institute** on GeeksforGeeks.
 - **1600+ GitHub Contributions** with an active **150+ day streak**.
 - **15+ Hackathons** and **18+ Online Quiz Podiums**.
 - Direct launchpad for the interactive **VJ Achievement Universe**.
 
 ### 5. 🤝 Freelance Services & Verified Contact Channel
+
 - 6 client service offerings: Full-Stack Portfolios, Frontend Web Applications, Bug Fixing & Refactoring, Responsive UI/UX Systems, GitHub Infrastructure, and Vercel Cloud Deployments.
 - Client-side validated contact form with accessible field labels, error handling, and direct WhatsApp / email actions.
 
@@ -119,17 +125,17 @@ Engineered with **React 18**, **Vite**, **Three.js / React Three Fiber**, and mo
 
 ## 💼 9 Verified Internships & Deliverables
 
-| # | Organization | Role | Duration & Track | Key Deliverables & Codebases |
-|---|---|---|---|---|
-| **01** | **Career Solutions77** | Full-Stack Development Intern | Sep 2026 – Present · Offline | [fsd-intern-task-and-project](https://github.com/VIJAYAPANDIANT/fsd-intern-task-and-project) (Smart Digital Museum) • [Live App](https://fsd-intern-task-and-project.vercel.app/) |
-| **02** | **Infosys Springboard** | Artificial Intelligence Intern | Aug 2026 – Present · Remote | AI coursework, ML prototypes, model evaluation, and prompt engineering |
-| **03** | **BharatCares® × IBM SkillsBuild** | Gen AI & Cloud Computing Intern | Jun 2026 – Jul 2026 · Remote | IBM SkillsBuild GenAI foundations, cloud resource deployment, and AICTE sessions |
-| **04** | **Elevate Labs** | SQL Developer Intern | Jan 2026 – Apr 2026 · Remote | [VIJAYAPANDIANT/sql-internship-portfolio](https://github.com/VIJAYAPANDIANT/sql-internship-portfolio) (20 SQL projects, query simulator) |
-| **05** | **1M1B (1 Million for 1 Billion)** | 1M1B Green Intern | Feb 2026 – Mar 2026 · Hybrid | [smart-waste-mapping-platform](https://github.com/VIJAYAPANDIANT/smart-waste-mapping-platform) • [Live App](https://smart-waste-mapping.vercel.app/) |
-| **06** | **1M1B (1 Million for 1 Billion)** | AI for Sustainability Virtual Intern | Dec 2025 – Jan 2026 · Remote | [ecowise-pro](https://github.com/VIJAYAPANDIANT/ecowise-pro) • [Live App](https://ecowise-pro.vercel.app/) (Explainable AI decision system) |
-| **07** | **Codec Technologies India** | Java Developer Intern | Jan 2026 – Feb 2026 · Remote | [student-management-system-java](https://github.com/VIJAYAPANDIANT/student-management-system-java) & [expense-tracker-java](https://github.com/VIJAYAPANDIANT/expense-tracker-java) |
-| **08** | **Codec Technologies India** | UI/UX & Frontend Developer Intern | Jan 2026 – Feb 2026 · Remote | [food-delivery-system](https://github.com/VIJAYAPANDIANT/food-delivery-system) (QuickEats) & [personal-finance-app](https://github.com/VIJAYAPANDIANT/personal-finance-app) (FinDash) |
-| **09** | **Zero2site** | Cloud Development Intern | May 2025 – Jun 2025 · Remote | [event-poll](https://github.com/VIJAYAPANDIANT/event-poll) • [Live](https://eventpoll-client-a2bl.vercel.app) & [task-master](https://github.com/VIJAYAPANDIANT/task-master) • [Live](https://task-master-chi-three.vercel.app/) |
+| #      | Organization                       | Role                                 | Duration & Track             | Key Deliverables & Codebases                                                                                                                                                                                                     |
+| ------ | ---------------------------------- | ------------------------------------ | ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **01** | **Career Solutions77**             | Full-Stack Development Intern        | Sep 2026 – Present · Offline | [fsd-intern-task-and-project](https://github.com/VIJAYAPANDIANT/fsd-intern-task-and-project) (Smart Digital Museum) • [Live App](https://fsd-intern-task-and-project.vercel.app/)                                                |
+| **02** | **Infosys Springboard**            | Artificial Intelligence Intern       | Aug 2026 – Present · Remote  | AI coursework, ML prototypes, model evaluation, and prompt engineering                                                                                                                                                           |
+| **03** | **BharatCares® × IBM SkillsBuild** | Gen AI & Cloud Computing Intern      | Jun 2026 – Jul 2026 · Remote | IBM SkillsBuild GenAI foundations, cloud resource deployment, and AICTE sessions                                                                                                                                                 |
+| **04** | **Elevate Labs**                   | SQL Developer Intern                 | Jan 2026 – Apr 2026 · Remote | [VIJAYAPANDIANT/sql-internship-portfolio](https://github.com/VIJAYAPANDIANT/sql-internship-portfolio) (20 SQL projects, query simulator)                                                                                         |
+| **05** | **1M1B (1 Million for 1 Billion)** | 1M1B Green Intern                    | Feb 2026 – Mar 2026 · Hybrid | [smart-waste-mapping-platform](https://github.com/VIJAYAPANDIANT/smart-waste-mapping-platform) • [Live App](https://smart-waste-mapping.vercel.app/)                                                                             |
+| **06** | **1M1B (1 Million for 1 Billion)** | AI for Sustainability Virtual Intern | Dec 2025 – Jan 2026 · Remote | [ecowise-pro](https://github.com/VIJAYAPANDIANT/ecowise-pro) • [Live App](https://ecowise-pro.vercel.app/) (Explainable AI decision system)                                                                                      |
+| **07** | **Codec Technologies India**       | Java Developer Intern                | Jan 2026 – Feb 2026 · Remote | [student-management-system-java](https://github.com/VIJAYAPANDIANT/student-management-system-java) & [expense-tracker-java](https://github.com/VIJAYAPANDIANT/expense-tracker-java)                                              |
+| **08** | **Codec Technologies India**       | UI/UX & Frontend Developer Intern    | Jan 2026 – Feb 2026 · Remote | [food-delivery-system](https://github.com/VIJAYAPANDIANT/food-delivery-system) (QuickEats) & [personal-finance-app](https://github.com/VIJAYAPANDIANT/personal-finance-app) (FinDash)                                            |
+| **09** | **Zero2site**                      | Cloud Development Intern             | May 2025 – Jun 2025 · Remote | [event-poll](https://github.com/VIJAYAPANDIANT/event-poll) • [Live](https://eventpoll-client-a2bl.vercel.app) & [task-master](https://github.com/VIJAYAPANDIANT/task-master) • [Live](https://task-master-chi-three.vercel.app/) |
 
 ---
 
@@ -180,24 +186,25 @@ vijayapandian-t-portfolio/
 
 ## 🛠️ Technology Stack
 
-| Domain | Technologies & Libraries |
-|---|---|
-| **Frontend Framework** | **React 18**, **JavaScript (ES6+)** |
-| **Build Tool & Bundler** | **Vite 5** (Fast HMR, dynamic chunk splitting, tree shaking) |
-| **3D Graphics & WebGL** | **Three.js**, **@react-three/fiber**, **@react-three/drei** |
-| **Styling & Design System** | **Vanilla CSS3** (Custom Properties, Glassmorphism, Flexbox, CSS Grid) |
-| **Typography & Sizing** | Fluid typography via `clamp()`, **Inter**, **JetBrains Mono** |
-| **Icons & Vectors** | **Lucide React**, Custom Handcrafted Brand SVGs (LeetCode, GfG, CodeChef, Unstop) |
-| **Live Telemetry & Counters** | **VisitorBadge.io** (Repository views), **Komarev PVC** (Profile views) |
-| **Cloud Hosting & CDN** | **Vercel** (Automated edge deployment, global CDN, SSL) |
+| Domain                        | Technologies & Libraries                                                          |
+| ----------------------------- | --------------------------------------------------------------------------------- |
+| **Frontend Framework**        | **React 18**, **JavaScript (ES6+)**                                               |
+| **Build Tool & Bundler**      | **Vite 5** (Fast HMR, dynamic chunk splitting, tree shaking)                      |
+| **3D Graphics & WebGL**       | **Three.js**, **@react-three/fiber**, **@react-three/drei**                       |
+| **Styling & Design System**   | **Vanilla CSS3** (Custom Properties, Glassmorphism, Flexbox, CSS Grid)            |
+| **Typography & Sizing**       | Fluid typography via `clamp()`, **Inter**, **JetBrains Mono**                     |
+| **Icons & Vectors**           | **Lucide React**, Custom Handcrafted Brand SVGs (LeetCode, GfG, CodeChef, Unstop) |
+| **Live Telemetry & Counters** | **VisitorBadge.io** (Repository views), **Komarev PVC** (Profile views)           |
+| **Cloud Hosting & CDN**       | **Vercel** (Automated edge deployment, global CDN, SSL)                           |
 
 ---
 
 ## 💻 Local Development & Setup
 
 ### Prerequisites
-* **Node.js**: v18.0.0 or higher
-* **npm**: v9.0.0 or higher (or pnpm / yarn)
+
+- **Node.js**: v18.0.0 or higher
+- **npm**: v9.0.0 or higher (or pnpm / yarn)
 
 ### Quickstart
 
@@ -250,14 +257,14 @@ npm run preview
 
 ## 🎨 Design System & Accessibility
 
-* **Color Palette**:
+- **Color Palette**:
   - Background Base: `#070a12` (Deep Obsidian)
   - Background Surface: `#0c111e` (Night Slate)
   - Primary Accent: `#38bdf8` (Sky Blue)
   - Secondary Accent: `#10b981` (Emerald Green)
   - Accent Indigo / Purple: `#818cf8` / `#c084fc`
   - Text Primary: `#f8fafc` | Text Secondary: `#94a3b8`
-* **Accessibility**:
+- **Accessibility**:
   - Semantic HTML5 sectioning (`<header>`, `<main>`, `<section>`, `<nav>`, `<footer>`).
   - WCAG AA compliant contrast ratios across dark mode surfaces.
   - Comprehensive `aria-label`, `role`, and keyboard focus states on all interactive elements.
@@ -268,8 +275,8 @@ npm run preview
 ## 👤 Author & Professional Connect
 
 **Vijayapandian T**  
-*Aspiring Software Development Engineer | Full-Stack & AI Developer*  
-*SRM Easwari Engineering College — Computer Science & Engineering*
+_Aspiring Software Development Engineer | Full-Stack & AI Developer_  
+_SRM Easwari Engineering College — Computer Science & Engineering_
 
 <p align="left">
   <a href="https://github.com/VIJAYAPANDIANT" target="_blank">
@@ -297,10 +304,10 @@ npm run preview
   </a>
 </p>
 
-* 📧 **Email**: [vijayapandian112007@gmail.com](mailto:vijayapandian112007@gmail.com)
-* 💬 **WhatsApp**: [+91 8610554060](https://wa.me/918610554060)
-* 🌐 **Portfolio**: [vijayapandian-t-portfolio.vercel.app](https://vijayapandian-t-portfolio.vercel.app)
-* 🌌 **Milestones**: [vj-achievement-universe.vercel.app](https://vj-achievement-universe.vercel.app/)
+- 📧 **Email**: [vijayapandian112007@gmail.com](mailto:vijayapandian112007@gmail.com)
+- 💬 **WhatsApp**: [+91 8610554060](https://wa.me/918610554060)
+- 🌐 **Portfolio**: [vijayapandian-t-portfolio.vercel.app](https://vijayapandian-t-portfolio.vercel.app)
+- 🌌 **Milestones**: [vj-achievement-universe.vercel.app](https://vj-achievement-universe.vercel.app/)
 
 ---
 
