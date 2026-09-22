@@ -275,62 +275,6 @@ export default function Experience() {
                   <MapPin size={14} style={{ color: 'var(--accent-emerald)' }} />
                   <span>{activeExp.location}</span>
                 </span>
-                {activeExp.featuredProjects && activeExp.featuredProjects.length > 0 ? (
-                  activeExp.featuredProjects.map((proj, pIdx) => (
-                    <React.Fragment key={pIdx}>
-                      {proj.repoUrl && (
-                        <a
-                          href={proj.repoUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="exp-meta-item"
-                          style={{
-                            color: 'var(--accent-sky)',
-                            background: 'rgba(56, 189, 248, 0.1)',
-                            border: '1px solid rgba(56, 189, 248, 0.3)',
-                            borderRadius: 'var(--radius-full)',
-                            padding: '2px 10px',
-                            textDecoration: 'none',
-                            display: 'inline-flex',
-                            alignItems: 'center',
-                            gap: '5px',
-                            fontSize: '0.78rem'
-                          }}
-                          title={`GitHub: ${proj.name}`}
-                        >
-                          <Github size={13} />
-                          <span>{proj.name.split('—')[0].trim()}</span>
-                          <ExternalLink size={11} style={{ opacity: 0.8 }} />
-                        </a>
-                      )}
-                    </React.Fragment>
-                  ))
-                ) : (
-                  activeExp.githubUrl && (
-                    <a
-                      href={activeExp.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="exp-meta-item"
-                      style={{
-                        color: 'var(--accent-sky)',
-                        background: 'rgba(56, 189, 248, 0.1)',
-                        border: '1px solid rgba(56, 189, 248, 0.3)',
-                        borderRadius: 'var(--radius-full)',
-                        padding: '2px 10px',
-                        textDecoration: 'none',
-                        display: 'inline-flex',
-                        alignItems: 'center',
-                        gap: '5px',
-                        fontSize: '0.78rem'
-                      }}
-                    >
-                      <Github size={13} />
-                      <span>GitHub Repo</span>
-                      <ExternalLink size={11} style={{ opacity: 0.8 }} />
-                    </a>
-                  )
-                )}
               </div>
 
               {/* Executive Summary */}
