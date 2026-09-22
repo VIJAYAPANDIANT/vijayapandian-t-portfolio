@@ -1,4 +1,4 @@
-﻿<div align="center">
+<div align="center">
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=220&section=header&text=Vijayapandian%20T&fontSize=46&fontColor=38bdf8&animation=fadeIn&fontAlignY=38&desc=Full-Stack%20Developer%20%E2%80%A2%20AI%20Engineer%20%E2%80%A2%20Problem%20Solver&descAlignY=62&descColor=94a3b8&descSize=18" alt="Vijayapandian T Header"/>
 
@@ -125,17 +125,17 @@ Engineered with **React 18**, **Vite**, **Three.js / React Three Fiber**, and mo
 
 ## 💼 9 Verified Internships & Deliverables
 
-| #      | Organization                       | Role                                 | Duration & Track             | Key Deliverables & Codebases                                                                                                                                                                                                     |
-| ------ | ---------------------------------- | ------------------------------------ | ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **01** | **Career Solutions77**             | Full-Stack Development Intern        | Sep 2026 – Present · Offline | [fsd-intern-task-and-project](https://github.com/VIJAYAPANDIANT/fsd-intern-task-and-project) (Smart Digital Museum) • [Live App](https://fsd-intern-task-and-project.vercel.app/)                                                |
-| **02** | **Infosys Springboard**            | Artificial Intelligence Intern       | Aug 2026 – Present · Remote  | AI coursework, ML prototypes, model evaluation, and prompt engineering                                                                                                                                                           |
-| **03** | **BharatCares® × IBM SkillsBuild** | Gen AI & Cloud Computing Intern      | Jun 2026 – Jul 2026 · Remote | IBM SkillsBuild GenAI foundations, cloud resource deployment, and AICTE sessions                                                                                                                                                 |
-| **04** | **Elevate Labs**                   | SQL Developer Intern                 | Jan 2026 – Apr 2026 · Remote | [VIJAYAPANDIANT/sql-internship-portfolio](https://github.com/VIJAYAPANDIANT/sql-internship-portfolio) (20 SQL projects, query simulator)                                                                                         |
-| **05** | **1M1B (1 Million for 1 Billion)** | 1M1B Green Intern                    | Feb 2026 – Mar 2026 · Hybrid | [smart-waste-mapping-platform](https://github.com/VIJAYAPANDIANT/smart-waste-mapping-platform) • [Live App](https://smart-waste-mapping.vercel.app/)                                                                             |
-| **06** | **1M1B (1 Million for 1 Billion)** | AI for Sustainability Virtual Intern | Dec 2025 – Jan 2026 · Remote | [ecowise-pro](https://github.com/VIJAYAPANDIANT/ecowise-pro) • [Live App](https://ecowise-pro.vercel.app/) (Explainable AI decision system)                                                                                      |
-| **07** | **Codec Technologies India**       | Java Developer Intern                | Jan 2026 – Feb 2026 · Remote | [student-management-system-java](https://github.com/VIJAYAPANDIANT/student-management-system-java) & [expense-tracker-java](https://github.com/VIJAYAPANDIANT/expense-tracker-java)                                              |
-| **08** | **Codec Technologies India**       | UI/UX & Frontend Developer Intern    | Jan 2026 – Feb 2026 · Remote | [food-delivery-system](https://github.com/VIJAYAPANDIANT/food-delivery-system) (QuickEats) & [personal-finance-app](https://github.com/VIJAYAPANDIANT/personal-finance-app) (FinDash)                                            |
-| **09** | **Zero2site**                      | Cloud Development Intern             | May 2025 – Jun 2025 · Remote | [event-poll](https://github.com/VIJAYAPANDIANT/event-poll) • [Live](https://eventpoll-client-a2bl.vercel.app) & [task-master](https://github.com/VIJAYAPANDIANT/task-master) • [Live](https://task-master-chi-three.vercel.app/) |
+| # | Organization | Role | Duration & Track | Key Deliverables & Codebases |
+|---|---|---|---|---|
+| **01** | **Career Solutions77** | Full-Stack Development Intern | Sep 2026 – Present · 1 mo · Offline | [fsd-intern-task-and-project](https://github.com/VIJAYAPANDIANT/fsd-intern-task-and-project) (FSD Intern Projects) • [Live App](https://fsd-intern-task-and-project.vercel.app/) |
+| **02** | **Infosys Springboard** | Artificial Intelligence Intern | Aug 2026 – Present · Remote | AI coursework, ML prototypes, model evaluation, and prompt engineering |
+| **03** | **BharatCares® × IBM SkillsBuild** | Gen AI & Cloud Computing Intern | Jun 2026 – Jul 2026 · Remote | IBM SkillsBuild GenAI foundations, cloud resource deployment, and AICTE sessions |
+| **04** | **Elevate Labs** | SQL Developer Intern | Jan 2026 – Apr 2026 · Remote | [VIJAYAPANDIANT/sql-internship-portfolio](https://github.com/VIJAYAPANDIANT/sql-internship-portfolio) (20 SQL projects, query simulator) |
+| **05** | **1M1B (1 Million for 1 Billion)** | 1M1B Green Intern | Feb 2026 – Mar 2026 · Hybrid | [smart-waste-mapping-platform](https://github.com/VIJAYAPANDIANT/smart-waste-mapping-platform) • [Live App](https://smart-waste-mapping.vercel.app/) |
+| **06** | **1M1B (1 Million for 1 Billion)** | AI for Sustainability Virtual Intern | Dec 2025 – Jan 2026 · Remote | [ecowise-pro](https://github.com/VIJAYAPANDIANT/ecowise-pro) • [Live App](https://ecowise-pro.vercel.app/) (Explainable AI decision system) |
+| **07** | **Codec Technologies India** | Java Developer Intern | Jan 2026 – Feb 2026 · Remote | [student-management-system-java](https://github.com/VIJAYAPANDIANT/student-management-system-java) & [expense-tracker-java](https://github.com/VIJAYAPANDIANT/expense-tracker-java) |
+| **08** | **Codec Technologies India** | UI/UX & Frontend Developer Intern | Jan 2026 – Feb 2026 · Remote | [food-delivery-system](https://github.com/VIJAYAPANDIANT/food-delivery-system) (QuickEats) & [personal-finance-app](https://github.com/VIJAYAPANDIANT/personal-finance-app) (FinDash) |
+| **09** | **Zero2site** | Cloud Development Intern | May 2025 – Jun 2025 · Remote | [event-poll](https://github.com/VIJAYAPANDIANT/event-poll) • [Live](https://eventpoll-client-a2bl.vercel.app) & [task-master](https://github.com/VIJAYAPANDIANT/task-master) • [Live](https://task-master-chi-three.vercel.app/) |
 
 ---
 
