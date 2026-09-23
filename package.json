@@ -9,7 +9,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@hugeicons/core-free-icons": "^4.3.5",
     "@react-three/drei": "^9.99.6",
     "@react-three/fiber": "^8.15.16",
     "lucide-react": "^0.344.0",
