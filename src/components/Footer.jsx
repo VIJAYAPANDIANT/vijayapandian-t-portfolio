@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Github, Linkedin, Mail, ArrowUp } from 'lucide-react';
 import { LeetCodeIcon, CodeChefIcon, GeeksforGeeksIcon, UnstopIcon } from './BrandIcons';
 import { personalInfo } from '../data/personalInfo';
+import PulseHeart from './PulseHeart';
 
 const navItems = [
   { label: 'Home', href: '#home' },
@@ -16,6 +17,34 @@ const navItems = [
 ];
 
 export default function Footer() {
+  const [liked, setLiked] = useState(() => {
+    try {
+      return localStorage.getItem('portfolio_heart_liked') === 'true';
+    } catch {
+      return false;
+    }
+  });
+
+  const [heartCount, setHeartCount] = useState(() => {
+    try {
+      const saved = localStorage.getItem('portfolio_heart_count');
+      return saved ? parseInt(saved, 10) : 1204;
+    } catch {
+      return 1204;
+    }
+  });
+
+  const handleHeartChange = (nextLiked, nextCount) => {
+    setLiked(nextLiked);
+    setHeartCount(nextCount);
+    try {
+      localStorage.setItem('portfolio_heart_liked', String(nextLiked));
+      localStorage.setItem('portfolio_heart_count', String(nextCount));
+    } catch (e) {
+      console.warn(e);
+    }
+  };
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -43,11 +72,33 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Social Links */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap', justifyContent: 'center' }}>
-            <a
-              href={personalInfo.socialLinks.github}
-              target="_blank"
+          {/* Reactions & Social Links */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: '16px', flexWrap: 'wrap', justifyContent: 'center' }}>
+            <PulseHeart
+              count={heartCount}
+              defaultLiked={liked}
+              onChange={handleHeartChange}
+              showCount
+              icon="heart"
+              idleOutline
+              size={40}
+              corner={32}
+              likedColor="#ff4d6d"
+              idleColor="#8b8b93"
+              pillColor="#232326"
+              textColor="#f5f5f5"
+              duration={560}
+              dotSize={0.3}
+              overshoot={1.7}
+              beat={3}
+              rollDuration={350}
+              disabled={false}
+            />
+
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap', justifyContent: 'center' }}>
+              <a
+                href={personalInfo.socialLinks.github}
+                target="_blank"
               rel="noopener noreferrer"
               className="btn-icon"
               title="GitHub"
@@ -132,6 +183,7 @@ export default function Footer() {
             </button>
           </div>
         </div>
+      </div>
 
         {/* Navigation Quick Links */}
         <nav className="footer-nav" aria-label="Footer Navigation">
