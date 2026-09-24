@@ -13,7 +13,7 @@ export const personalInfo = {
     "Open to Collaborate & Build"
   ],
   heroDescription:
-    "Building full-stack and AI-powered applications with Java, Spring Boot, React, and modern cloud technologies from real-time systems to AI-integrated tools.",
+    "Building full-stack and AI-powered applications with Java, Spring Boot, React, and modern cloud technologies from\nreal-time systems to AI-integrated tools.",
   aboutParagraphs: [
     "I am a Computer Science and Engineering student focused on software development, full-stack applications, and AI-powered solutions.",
     "With a strong foundation in Data Structures & Algorithms, Object-Oriented Programming, databases, and software engineering, I enjoy turning complex problems into practical, real-world applications. I've also earned a #6 institute rank on GeeksforGeeks for consistent DSA practice.",
