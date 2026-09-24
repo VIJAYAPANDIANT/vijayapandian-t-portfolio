@@ -189,10 +189,9 @@ export default function Hero() {
             <div style={{ position: 'relative', zIndex: 1, width: '100%', maxWidth: '340px', transform: 'scale(0.95)' }}>
               <ProfileCard 
                 avatarUrl="/assets/images/vijayapandian-avatar.png"
-                handle="VIJAYAPANDIANT"
-                status="Available for Roles"
-                showUserInfo={true}
-                onContactClick={() => scrollTo('contact')}
+                name=""
+                title=""
+                showUserInfo={false}
               />
             </div>
           </div>
