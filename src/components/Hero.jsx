@@ -188,9 +188,7 @@ export default function Hero() {
           <div className="hero-visual-wrapper" style={{ position: 'relative', width: '100%', minHeight: '440px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             <div style={{ position: 'relative', zIndex: 1, width: '100%', maxWidth: '340px', transform: 'scale(0.95)' }}>
               <ProfileCard 
-                avatarUrl="/assets/images/vijayapandian-avatar.png" 
-                name={personalInfo.name}
-                title="Software Engineer"
+                avatarUrl="/assets/images/vijayapandian-avatar.png"
                 handle="VIJAYAPANDIANT"
                 status="Available for Roles"
                 showUserInfo={true}
