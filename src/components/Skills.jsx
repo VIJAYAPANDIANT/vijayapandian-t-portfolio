@@ -21,7 +21,10 @@ import {
   GithubIcon,
   PostmanIcon,
   VsCodeIcon,
-  FigmaIcon
+  FigmaIcon,
+  TailwindIcon,
+  BootstrapIcon,
+  SQLiteIcon
 } from './BrandIcons';
 import { skillCategories, skillsData } from '../data/skills';
 
@@ -35,6 +38,8 @@ const skillIconMap = {
   'React.js': ReactIcon,
   'HTML5': Html5Icon,
   'CSS3 / Modern CSS': Css3Icon,
+  'Tailwind CSS': TailwindIcon,
+  'Bootstrap': BootstrapIcon,
   'JavaScript (ES6+)': JavaScriptIcon,
 
   // Backend
@@ -46,6 +51,7 @@ const skillIconMap = {
   // Database
   'MySQL': MysqlIcon,
   'PostgreSQL': PostgresqlIcon,
+  'SQLite': SQLiteIcon,
   'MongoDB': MongodbIcon,
 
   // AI
