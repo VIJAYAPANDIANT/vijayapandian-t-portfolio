@@ -68,10 +68,11 @@
   position: relative;
   background-blend-mode: color-dodge, normal, normal, normal;
   animation: glow-bg 12s linear infinite;
-  box-shadow: none;
+  box-shadow: rgba(0, 0, 0, 0.8) calc((var(--pointer-from-left) * 10px) - 3px)
+    calc((var(--pointer-from-top) * 20px) - 6px) 20px -5px;
   transition: transform 1s ease;
   transform: translateZ(0) rotateX(0deg) rotateY(0deg);
-  background: transparent;
+  background: rgba(0, 0, 0, 0.9);
   backface-visibility: hidden;
   overflow: hidden;
 }
@@ -101,23 +102,14 @@
 .pc-inside {
   inset: 0;
   position: absolute;
-  background-image: none;
-  background-color: transparent;
+  background-image: var(--inner-gradient);
+  background-color: rgba(0, 0, 0, 0.9);
   transform: none;
 }
 
 .pc-shine {
-  -webkit-mask-image: var(--icon);
-  mask-image: var(--icon);
-  mask-mode: luminance;
-  -webkit-mask-repeat: repeat;
-  mask-repeat: repeat;
-  -webkit-mask-size: 150%;
-  mask-size: 150%;
-  -webkit-mask-position: top calc(200% - (var(--background-y) * 5)) left calc(100% - var(--background-x));
-  mask-position: top calc(200% - (var(--background-y) * 5)) left calc(100% - var(--background-x));
   transition: filter 0.8s ease;
-  filter: brightness(0.66) contrast(1.33) saturate(0.33) opacity(0.5);
+  filter: brightness(0.66) contrast(1.33) saturate(0.33) opacity(0.15);
   animation: holo-bg 18s linear infinite;
   animation-play-state: running;
   mix-blend-mode: color-dodge;
