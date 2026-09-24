@@ -4,7 +4,7 @@
 export const achievementsData = [
   {
     id: "dsa",
-    title: "300+ DSA Problems Solved",
+    title: "400+ DSA Problems Solved",
     subtitle: "Algorithmic Mastery",
     icon: "Binary",
     description:
@@ -31,11 +31,11 @@ export const achievementsData = [
   },
   {
     id: "github-contributions",
-    title: "1600+ GitHub Contributions",
+    title: "1800+ GitHub Contributions",
     subtitle: "150-Day Active Streak",
     icon: "Github",
     description:
-      "Maintained a continuous 150+ day active coding streak, authoring 1,600+ contributions across full-stack web applications, open-source repositories, and algorithmic problem-solving.",
+      "Maintained a continuous 150+ day active coding streak, authoring 1,800+ contributions across full-stack web applications, open-source repositories, and algorithmic problem-solving.",
     badge: "Engineering"
   }
 ];
