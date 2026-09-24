@@ -31,10 +31,6 @@
     <img src="https://img.shields.io/badge/Vite_5-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite 5" />
   </a>
   &nbsp;
-  <a href="https://threejs.org/">
-    <img src="https://img.shields.io/badge/Three.js-WebGL-black?style=flat-square&logo=three.js&logoColor=white" alt="Three.js" />
-  </a>
-  &nbsp;
   <a href="https://lucide.dev/">
     <img src="https://img.shields.io/badge/Lucide-Icons-F56565?style=flat-square&logo=feather&logoColor=white" alt="Lucide Icons" />
   </a>
@@ -79,9 +75,9 @@
 
 This repository houses the modern personal portfolio and client engineering hub for **Vijayapandian T** — Pre-Final Year Computer Science Engineering student at SRM Easwari Engineering College, Aspiring Software Development Engineer (SDE), and Full-Stack / AI Developer.
 
-Engineered with **React 18**, **Vite**, **Three.js / React Three Fiber**, and modern **CSS custom properties**, the site delivers:
+Engineered with **React 18**, **Vite**, and modern **CSS custom properties**, the site delivers:
 
-- Hardware-accelerated 3D particle hero visualizer that smoothly responds to mouse movement and gyro orientation.
+- 3D interactive holographic CSS Profile Card that smoothly responds to mouse movement and orientation.
 - Interactive **Master-Detail Experience Hub** categorizing 9 verified internships with live repository deliverables.
 - Comprehensive project showcase featuring architecture deep-dive modals, categorized filtering, and instant code/demo links.
 - Fluid responsiveness spanning mobile (320px–425px), tablet, laptop, and ultra-wide desktops (1920px+) with zero horizontal scroll overflow.
@@ -90,11 +86,11 @@ Engineered with **React 18**, **Vite**, **Three.js / React Three Fiber**, and mo
 
 ## 🚀 Key Features & Architecture
 
-### 1. 🌌 Interactive 3D WebGL Hero
+### 1. 🌌 Interactive CSS 3D Profile Card
 
-- Engineered with `@react-three/fiber` and `@react-three/drei`.
-- Features an interactive rotating geometric particle sphere and ambient lighting.
-- Integrated cursor parallax tracking with touch-friendly fallbacks on mobile viewports.
+- Engineered with modern CSS 3D transforms, custom properties, and perspective rendering.
+- Features a physics-based, interactive tilt card that responds seamlessly to cursor parallax and device orientation.
+- Integrates a holographic glare effect overlay for premium material depth.
 
 ### 2. 💼 Master-Detail Experience Workspace
 
@@ -111,8 +107,8 @@ Engineered with **React 18**, **Vite**, **Three.js / React Three Fiber**, and mo
 
 ### 4. 🏆 Academic & Competitive Achievements
 
-- **300+ DSA Problems Solved** with **Rank #6 in Institute** on GeeksforGeeks.
-- **1600+ GitHub Contributions** with an active **150+ day streak**.
+- **400+ DSA Problems Solved** with **Rank #6 in Institute** on GeeksforGeeks.
+- **1800+ GitHub Contributions** with an active **150+ day streak**.
 - **15+ Hackathons** and **18+ Online Quiz Podiums**.
 - Direct launchpad for the interactive **VJ Achievement Universe**.
 
@@ -158,7 +154,8 @@ vijayapandian-t-portfolio/
 │   │   ├── Experience.jsx        # Interactive Master-Detail Hub with 9 verified internships
 │   │   ├── Footer.jsx            # Social hub, navigation quick links & performance tagline
 │   │   ├── Hero.jsx              # Typing subtitles, CTA buttons & social links
-│   │   ├── HeroScene.jsx         # Three.js 3D WebGL particle sphere visualizer
+│   │   ├── ProfileCard.css       # 3D interactive holographic card styling
+│   │   ├── ProfileCard.jsx       # 3D holographic avatar tilt card component
 │   │   ├── Navbar.jsx            # Sticky blurred glass navbar with mobile drawer & theme toggle
 │   │   ├── ProjectModal.jsx      # Deep-dive architecture modal with problem/solution specs
 │   │   ├── Projects.jsx          # Categorized projects showcase with live & repo actions
@@ -184,16 +181,15 @@ vijayapandian-t-portfolio/
 
 ---
 
-## 🛠️ Technology Stack
+## 💻 Technology Stack
 
 | Domain                        | Technologies & Libraries                                                          |
 | ----------------------------- | --------------------------------------------------------------------------------- |
 | **Frontend Framework**        | **React 18**, **JavaScript (ES6+)**                                               |
 | **Build Tool & Bundler**      | **Vite 5** (Fast HMR, dynamic chunk splitting, tree shaking)                      |
-| **3D Graphics & WebGL**       | **Three.js**, **@react-three/fiber**, **@react-three/drei**                       |
 | **Styling & Design System**   | **Vanilla CSS3** (Custom Properties, Glassmorphism, Flexbox, CSS Grid)            |
 | **Typography & Sizing**       | Fluid typography via `clamp()`, **Inter**, **JetBrains Mono**                     |
-| **Icons & Vectors**           | **Lucide React**, Custom Handcrafted Brand SVGs (LeetCode, GfG, CodeChef, Unstop) |
+| **Icons & Vectors**           | **Lucide React**, Custom Handcrafted Brand SVGs (Tailwind, Bootstrap, LeetCode, GfG, CodeChef, etc) |
 | **Live Telemetry & Counters** | **VisitorBadge.io** (Repository views), **Komarev PVC** (Profile views)           |
 | **Cloud Hosting & CDN**       | **Vercel** (Automated edge deployment, global CDN, SSL)                           |
 
@@ -235,7 +231,7 @@ Visit `http://localhost:3000` in your web browser. Hot Module Replacement (HMR) 
 npm run build
 ```
 
-This generates an optimized, minified production distribution under the `dist/` directory with separate vendor, icons, and Three.js chunking.
+This generates an optimized, minified production distribution under the `dist/` directory with separate vendor and icons chunking.
 
 ### Preview Production Build
 
