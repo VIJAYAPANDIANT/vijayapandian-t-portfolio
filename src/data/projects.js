@@ -111,7 +111,7 @@ export const projectsData = [
     technologies: ["React", "Node.js", "Express", "MongoDB (GeoJSON)", "Python (Flask)", "Scikit-Learn", "Socket.io", "Leaflet"],
     image: "/assets/images/smart-waste-mapping.svg",
     githubUrl: "https://github.com/VIJAYAPANDIANT/ai-powered-smart-waste-mapping-platform",
-    liveUrl: "https://github.com/VIJAYAPANDIANT/ai-powered-smart-waste-mapping-platform",
+    liveUrl: "https://ai-powered-smart-waste-mapping-plat.vercel.app/",
     problem:
       "Urban municipalities face uncoordinated waste collection, severe vehicle routing inefficiencies resulting in excess fuel consumption, and delayed responses to hazardous illegal dumping.",
     solution:
@@ -180,7 +180,7 @@ export const projectsData = [
     technologies: ["JavaScript (ES6+)", "HTML5", "CSS3 (Glassmorphism)", "Open-Meteo REST APIs", "DOM Manipulation"],
     image: "/assets/images/weather-dashboard.svg",
     githubUrl: "https://github.com/VIJAYAPANDIANT/premium-weather-dashboard",
-    liveUrl: "https://github.com/VIJAYAPANDIANT/premium-weather-dashboard",
+    liveUrl: "https://weather-app-lemon-nine-29.vercel.app/",
     problem:
       "Most weather web applications are bloated with ads, require paid API keys with restrictive rate limits, and lack modern, responsive glassmorphism visual design systems.",
     solution:
