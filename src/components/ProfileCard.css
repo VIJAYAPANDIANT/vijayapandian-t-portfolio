@@ -249,9 +249,9 @@
 }
 
 .pc-avatar-content {
-  mix-blend-mode: luminosity;
+  mix-blend-mode: normal;
   overflow: visible;
-  transform: translateZ(2);
+  transform: translateZ(30px);
   backface-visibility: hidden;
 }
 
@@ -260,13 +260,14 @@
   position: absolute;
   left: 50%;
   transform-origin: 50% 100%;
-  transform: translateX(calc(-50% + (var(--pointer-from-left) - 0.5) * 6px)) translateZ(0)
-    scaleY(calc(1 + (var(--pointer-from-top) - 0.5) * 0.02)) scaleX(calc(1 + (var(--pointer-from-left) - 0.5) * 0.01));
+  transform: translateX(calc(-50% + (var(--pointer-from-left) - 0.5) * 12px)) translateZ(20px)
+    scaleY(calc(1 + (var(--pointer-from-top) - 0.5) * 0.03)) scaleX(calc(1 + (var(--pointer-from-left) - 0.5) * 0.02));
   bottom: -1px;
   backface-visibility: hidden;
   will-change: transform;
   transition: transform 120ms ease-out;
   object-fit: contain;
+  filter: drop-shadow(0 15px 25px rgba(0,0,0,0.5));
 }
 
 .pc-avatar-content::before {
@@ -364,9 +365,9 @@
   text-align: center;
   position: relative;
   transform: translate3d(
-    calc(var(--pointer-from-left) * -6px + 3px),
-    calc(var(--pointer-from-top) * -6px + 3px),
-    0.1px
+    calc(var(--pointer-from-left) * -12px + 6px),
+    calc(var(--pointer-from-top) * -12px + 6px),
+    40px
   );
   z-index: 5;
   mix-blend-mode: luminosity;
