@@ -147,8 +147,8 @@ vijayapandian-t-portfolio/
 ├── src/
 │   ├── components/
 │   │   ├── About.jsx             # Bio narrative, resume action, and verified stats grid
-│   │   ├── Academic.jsx          # Education timeline, B.E CSE SRM Easwari, 8.49 CGPA
-│   │   ├── Achievements.jsx      # DSA rank, hackathons, quiz wins & 1600+ GitHub contributions
+│   │   ├── Education.jsx         # Education timeline, B.E CSE SRM Easwari, 8.49 CGPA
+│   │   ├── Achievements.jsx      # DSA rank, hackathons, quiz wins & 1800+ GitHub contributions
 │   │   ├── BrandIcons.jsx        # LeetCode, CodeChef, GeeksforGeeks, Unstop vector SVGs
 │   │   ├── Contact.jsx           # Validated contact form, direct email & WhatsApp actions
 │   │   ├── Experience.jsx        # Interactive Master-Detail Hub with 9 verified internships
