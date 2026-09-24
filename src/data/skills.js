@@ -21,6 +21,8 @@ export const skillsData = [
   { name: "React.js", category: "Frontend", icon: "Atom", level: "Advanced", proficiency: 90 },
   { name: "HTML5", category: "Frontend", icon: "Layout", level: "Expert", proficiency: 95 },
   { name: "CSS3 / Modern CSS", category: "Frontend", icon: "Palette", level: "Advanced", proficiency: 92 },
+  { name: "Tailwind CSS", category: "Frontend", icon: "Paintbrush", level: "Advanced", proficiency: 88 },
+  { name: "Bootstrap", category: "Frontend", icon: "Monitor", level: "Advanced", proficiency: 85 },
   { name: "JavaScript (ES6+)", category: "Frontend", icon: "Braces", level: "Advanced", proficiency: 90 },
 
   // Backend
@@ -32,6 +34,7 @@ export const skillsData = [
   // Database
   { name: "MySQL", category: "Database", icon: "Database", level: "Advanced", proficiency: 88 },
   { name: "PostgreSQL", category: "Database", icon: "Boxes", level: "Intermediate", proficiency: 82 },
+  { name: "SQLite", category: "Database", icon: "HardDrive", level: "Intermediate", proficiency: 80 },
   { name: "MongoDB", category: "Database", icon: "Layers", level: "Advanced", proficiency: 84 },
 
   // AI
