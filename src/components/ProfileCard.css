@@ -108,6 +108,7 @@
 }
 
 .pc-shine {
+  display: none;
   transition: filter 0.8s ease;
   filter: brightness(0.66) contrast(1.33) saturate(0.33) opacity(0.15);
   animation: holo-bg 18s linear infinite;
