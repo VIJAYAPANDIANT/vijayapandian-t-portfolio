@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from 'react';
 import { ArrowRight, MessageSquare, Github, Linkedin } from 'lucide-react';
 import { LeetCodeIcon, CodeChefIcon, GeeksforGeeksIcon, UnstopIcon } from './BrandIcons';
 import { personalInfo } from '../data/personalInfo';
-import HeroScene from './HeroScene';
 import ProfileCard from './ProfileCard';
 
 const lines = [
@@ -185,11 +184,8 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right Visuals (Creative Photo Showcase + 3D Scene) */}
+          {/* Right Visuals (Creative Photo Showcase) */}
           <div className="hero-visual-wrapper" style={{ position: 'relative', width: '100%', minHeight: '440px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <div style={{ position: 'absolute', inset: 0, zIndex: 0, opacity: 0.8, pointerEvents: 'none' }}>
-              <HeroScene />
-            </div>
             <div style={{ position: 'relative', zIndex: 1, width: '100%', maxWidth: '340px', transform: 'scale(0.95)' }}>
               <ProfileCard 
                 avatarUrl="/assets/images/vijayapandian-avatar.png" 
