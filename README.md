@@ -107,7 +107,7 @@ Engineered with **React 18**, **Vite**, and modern **CSS custom properties**, th
 
 ### 4. 🏆 Academic & Competitive Achievements
 
-- **400+ DSA Problems Solved** with **Rank #6 in Institute** on GeeksforGeeks.
+- **400+ DSA Problems Solved** with **Rank #5 in Institute** on GeeksforGeeks.
 - **1800+ GitHub Contributions** with an active **150+ day streak**.
 - **15+ Hackathons** and **18+ Online Quiz Podiums**.
 - Direct launchpad for the interactive **VJ Achievement Universe**.

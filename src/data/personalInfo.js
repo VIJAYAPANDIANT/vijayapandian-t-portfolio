@@ -16,7 +16,7 @@ export const personalInfo = {
     "Building full-stack and AI-powered applications with Java, Spring Boot, React, and modern cloud technologies from\nreal-time systems to AI-integrated tools.",
   aboutParagraphs: [
     "I am a Computer Science and Engineering student focused on software development, full-stack applications, and AI-powered solutions.",
-    "With a strong foundation in Data Structures & Algorithms, Object-Oriented Programming, databases, and software engineering, I enjoy turning complex problems into practical, real-world applications. I've also earned a #6 institute rank on GeeksforGeeks for consistent DSA practice.",
+    "With a strong foundation in Data Structures & Algorithms, Object-Oriented Programming, databases, and software engineering, I enjoy turning complex problems into practical, real-world applications. I've also earned a #5 institute rank on GeeksforGeeks for consistent DSA practice.",
     "I have hands-on experience across 7+ internships, building full-stack and AI-driven projects using Java, Spring Boot, React, Python, and modern web technologies. I'm also exploring Generative AI, cloud technologies, and scalable backend development."
   ],
   stats: [

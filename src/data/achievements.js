@@ -8,8 +8,8 @@ export const achievementsData = [
     subtitle: "Algorithmic Mastery",
     icon: "Binary",
     description:
-      "Ranked #6 in Institute on GeeksforGeeks. Demonstrated strong problem-solving skills across LeetCode, CodeChef, and GfG covering trees, DP, graphs, and algorithms.",
-    badge: "Rank #6 GfG"
+      "Ranked #5 in Institute on GeeksforGeeks. Demonstrated strong problem-solving skills across LeetCode, CodeChef, and GfG covering trees, DP, graphs, and algorithms.",
+    badge: "Rank #5 GfG"
   },
   {
     id: "hackathons",
