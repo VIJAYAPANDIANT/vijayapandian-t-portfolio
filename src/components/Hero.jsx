@@ -88,7 +88,12 @@ export default function Hero() {
             </h2>
 
             <p className="hero-description">
-              {personalInfo.heroDescription}
+              {personalInfo.heroDescription.split('\n').map((line, i) => (
+                <React.Fragment key={i}>
+                  {line}
+                  {i < personalInfo.heroDescription.split('\n').length - 1 && <br />}
+                </React.Fragment>
+              ))}
             </p>
 
             {/* CTA Buttons */}
