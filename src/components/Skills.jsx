@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { Wrench, Code2 } from 'lucide-react';
+import { Wrench, Code2, Database, Key } from 'lucide-react';
 import {
   JavaIcon,
   PythonIcon,
@@ -47,10 +47,13 @@ const skillIconMap = {
   'Node.js': NodejsIcon,
   'Express.js': ExpressIcon,
   'REST API': RestApiIcon,
+  'JWT Authentication': Key,
 
   // Database
+  'SQL': Database,
   'MySQL': MysqlIcon,
   'PostgreSQL': PostgresqlIcon,
+  'SQL Server': Database,
   'SQLite': SQLiteIcon,
   'MongoDB': MongodbIcon,
 
@@ -70,11 +73,11 @@ const skillIconMap = {
 export default function Skills() {
   const [activeCategory, setActiveCategory] = useState('All');
 
-  // Partition all 22 skills into 3 balanced rows for the train marquee
+  // Partition all 25 skills into 3 balanced rows for the train marquee
   const { row1, row2, row3 } = useMemo(() => {
-    const r1 = skillsData.slice(0, 8);
-    const r2 = skillsData.slice(8, 15);
-    const r3 = skillsData.slice(15, 22);
+    const r1 = skillsData.slice(0, 9);
+    const r2 = skillsData.slice(9, 17);
+    const r3 = skillsData.slice(17, 25);
     return { row1: r1, row2: r2, row3: r3 };
   }, []);
 

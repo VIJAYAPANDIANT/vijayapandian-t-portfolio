@@ -30,10 +30,13 @@ export const skillsData = [
   { name: "Node.js", category: "Backend", icon: "Server", level: "Advanced", proficiency: 86 },
   { name: "Express.js", category: "Backend", icon: "Workflow", level: "Advanced", proficiency: 85 },
   { name: "REST API", category: "Backend", icon: "Network", level: "Expert", proficiency: 92 },
+  { name: "JWT Authentication", category: "Backend", icon: "Key", level: "Advanced", proficiency: 85 },
 
   // Database
+  { name: "SQL", category: "Database", icon: "Database", level: "Advanced", proficiency: 90 },
   { name: "MySQL", category: "Database", icon: "Database", level: "Advanced", proficiency: 88 },
   { name: "PostgreSQL", category: "Database", icon: "Boxes", level: "Intermediate", proficiency: 82 },
+  { name: "SQL Server", category: "Database", icon: "Database", level: "Intermediate", proficiency: 80 },
   { name: "SQLite", category: "Database", icon: "HardDrive", level: "Intermediate", proficiency: 80 },
   { name: "MongoDB", category: "Database", icon: "Layers", level: "Advanced", proficiency: 84 },
 
