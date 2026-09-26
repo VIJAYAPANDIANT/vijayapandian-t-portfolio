@@ -39,5 +39,5 @@ export const personalInfo = {
     whatsapp: "https://wa.me/918610554060",
     phone: "+91 8610554060"
   },
-  resumePath: "https://drive.google.com/file/d/1nRrqbiIwxStywyVKvkCbQTMS0RwOvdTT/view?usp=sharing"
+  resumePath: "https://drive.google.com/file/d/19Jxhh-z0wC_gVPZ85XuRgP-YXpyGtFBN/view?usp=sharing"
 };

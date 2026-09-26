@@ -47,7 +47,7 @@
 <p align="center">
   <a href="https://vijayapandian-t-portfolio.vercel.app"><strong>🌐 Explore Live Portfolio</strong></a> •
   <a href="https://vj-achievement-universe.vercel.app/"><strong>🌌 VJ Achievement Universe</strong></a> •
-  <a href="https://drive.google.com/file/d/1nRrqbiIwxStywyVKvkCbQTMS0RwOvdTT/view?usp=sharing"><strong>📄 View Resume PDF</strong></a> •
+  <a href="https://drive.google.com/file/d/19Jxhh-z0wC_gVPZ85XuRgP-YXpyGtFBN/view?usp=sharing"><strong>📄 View Resume PDF</strong></a> •
   <a href="https://github.com/VIJAYAPANDIANT"><strong>💻 GitHub Profile</strong></a>
 </p>
 
