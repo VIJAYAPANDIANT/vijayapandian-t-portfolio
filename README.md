@@ -185,7 +185,11 @@ vijayapandian-t-portfolio/
 
 | Domain                        | Technologies & Libraries                                                          |
 | ----------------------------- | --------------------------------------------------------------------------------- |
-| **Frontend Framework**        | **React 18**, **JavaScript (ES6+)**                                               |
+| **Programming Languages**     | **Java**, **Python**, **JavaScript (ES6+)**, **SQL**                              |
+| **Frontend Framework**        | **React 18**, **HTML5**, **CSS3**, **Tailwind CSS**, **Bootstrap**                |
+| **Backend & APIs**            | **Spring Boot**, **Node.js**, **Express.js**, **REST API**, **JWT Authentication**|
+| **Database & SQL**            | **SQL**, **MySQL**, **PostgreSQL**, **SQL Server**, **SQLite**, **MongoDB**       |
+| **AI & Generative AI**        | **Gemini API**, **LLMs**, **Prompt Engineering**, **AI App Development**          |
 | **Build Tool & Bundler**      | **Vite 5** (Fast HMR, dynamic chunk splitting, tree shaking)                      |
 | **Styling & Design System**   | **Vanilla CSS3** (Custom Properties, Glassmorphism, Flexbox, CSS Grid)            |
 | **Typography & Sizing**       | Fluid typography via `clamp()`, **Inter**, **JetBrains Mono**                     |
