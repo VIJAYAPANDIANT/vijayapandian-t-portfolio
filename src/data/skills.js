@@ -16,6 +16,7 @@ export const skillsData = [
   { name: "Java", category: "Programming", icon: "Code2", level: "Advanced", proficiency: 88 },
   { name: "Python", category: "Programming", icon: "Terminal", level: "Advanced", proficiency: 85 },
   { name: "JavaScript", category: "Programming", icon: "FileCode", level: "Advanced", proficiency: 90 },
+  { name: "SQL", category: "Programming", icon: "Database", level: "Advanced", proficiency: 90 },
 
   // Frontend
   { name: "React.js", category: "Frontend", icon: "Atom", level: "Advanced", proficiency: 90 },
@@ -33,7 +34,6 @@ export const skillsData = [
   { name: "JWT Authentication", category: "Backend", icon: "Key", level: "Advanced", proficiency: 85 },
 
   // Database
-  { name: "SQL", category: "Database", icon: "Database", level: "Advanced", proficiency: 90 },
   { name: "MySQL", category: "Database", icon: "Database", level: "Advanced", proficiency: 88 },
   { name: "PostgreSQL", category: "Database", icon: "Boxes", level: "Intermediate", proficiency: 82 },
   { name: "SQL Server", category: "Database", icon: "Database", level: "Intermediate", proficiency: 80 },

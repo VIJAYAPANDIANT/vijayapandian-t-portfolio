@@ -33,6 +33,7 @@ const skillIconMap = {
   'Java': JavaIcon,
   'Python': PythonIcon,
   'JavaScript': JavaScriptIcon,
+  'SQL': Database,
 
   // Frontend
   'React.js': ReactIcon,
@@ -50,7 +51,6 @@ const skillIconMap = {
   'JWT Authentication': Key,
 
   // Database
-  'SQL': Database,
   'MySQL': MysqlIcon,
   'PostgreSQL': PostgresqlIcon,
   'SQL Server': Database,
