@@ -8,7 +8,11 @@ import AccordionGallery from './AccordionGallery';
 export default function Projects() {
   const [activeCategory, setActiveCategory] = useState('All');
   const [selectedProject, setSelectedProject] = useState(null);
-  const [viewMode, setViewMode] = useState('accordion'); // 'accordion' | 'grid'
+  
+  // Default to grid view on mobile devices for better UX and visibility
+  const [viewMode, setViewMode] = useState(
+    typeof window !== 'undefined' && window.innerWidth <= 768 ? 'grid' : 'accordion'
+  );
 
   const filteredProjects = useMemo(() => {
     if (activeCategory === 'All') {

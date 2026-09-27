@@ -18,7 +18,11 @@ import { experienceData, experienceCategories } from '../data/experience';
 export default function Experience() {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [activeId, setActiveId] = useState(experienceData[0]?.id || 'infosys-springboard');
-  const [viewMode, setViewMode] = useState('workspace'); // 'workspace' | 'grid'
+  
+  // Default to grid view on mobile devices for better UX and visibility
+  const [viewMode, setViewMode] = useState(
+    typeof window !== 'undefined' && window.innerWidth <= 768 ? 'grid' : 'workspace'
+  );
 
   // Filter experiences based on domain category
   const filteredExperiences = experienceData.filter((exp) =>
