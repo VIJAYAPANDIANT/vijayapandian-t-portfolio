@@ -1077,22 +1077,28 @@ button {
 @media (max-width: 768px) {
   .accordion-gallery-container {
     flex-direction: column !important;
-    height: auto !important;
-    min-height: 540px;
+    height: 75vh !important;
+    max-height: 700px !important;
+    min-height: 500px !important;
   }
 
   .accordion-panel {
-    min-height: 60px;
+    min-height: 0 !important;
     width: 100% !important;
-    flex-basis: auto !important;
   }
 
   .accordion-panel.is-expanded {
-    min-height: 340px;
+    min-height: 0 !important;
   }
 
   .accordion-collapsed-label {
-    display: none;
+    display: flex !important;
+  }
+
+  .accordion-collapsed-text {
+    writing-mode: horizontal-tb;
+    transform: none;
+    letter-spacing: 0.05em;
   }
 
   .accordion-content {
