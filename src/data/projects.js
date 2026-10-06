@@ -6,6 +6,30 @@ export const projectCategories = ["All", "Full Stack", "AI", "Frontend", "Databa
 
 export const projectsData = [
   {
+    id: "smart-resume-builder",
+    title: "Smart Resume Builder & ATS Checker",
+    tagline: "AI-Powered Resume Construction & Vetting Platform",
+    shortDescription:
+      "A full-stack, production-ready web application enabling users to build professional resumes, check ATS compatibility using Google Gemini 2.5 Flash, and export polished PDFs instantly with a personal dashboard.",
+    categories: ["Full Stack", "AI"],
+    technologies: ["React 18", "Express.js", "PostgreSQL", "Google Gemini API", "JWT Auth", "Tailwind CSS"],
+    image: "/assets/images/project-resume.svg",
+    githubUrl: "https://github.com/VIJAYAPANDIANT/smart-resume-builder",
+    liveUrl: "https://smart-resume-builder-a1ej.vercel.app/",
+    problem:
+      "Job seekers often struggle with building ATS-compliant resumes, lacking immediate feedback on keyword optimization, formatting issues, and overall application strength before submission.",
+    solution:
+      "Developed a complete resume ecosystem where users construct resumes via a live-preview builder and instantly analyze them using a Gemini 2.5 Flash powered ATS checker, receiving actionable feedback, scores, and print-ready PDF exports.",
+    keyFeatures: [
+      "Interactive multi-section resume builder with real-time live preview rendering",
+      "AI-Powered ATS Checker utilizing Google Gemini 2.5 Flash for image-based resume layout and keyword analysis",
+      "Actionable AI feedback generation including ATS scoring, strengths, weaknesses, and specific recommendations",
+      "Secure JWT-based authentication and PostgreSQL personal dashboard for managing saved resumes",
+      "High-quality multi-page PDF generation via html2pdf.js preventing clipped content across pages",
+      "Responsive glassmorphic UI with full Dark/Light mode support and Framer Motion transitions"
+    ]
+  },
+  {
     id: "ai-test-case-agent",
     title: "TestGen AI - Test Generation Agent",
     tagline: "Autonomous AI Multi-Framework Test Suite Generator",

@@ -54,7 +54,15 @@ export const experienceData = [
       "Participated in specialized technical sessions organized in collaboration with BharatCares and AICTE.",
       "Delivered real-world problem-solving modules demonstrating automated AI pipelines and cloud resource deployment."
     ],
-    technologies: ["Generative AI", "Cloud Computing", "IBM SkillsBuild", "AICTE", "Prompt Engineering"]
+    technologies: ["Generative AI", "Cloud Computing", "IBM SkillsBuild", "AICTE", "Prompt Engineering"],
+    featuredProjects: [
+      {
+        name: "Smart Resume Builder with AI ATS Checker",
+        description: "Full-stack AI-powered Resume Builder & ATS Checker using Gemini 2.5 Flash, React, Express, and PostgreSQL.",
+        repoUrl: "https://github.com/VIJAYAPANDIANT/smart-resume-builder",
+        liveUrl: "https://smart-resume-builder-a1ej.vercel.app/"
+      }
+    ]
   },
   {
     id: "elevate-labs",

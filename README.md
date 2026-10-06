@@ -124,7 +124,7 @@ Engineered with **React 18**, **Vite**, and modern **CSS custom properties**, th
 | # | Organization | Role | Duration & Track | Key Deliverables & Codebases |
 |---|---|---|---|---|
 | **01** | **Career Solutions77** | Full-Stack Development Intern | Sep 2026 – Present · Offline | [fsd-intern-task-and-project](https://github.com/VIJAYAPANDIANT/fsd-intern-task-and-project) (FSD Intern Projects) • [Live App](https://fsd-intern-task-and-project.vercel.app/) |
-| **02** | **BharatCares® × IBM SkillsBuild** | Gen AI & Cloud Computing Intern | Jun 2026 – Jul 2026 · Remote | IBM SkillsBuild GenAI foundations, cloud resource deployment, and AICTE sessions |
+| **02** | **BharatCares® × IBM SkillsBuild** | Gen AI & Cloud Computing Intern | Jun 2026 – Jul 2026 · Remote | [smart-resume-builder](https://github.com/VIJAYAPANDIANT/smart-resume-builder) &nbsp;[Live App](https://smart-resume-builder-a1ej.vercel.app/) (AI ATS Checker) |
 | **03** | **Elevate Labs** | SQL Developer Intern | Jan 2026 – Apr 2026 · Remote | [VIJAYAPANDIANT/sql-internship-portfolio](https://github.com/VIJAYAPANDIANT/sql-internship-portfolio) (20 SQL projects, query simulator) |
 | **04** | **1M1B (1 Million for 1 Billion)** | 1M1B Green Intern | Feb 2026 – Mar 2026 · Hybrid | [smart-waste-mapping-platform](https://github.com/VIJAYAPANDIANT/smart-waste-mapping-platform) • [Live App](https://smart-waste-mapping.vercel.app/) |
 | **05** | **1M1B (1 Million for 1 Billion)** | AI for Sustainability Virtual Intern | Dec 2025 – Jan 2026 · Remote | [ecowise-pro](https://github.com/VIJAYAPANDIANT/ecowise-pro) • [Live App](https://ecowise-pro.vercel.app/) (Explainable AI decision system) |
