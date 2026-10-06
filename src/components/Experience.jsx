@@ -17,7 +17,7 @@ import { experienceData, experienceCategories } from '../data/experience';
 
 export default function Experience() {
   const [selectedCategory, setSelectedCategory] = useState('all');
-  const [activeId, setActiveId] = useState(experienceData[0]?.id || 'infosys-springboard');
+  const [activeId, setActiveId] = useState(experienceData[0]?.id || 'career-solutions77');
   const [viewMode, setViewMode] = useState('workspace'); // 'workspace' | 'grid'
 
   // Filter experiences based on domain category

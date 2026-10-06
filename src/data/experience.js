@@ -39,24 +39,6 @@ export const experienceData = [
     technologies: ["Full-Stack Development", "React.js", "Vite", "Tailwind CSS", "Node.js", "Express.js", "REST APIs", "MongoDB", "Git"]
   },
   {
-    id: "infosys-springboard",
-    company: "Infosys Springboard",
-    role: "Artificial Intelligence Intern",
-    category: "ai",
-    duration: "Aug 2026 – Present · 2 mos",
-    badge: "Internship",
-    location: "Chennai, Tamil Nadu, India · Remote",
-    description:
-      "Currently completing an 8-week virtual internship in the AI domain through Infosys Springboard, applying artificial intelligence concepts to structured, industry-aligned coursework and hands-on projects.",
-    responsibilities: [
-      "Engaging in structured, industry-aligned AI coursework covering core artificial intelligence and machine learning principles.",
-      "Building practical project prototypes integrating intelligent algorithms and modern AI architectures.",
-      "Evaluating model performance, response quality, and latency benchmarks under mentorship from industry professionals.",
-      "Integrating AI endpoints into full-stack application workflows with secure API authentication."
-    ],
-    technologies: ["Artificial Intelligence (AI)", "Machine Learning", "Python", "LLMs", "Prompt Engineering"]
-  },
-  {
     id: "bharatcares-ibm",
     company: "BharatCares® × IBM SkillsBuild",
     role: "Gen AI & Cloud Computing Intern",

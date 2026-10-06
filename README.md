@@ -59,7 +59,7 @@
 
 - [Overview](#-overview)
 - [Key Features & Architecture](#-key-features--architecture)
-- [9 Verified Internships & Deliverables](#-9-verified-internships--deliverables)
+- [8 Verified Internships & Deliverables](#-9-verified-internships--deliverables)
 - [Featured Projects Matrix](#-featured-projects-matrix)
 - [Project Architecture & Directory Structure](#-project-architecture--directory-structure)
 - [Technology Stack](#-technology-stack)
@@ -78,7 +78,7 @@ This repository houses the modern personal portfolio and client engineering hub 
 Engineered with **React 18**, **Vite**, and modern **CSS custom properties**, the site delivers:
 
 - 3D interactive holographic CSS Profile Card that smoothly responds to mouse movement and orientation.
-- Interactive **Master-Detail Experience Hub** categorizing 9 verified internships with live repository deliverables.
+- Interactive **Master-Detail Experience Hub** categorizing 8 Verified Internships with live repository deliverables.
 - Comprehensive project showcase featuring architecture deep-dive modals, categorized filtering, and instant code/demo links.
 - Fluid responsiveness spanning mobile (320px–425px), tablet, laptop, and ultra-wide desktops (1920px+) with zero horizontal scroll overflow.
 
@@ -119,19 +119,18 @@ Engineered with **React 18**, **Vite**, and modern **CSS custom properties**, th
 
 ---
 
-## 💼 9 Verified Internships & Deliverables
+## 💼 8 Verified Internships & Deliverables
 
 | # | Organization | Role | Duration & Track | Key Deliverables & Codebases |
 |---|---|---|---|---|
 | **01** | **Career Solutions77** | Full-Stack Development Intern | Sep 2026 – Present · Offline | [fsd-intern-task-and-project](https://github.com/VIJAYAPANDIANT/fsd-intern-task-and-project) (FSD Intern Projects) • [Live App](https://fsd-intern-task-and-project.vercel.app/) |
-| **02** | **Infosys Springboard** | Artificial Intelligence Intern | Aug 2026 – Present · Remote | AI coursework, ML prototypes, model evaluation, and prompt engineering |
-| **03** | **BharatCares® × IBM SkillsBuild** | Gen AI & Cloud Computing Intern | Jun 2026 – Jul 2026 · Remote | IBM SkillsBuild GenAI foundations, cloud resource deployment, and AICTE sessions |
-| **04** | **Elevate Labs** | SQL Developer Intern | Jan 2026 – Apr 2026 · Remote | [VIJAYAPANDIANT/sql-internship-portfolio](https://github.com/VIJAYAPANDIANT/sql-internship-portfolio) (20 SQL projects, query simulator) |
-| **05** | **1M1B (1 Million for 1 Billion)** | 1M1B Green Intern | Feb 2026 – Mar 2026 · Hybrid | [smart-waste-mapping-platform](https://github.com/VIJAYAPANDIANT/smart-waste-mapping-platform) • [Live App](https://smart-waste-mapping.vercel.app/) |
-| **06** | **1M1B (1 Million for 1 Billion)** | AI for Sustainability Virtual Intern | Dec 2025 – Jan 2026 · Remote | [ecowise-pro](https://github.com/VIJAYAPANDIANT/ecowise-pro) • [Live App](https://ecowise-pro.vercel.app/) (Explainable AI decision system) |
-| **07** | **Codec Technologies India** | Java Developer Intern | Jan 2026 – Feb 2026 · Remote | [student-management-system-java](https://github.com/VIJAYAPANDIANT/student-management-system-java) & [expense-tracker-java](https://github.com/VIJAYAPANDIANT/expense-tracker-java) |
-| **08** | **Codec Technologies India** | UI/UX & Frontend Developer Intern | Jan 2026 – Feb 2026 · Remote | [food-delivery-system](https://github.com/VIJAYAPANDIANT/food-delivery-system) (QuickEats) & [personal-finance-app](https://github.com/VIJAYAPANDIANT/personal-finance-app) (FinDash) |
-| **09** | **Zero2site** | Cloud Development Intern | May 2025 – Jun 2025 · Remote | [event-poll](https://github.com/VIJAYAPANDIANT/event-poll) • [Live](https://eventpoll-client-a2bl.vercel.app) & [task-master](https://github.com/VIJAYAPANDIANT/task-master) • [Live](https://task-master-chi-three.vercel.app/) |
+| **02** | **BharatCares® × IBM SkillsBuild** | Gen AI & Cloud Computing Intern | Jun 2026 – Jul 2026 · Remote | IBM SkillsBuild GenAI foundations, cloud resource deployment, and AICTE sessions |
+| **03** | **Elevate Labs** | SQL Developer Intern | Jan 2026 – Apr 2026 · Remote | [VIJAYAPANDIANT/sql-internship-portfolio](https://github.com/VIJAYAPANDIANT/sql-internship-portfolio) (20 SQL projects, query simulator) |
+| **04** | **1M1B (1 Million for 1 Billion)** | 1M1B Green Intern | Feb 2026 – Mar 2026 · Hybrid | [smart-waste-mapping-platform](https://github.com/VIJAYAPANDIANT/smart-waste-mapping-platform) • [Live App](https://smart-waste-mapping.vercel.app/) |
+| **05** | **1M1B (1 Million for 1 Billion)** | AI for Sustainability Virtual Intern | Dec 2025 – Jan 2026 · Remote | [ecowise-pro](https://github.com/VIJAYAPANDIANT/ecowise-pro) • [Live App](https://ecowise-pro.vercel.app/) (Explainable AI decision system) |
+| **06** | **Codec Technologies India** | Java Developer Intern | Jan 2026 – Feb 2026 · Remote | [student-management-system-java](https://github.com/VIJAYAPANDIANT/student-management-system-java) & [expense-tracker-java](https://github.com/VIJAYAPANDIANT/expense-tracker-java) |
+| **07** | **Codec Technologies India** | UI/UX & Frontend Developer Intern | Jan 2026 – Feb 2026 · Remote | [food-delivery-system](https://github.com/VIJAYAPANDIANT/food-delivery-system) (QuickEats) & [personal-finance-app](https://github.com/VIJAYAPANDIANT/personal-finance-app) (FinDash) |
+| **08** | **Zero2site** | Cloud Development Intern | May 2025 – Jun 2025 · Remote | [event-poll](https://github.com/VIJAYAPANDIANT/event-poll) • [Live](https://eventpoll-client-a2bl.vercel.app) & [task-master](https://github.com/VIJAYAPANDIANT/task-master) • [Live](https://task-master-chi-three.vercel.app/) |
 
 ---
 
@@ -151,7 +150,7 @@ vijayapandian-t-portfolio/
 │   │   ├── Achievements.jsx      # DSA rank, hackathons, quiz wins & 1800+ GitHub contributions
 │   │   ├── BrandIcons.jsx        # LeetCode, CodeChef, GeeksforGeeks, Unstop vector SVGs
 │   │   ├── Contact.jsx           # Validated contact form, direct email & WhatsApp actions
-│   │   ├── Experience.jsx        # Interactive Master-Detail Hub with 9 verified internships
+│   │   ├── Experience.jsx        # Interactive Master-Detail Hub with 8 Verified Internships
 │   │   ├── Footer.jsx            # Social hub, navigation quick links & performance tagline
 │   │   ├── Hero.jsx              # Typing subtitles, CTA buttons & social links
 │   │   ├── ProfileCard.css       # 3D interactive holographic card styling
@@ -164,7 +163,7 @@ vijayapandian-t-portfolio/
 │   ├── data/
 │   │   ├── achievements.js       # Verified milestones, DSA rank, and GitHub contributions
 │   │   ├── education.js          # Academic history, coursework, and CGPA metrics
-│   │   ├── experience.js         # 9 verified internships with deliverable repos and demos
+│   │   ├── experience.js         # 8 Verified Internships with deliverable repos and demos
 │   │   ├── personalInfo.js       # Centralized personal info, social links, and contact handles
 │   │   ├── projects.js           # 9 flagship projects with full architecture breakdowns
 │   │   ├── services.js           # Freelance service offerings with deliverable features
