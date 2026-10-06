@@ -78,7 +78,7 @@ This repository houses the modern personal portfolio and client engineering hub 
 Engineered with **React 18**, **Vite**, and modern **CSS custom properties**, the site delivers:
 
 - 3D interactive holographic CSS Profile Card that smoothly responds to mouse movement and orientation.
-- Interactive **Master-Detail Experience Hub** categorizing 8 Verified Internships with live repository deliverables.
+- Interactive **Master-Detail Experience Hub** categorizing 8 verified internships with live repository deliverables.
 - Comprehensive project showcase featuring architecture deep-dive modals, categorized filtering, and instant code/demo links.
 - Fluid responsiveness spanning mobile (320px–425px), tablet, laptop, and ultra-wide desktops (1920px+) with zero horizontal scroll overflow.
 
@@ -132,6 +132,15 @@ Engineered with **React 18**, **Vite**, and modern **CSS custom properties**, th
 | **07** | **Codec Technologies India** | UI/UX & Frontend Developer Intern | Jan 2026 – Feb 2026 · Remote | [food-delivery-system](https://github.com/VIJAYAPANDIANT/food-delivery-system) (QuickEats) & [personal-finance-app](https://github.com/VIJAYAPANDIANT/personal-finance-app) (FinDash) |
 | **08** | **Zero2site** | Cloud Development Intern | May 2025 – Jun 2025 · Remote | [event-poll](https://github.com/VIJAYAPANDIANT/event-poll) • [Live](https://eventpoll-client-a2bl.vercel.app) & [task-master](https://github.com/VIJAYAPANDIANT/task-master) • [Live](https://task-master-chi-three.vercel.app/) |
 
+## 🚀 Featured Projects Matrix
+
+| Project Name | Domain | Description | Live Demo | Repository |
+|---|---|---|---|---|
+| **Smart Resume Builder & ATS Checker** | Full Stack / AI | AI-powered resume builder, ATS scoring using Gemini 2.5 Flash, and multi-page PDF generation. | [Live App](https://smart-resume-builder-a1ej.vercel.app/) | [GitHub](https://github.com/VIJAYAPANDIANT/smart-resume-builder) |
+| **TestGen AI** | Full Stack / AI | Autonomous AI agent generating multi-framework test suites using Google Gemini API. | [Live App](https://ai-test-case-generation-agent.vercel.app) | [GitHub](https://github.com/VIJAYAPANDIANT/ai-test-case-generation-agent) |
+| **Placement Portal Application** | Full Stack / AI | Enterprise campus recruitment platform with Groq AI ATS resume parsing and automated workflows. | N/A | [GitHub](https://github.com/VIJAYAPANDIANT/placement-portal-application) |
+
+
 ---
 
 ## 📂 Project Architecture & Directory Structure
@@ -150,7 +159,7 @@ vijayapandian-t-portfolio/
 │   │   ├── Achievements.jsx      # DSA rank, hackathons, quiz wins & 1800+ GitHub contributions
 │   │   ├── BrandIcons.jsx        # LeetCode, CodeChef, GeeksforGeeks, Unstop vector SVGs
 │   │   ├── Contact.jsx           # Validated contact form, direct email & WhatsApp actions
-│   │   ├── Experience.jsx        # Interactive Master-Detail Hub with 8 Verified Internships
+│   │   ├── Experience.jsx        # Interactive Master-Detail Hub with 8 verified internships
 │   │   ├── Footer.jsx            # Social hub, navigation quick links & performance tagline
 │   │   ├── Hero.jsx              # Typing subtitles, CTA buttons & social links
 │   │   ├── ProfileCard.css       # 3D interactive holographic card styling
@@ -163,7 +172,7 @@ vijayapandian-t-portfolio/
 │   ├── data/
 │   │   ├── achievements.js       # Verified milestones, DSA rank, and GitHub contributions
 │   │   ├── education.js          # Academic history, coursework, and CGPA metrics
-│   │   ├── experience.js         # 8 Verified Internships with deliverable repos and demos
+│   │   ├── experience.js         # 8 verified internships with deliverable repos and demos
 │   │   ├── personalInfo.js       # Centralized personal info, social links, and contact handles
 │   │   ├── projects.js           # 9 flagship projects with full architecture breakdowns
 │   │   ├── services.js           # Freelance service offerings with deliverable features
