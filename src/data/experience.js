@@ -23,7 +23,7 @@ export const experienceData = [
       {
         name: "FSD Intern Projects",
         repoUrl: "https://github.com/VIJAYAPANDIANT/fsd-intern-task-and-project",
-        liveUrl: "https://fsd-intern-task-and-project.vercel.app/",
+        liveUrl: "https://smart-digital-musem.vercel.app/",
         description: "Interactive Smart Digital Museum web app featuring 12 curated historical artifacts (including 8 Tamil Nadu heritage items), real-time search, category/period filtering, side-by-side artifact comparison, virtual room tours, formatted CE/BCE badges, and localStorage persistence."
       }
     ],
