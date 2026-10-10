@@ -1,20 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
   <defs>
     <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="0%" stop-color="#0ea5e9" />
       <stop offset="50%" stop-color="#8b5cf6" />
-      <stop offset="100%" stop-color="#ec4899" />
+      <stop offset="100%" stop-color="#d946ef" />
     </linearGradient>
     <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#38bdf8" />
-      <stop offset="50%" stop-color="#c084fc" />
-      <stop offset="100%" stop-color="#f472b6" />
+      <stop offset="50%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#e879f9" />
     </linearGradient>
   </defs>
-  <!-- Gradient Outer Circle -->
-  <circle cx="50" cy="50" r="48" fill="url(#grad1)" />
-  <!-- Dark Inner Circle -->
-  <circle cx="50" cy="50" r="42" fill="#0f172a" />
+  <!-- Transparent Inner, Gradient Stroke Outer Ring -->
+  <circle cx="50" cy="50" r="44" fill="transparent" stroke="url(#grad1)" stroke-width="6" />
   <!-- VJ Text -->
-  <text x="50" y="68" font-family="Arial, sans-serif" font-size="44" font-weight="900" fill="url(#grad2)" text-anchor="middle" letter-spacing="2">VJ</text>
+  <text x="50" y="70" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="900" fill="url(#grad2)" text-anchor="middle" letter-spacing="1">VJ</text>
 </svg>
