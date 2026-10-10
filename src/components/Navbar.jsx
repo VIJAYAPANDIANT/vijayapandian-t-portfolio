@@ -82,8 +82,12 @@ export default function Navbar() {
           className="nav-brand"
           onClick={(e) => handleNavClick(e, '#home')}
           aria-label="Portfolio - Home"
+          style={{ display: 'flex', alignItems: 'center', gap: '12px' }}
         >
-          <span className="gradient-text">Portfolio</span>
+          <div className="vj-logo-container">
+            <div className="vj-logo-inner">VJ</div>
+          </div>
+          <span className="gradient-text" style={{ fontSize: '1.25rem', fontWeight: 800, letterSpacing: '-0.2px' }}>Vijayapandian</span>
         </a>
 
         {/* Desktop Navigation Links */}

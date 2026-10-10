@@ -411,6 +411,56 @@ button {
   font-family: var(--font-mono);
 }
 
+/* ==========================================================================
+   VJ LOGO COMPONENT
+   ========================================================================== */
+.vj-logo-container {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  padding: 2px;
+  background: linear-gradient(135deg, #06b6d4, #8b5cf6, #ec4899);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+  animation: pulse-glow 3s infinite alternate;
+}
+
+.vj-logo-container:hover {
+  transform: scale(1.08) rotate(5deg);
+  box-shadow: 0 0 15px rgba(139, 92, 246, 0.6), 0 0 30px rgba(6, 182, 212, 0.4);
+}
+
+.vj-logo-inner {
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-surface-elevated);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-sans);
+  font-weight: 900;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  background-image: linear-gradient(135deg, #38bdf8, #c084fc, #f472b6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  z-index: 2;
+}
+
+@keyframes pulse-glow {
+  0% {
+    box-shadow: 0 0 8px rgba(139, 92, 246, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 16px rgba(139, 92, 246, 0.5), 0 0 24px rgba(56, 189, 248, 0.3);
+  }
+}
+
 .nav-links {
   display: flex;
   align-items: center;
