@@ -21,16 +21,10 @@ export const experienceData = [
     githubUrl: "https://github.com/VIJAYAPANDIANT/fsd-intern-task-and-project",
     featuredProjects: [
       {
-        name: "🏛️ Smart Digital Museum",
-        repoUrl: "https://github.com/VIJAYAPANDIANT/fsd-intern-task-and-project/tree/main/smart-digital-museum",
+        name: "fsd-intern-task-and-project",
+        repoUrl: "https://github.com/VIJAYAPANDIANT/fsd-intern-task-and-project",
         liveUrl: "https://smart-digital-musem.vercel.app/",
-        description: "Interactive cultural heritage SPA showcasing 12 curated historical artifacts (including 8 Tamil Nadu heritage masterworks), 360° virtual room tours, side-by-side artifact comparison matrices, BCE/CE year badges, and localStorage persistence."
-      },
-      {
-        name: "💊 Smart Medicine Reminder & Health Tracker (MediTrack)",
-        repoUrl: "https://github.com/VIJAYAPANDIANT/fsd-intern-task-and-project/tree/main/smart-medicine-reminder-health-tracker",
-        liveUrl: "https://health-tracker-khaki-nine.vercel.app/",
-        description: "Enterprise full-stack healthcare platform combating medication non-adherence. Features React 18, Express REST APIs, JWT authentication, automated daily dose scheduling, real-time compliance rate formulas, custom zero-DB atomic JSON concurrency engine, and a 35-test automated Postman suite."
+        description: "Official repository for Full-Stack Development Internship at Career Solutions77. Features production-ready web applications: Smart Digital Museum (React 18 cultural heritage SPA) and Smart Medicine Reminder & Health Tracker (Full-stack React, Express, JWT, and atomic JSON persistence)."
       }
     ],
     description:
