@@ -15,7 +15,7 @@ export const experienceData = [
     company: "Career Solutions77",
     role: "Full-Stack Development Intern",
     category: "fullstack",
-    duration: "Sep 2026 – Present · 1 mo",
+    duration: "Sep 2026 – Oct 2026 · 2 mos",
     badge: "Internship",
     location: "Chennai, Tamil Nadu, India · Offline",
     githubUrl: "https://github.com/VIJAYAPANDIANT/fsd-intern-task-and-project",
@@ -28,7 +28,7 @@ export const experienceData = [
       }
     ],
     description:
-      "Currently working as a Full-Stack Development Intern at Career Solutions77 (Offline, Chennai). Developing and enhancing full-stack web applications using modern frontend and backend technologies, integrating REST APIs, and engineering database-driven features.",
+      "Worked as a Full-Stack Development Intern at Career Solutions77 (Offline, Chennai). Developed and enhanced full-stack web applications using modern frontend and backend technologies, integrating REST APIs, and engineering database-driven features.",
     responsibilities: [
       "Developed and enhanced production-ready full-stack web applications leveraging React.js, Node.js, and Express.js.",
       "Architected and deployed the Smart Digital Museum web app with React 18, Vite, Tailwind CSS, and LocalStorage state synchronization.",
