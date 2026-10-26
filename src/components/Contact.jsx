@@ -191,7 +191,7 @@ export default function Contact() {
                     className="contact-val"
                     style={{ color: 'var(--accent-sky)', display: 'inline-flex', alignItems: 'center', gap: '4px' }}
                   >
-                    <span>linkedin.com/in/vijayapandiant</span>
+                    <span>linkedin.com/in/vijayapandian-t</span>
                     <ExternalLink size={14} style={{ color: 'var(--accent-sky)', opacity: 0.8 }} />
                   </a>
                 </div>

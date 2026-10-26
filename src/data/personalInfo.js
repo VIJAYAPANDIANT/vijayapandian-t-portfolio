@@ -29,7 +29,7 @@ export const personalInfo = {
   ],
   socialLinks: {
     github: "https://github.com/VIJAYAPANDIANT",
-    linkedin: "https://linkedin.com/in/vijayapandiant",
+    linkedin: "https://www.linkedin.com/in/vijayapandian-t/",
     leetcode: "https://leetcode.com/u/hackervj18/",
     codechef: "https://www.codechef.com/users/vijay_code07",
     geeksforgeeks: "https://www.geeksforgeeks.org/profile/vijayapandiant11",

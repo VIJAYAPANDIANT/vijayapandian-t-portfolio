@@ -292,8 +292,8 @@ _SRM Easwari Engineering College — Computer Science & Engineering_
     <img src="https://img.shields.io/badge/GitHub-VIJAYAPANDIANT-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   </a>
   &nbsp;
-  <a href="https://linkedin.com/in/vijayapandiant" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-vijayapandiant-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  <a href="https://www.linkedin.com/in/vijayapandian-t/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-vijayapandian--t-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
   &nbsp;
   <a href="https://leetcode.com/u/hackervj18/" target="_blank">
