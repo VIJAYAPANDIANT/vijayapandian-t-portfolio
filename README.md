@@ -107,9 +107,9 @@ Engineered with **React 18**, **Vite**, and modern **CSS custom properties**, th
 
 ### 4. 🏆 Academic & Competitive Achievements
 
-- **400+ DSA Problems Solved** with **Rank #5 in Institute** on GeeksforGeeks.
-- **1800+ GitHub Contributions** with an active **150+ day streak**.
-- **15+ Hackathons** and **18+ Online Quiz Podiums**.
+- **450+ DSA Problems Solved** with **Rank #5 in Institute** on GeeksforGeeks.
+- **2000+ GitHub Contributions** with an active **150+ day streak**.
+- **20+ Hackathons** and **18+ Online Quiz Podiums**.
 - Direct launchpad for the interactive **VJ Achievement Universe**.
 
 ### 5. 🤝 Freelance Services & Verified Contact Channel
@@ -157,7 +157,7 @@ vijayapandian-t-portfolio/
 │   ├── components/
 │   │   ├── About.jsx             # Bio narrative, resume action, and verified stats grid
 │   │   ├── Education.jsx         # Education timeline, B.E CSE SRM Easwari, 8.49 CGPA
-│   │   ├── Achievements.jsx      # DSA rank, hackathons, quiz wins & 1800+ GitHub contributions
+│   │   ├── Achievements.jsx      # DSA rank, hackathons, quiz wins & 2000+ GitHub contributions
 │   │   ├── BrandIcons.jsx        # LeetCode, CodeChef, GeeksforGeeks, Unstop vector SVGs
 │   │   ├── Contact.jsx           # Validated contact form, direct email & WhatsApp actions
 │   │   ├── Experience.jsx        # Interactive Master-Detail Hub with 8 verified internships
