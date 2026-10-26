@@ -21,22 +21,28 @@ export const experienceData = [
     githubUrl: "https://github.com/VIJAYAPANDIANT/fsd-intern-task-and-project",
     featuredProjects: [
       {
-        name: "FSD Intern Projects",
-        repoUrl: "https://github.com/VIJAYAPANDIANT/fsd-intern-task-and-project",
+        name: "🏛️ Smart Digital Museum",
+        repoUrl: "https://github.com/VIJAYAPANDIANT/fsd-intern-task-and-project/tree/main/smart-digital-museum",
         liveUrl: "https://smart-digital-musem.vercel.app/",
-        description: "Interactive Smart Digital Museum web app featuring 12 curated historical artifacts (including 8 Tamil Nadu heritage items), real-time search, category/period filtering, side-by-side artifact comparison, virtual room tours, formatted CE/BCE badges, and localStorage persistence."
+        description: "Interactive cultural heritage SPA showcasing 12 curated historical artifacts (including 8 Tamil Nadu heritage masterworks), 360° virtual room tours, side-by-side artifact comparison matrices, BCE/CE year badges, and localStorage persistence."
+      },
+      {
+        name: "💊 Smart Medicine Reminder & Health Tracker (MediTrack)",
+        repoUrl: "https://github.com/VIJAYAPANDIANT/fsd-intern-task-and-project/tree/main/smart-medicine-reminder-health-tracker",
+        liveUrl: "https://health-tracker-khaki-nine.vercel.app/",
+        description: "Enterprise full-stack healthcare platform combating medication non-adherence. Features React 18, Express REST APIs, JWT authentication, automated daily dose scheduling, real-time compliance rate formulas, custom zero-DB atomic JSON concurrency engine, and a 35-test automated Postman suite."
       }
     ],
     description:
-      "Worked as a Full-Stack Development Intern at Career Solutions77 (Offline, Chennai). Developed and enhanced full-stack web applications using modern frontend and backend technologies, integrating REST APIs, and engineering database-driven features.",
+      "Worked as a Full-Stack Development Intern at Career Solutions77 (Offline, Chennai). Engineered production-ready, decoupled full-stack web applications and robust REST APIs with strict data isolation, zero-database JSON atomic storage engines, and cloud deployments on Vercel.",
     responsibilities: [
-      "Developed and enhanced production-ready full-stack web applications leveraging React.js, Node.js, and Express.js.",
-      "Architected and deployed the Smart Digital Museum web app with React 18, Vite, Tailwind CSS, and LocalStorage state synchronization.",
-      "Built responsive, accessible user interfaces with dynamic filters, side-by-side artifact comparison, and image fallback recovery.",
-      "Worked with database-driven application features using MongoDB, implementing scalable schemas and data persistence.",
-      "Applied hands-on debugging, performance tuning, and Git-based collaborative development in an on-site engineering environment."
+      "Engineered decoupled full-stack web applications following production standards with independent React 18 SPAs and Express REST APIs.",
+      "Architected and deployed the Smart Digital Museum web app with React 18, Vite, Tailwind CSS, 360° virtual tours, and LocalStorage state synchronization.",
+      "Developed MediTrack, an enterprise healthcare adherence platform with automated dose scheduling, real-time compliance rate formulas, and multi-criteria intake logs.",
+      "Engineered a resilient zero-database JSON persistence engine with atomic temp-file swaps, promise-based write queues, and serverless runtime safety.",
+      "Implemented secure JWT authentication with bcryptjs salted hashing, strict resource ownership checks, and a 35-test automated Postman suite (100% pass rate)."
     ],
-    technologies: ["Full-Stack Development", "React.js", "Vite", "Tailwind CSS", "Node.js", "Express.js", "REST APIs", "MongoDB", "Git"]
+    technologies: ["React 18", "Vite", "Tailwind CSS", "Node.js", "Express.js", "REST APIs", "JWT Auth", "bcryptjs", "Atomic JSON Engine", "Postman", "Git", "Vercel"]
   },
   {
     id: "bharatcares-ibm",
