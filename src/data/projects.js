@@ -6,6 +6,43 @@ export const projectCategories = ["All", "Full Stack", "AI", "Frontend", "Databa
 
 export const projectsData = [
   {
+    id: "testforge",
+    title: "TestForge - No-Code Test Automation & AI Platform",
+    tagline: "Enterprise Visual Playwright Automation, Multi-Browser Matrix & AI Failure Diagnosis",
+    shortDescription:
+      "An enterprise-grade, end-to-end visual web test automation and AI failure diagnosis platform. Visually construct Playwright test suites (Chromium, Firefox, WebKit), execute live worker runs via Socket.IO, trigger CI/CD webhooks on push, and diagnose failures with Google Gemini AI.",
+    categories: ["Full Stack", "AI"],
+    technologies: [
+      "React 18",
+      "TypeScript",
+      "Node.js",
+      "Express.js",
+      "Playwright",
+      "Socket.IO",
+      "MongoDB Atlas",
+      "Google Gemini 2.5 Flash",
+      "Tailwind CSS",
+      "Vercel"
+    ],
+    image: "/assets/images/testforge.svg",
+    githubUrl: "https://github.com/VIJAYAPANDIANT/testforge",
+    liveUrl: "https://testforge-client.vercel.app/",
+    problem:
+      "Software development and QA teams spend up to 40% of their engineering capacity manually coding boilerplate assertions, managing brittle locators across multiple browsers, and diagnosing opaque CI/CD failures without automated root-cause guidance.",
+    solution:
+      "Architected a decoupled, hybrid-cloud testing platform that converts visual drag-and-drop workflows into a structured JSON DSL and compiles them into production-ready Playwright TypeScript (.spec.ts) scripts. Features a multi-browser execution matrix (Chromium, Firefox, WebKit), real-time Socket.IO execution telemetry, HMAC SHA-256 verified GitHub push webhooks, visual regression diff inspection, and Google Gemini 2.5 Flash failure diagnosis with automated credential sanitization.",
+    keyFeatures: [
+      "Visual drag-and-drop test builder supporting 7 action step types (Navigate, Click, Fill, Assert Visible, Assert Text, Wait, Screenshot) with real-time Ajv schema validation",
+      "Automated Test DSL compilation to production-ready Playwright TypeScript (.spec.ts) test suites with defensive fallback locators",
+      "Multi-Browser Matrix Engine enabling seamless cross-browser testing across Google Chromium, Mozilla Firefox, and Apple WebKit",
+      "Live real-time test execution event streaming via Socket.IO with console output, execution timelines, and failure screenshot captures",
+      "Automated GitHub CI/CD webhooks with HMAC SHA-256 cryptographic verification and constant-time timing-safe comparisons",
+      "Google Gemini 2.5 Flash AI Failure Diagnosis with automatic credential redaction, structured root-cause analysis, and actionable remediation suggestions",
+      "Visual Regression & Delta Diff Inspector featuring side-by-side baseline comparisons and color-delta differential highlighting",
+      "Decoupled cloud architecture: Vercel Static Hosting for frontend, Vercel Serverless Functions with MongoDB Atlas connection pooling for API, and isolated browser workers"
+    ]
+  },
+  {
     id: "smart-resume-builder",
     title: "Smart Resume Builder & ATS Checker",
     tagline: "AI-Powered Resume Construction & Vetting Platform",
