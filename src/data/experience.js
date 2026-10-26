@@ -23,7 +23,6 @@ export const experienceData = [
       {
         name: "fsd-intern-task-and-project",
         repoUrl: "https://github.com/VIJAYAPANDIANT/fsd-intern-task-and-project",
-        liveUrl: "https://smart-digital-musem.vercel.app/",
         description: "Official repository for Full-Stack Development Internship at Career Solutions77. Features production-ready web applications: Smart Digital Museum (React 18 cultural heritage SPA) and Smart Medicine Reminder & Health Tracker (Full-stack React, Express, JWT, and atomic JSON persistence)."
       }
     ],
