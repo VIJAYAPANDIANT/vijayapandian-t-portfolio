@@ -136,7 +136,6 @@ Engineered with **React 18**, **Vite**, and modern **CSS custom properties**, th
 
 | Project Name | Domain | Description | Live Demo | Repository |
 |---|---|---|---|---|
-| **TestForge** | Full Stack / AI / DevOps | Enterprise no-code test automation platform compiling DSL to Playwright, Socket.IO live streaming, GitHub CI/CD webhooks, and Gemini AI diagnosis. | [Live App](https://testforge-client.vercel.app/) | [GitHub](https://github.com/VIJAYAPANDIANT/testforge) |
 | **Smart Resume Builder & ATS Checker** | Full Stack / AI | AI-powered resume builder, ATS scoring using Gemini 2.5 Flash, and multi-page PDF generation. | [Live App](https://smart-resume-builder-a1ej.vercel.app/) | [GitHub](https://github.com/VIJAYAPANDIANT/smart-resume-builder) |
 | **TestGen AI** | Full Stack / AI | Autonomous AI agent generating multi-framework test suites using Google Gemini API. | [Live App](https://ai-test-case-generation-agent.vercel.app) | [GitHub](https://github.com/VIJAYAPANDIANT/ai-test-case-generation-agent) |
 | **Placement Portal Application** | Full Stack / AI | Enterprise campus recruitment platform with Groq AI ATS resume parsing and automated workflows. | N/A | [GitHub](https://github.com/VIJAYAPANDIANT/placement-portal-application) |
