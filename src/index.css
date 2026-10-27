@@ -1089,6 +1089,19 @@ button {
     justify-content: center !important;
     margin-bottom: 20px;
   }
+
+  .exp-view-toggle {
+    display: none !important;
+  }
+
+  .exp-workspace {
+    display: none !important;
+  }
+
+  .exp-grid-desc.is-expanded {
+    display: block !important;
+    -webkit-line-clamp: unset !important;
+  }
 }
 
 .projects-view-toggle {

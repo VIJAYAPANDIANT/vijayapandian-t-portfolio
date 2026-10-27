@@ -19,6 +19,33 @@ export default function Experience() {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [activeId, setActiveId] = useState(experienceData[0]?.id || 'career-solutions77');
   const [viewMode, setViewMode] = useState('workspace'); // 'workspace' | 'grid'
+  const [expandedMobileId, setExpandedMobileId] = useState(null);
+
+  const [isMobile, setIsMobile] = useState(() => {
+    if (typeof window !== 'undefined') {
+      return window.innerWidth <= 768;
+    }
+    return false;
+  });
+
+  useEffect(() => {
+    const mql = window.matchMedia('(max-width: 768px)');
+    const onChange = (e) => {
+      setIsMobile(e.matches);
+    };
+
+    setIsMobile(mql.matches);
+
+    if (mql.addEventListener) {
+      mql.addEventListener('change', onChange);
+      return () => mql.removeEventListener('change', onChange);
+    } else {
+      mql.addListener(onChange);
+      return () => mql.removeListener(onChange);
+    }
+  }, []);
+
+  const showWorkspace = !isMobile && viewMode === 'workspace';
 
   // Filter experiences based on domain category
   const filteredExperiences = experienceData.filter((exp) =>
@@ -140,33 +167,35 @@ export default function Experience() {
             })}
           </div>
 
-          {/* View Mode Toggle (Interactive Hub vs Grid Overview) */}
-          <div className="exp-view-toggle">
-            <button
-              type="button"
-              className={`exp-view-btn ${viewMode === 'workspace' ? 'active' : ''}`}
-              onClick={() => setViewMode('workspace')}
-              title="Interactive Master-Detail View"
-              aria-label="Interactive Master-Detail View"
-            >
-              <Layers size={15} />
-              <span>Interactive</span>
-            </button>
-            <button
-              type="button"
-              className={`exp-view-btn ${viewMode === 'grid' ? 'active' : ''}`}
-              onClick={() => setViewMode('grid')}
-              title="Overview Grid View"
-              aria-label="Overview Grid View"
-            >
-              <LayoutGrid size={15} />
-              <span>Overview</span>
-            </button>
-          </div>
+          {/* View Mode Toggle (Shown on Laptop and Desktop; hidden on mobile) */}
+          {!isMobile && (
+            <div className="exp-view-toggle">
+              <button
+                type="button"
+                className={`exp-view-btn ${viewMode === 'workspace' ? 'active' : ''}`}
+                onClick={() => setViewMode('workspace')}
+                title="Interactive Master-Detail View"
+                aria-label="Interactive Master-Detail View"
+              >
+                <Layers size={15} />
+                <span>Interactive</span>
+              </button>
+              <button
+                type="button"
+                className={`exp-view-btn ${viewMode === 'grid' ? 'active' : ''}`}
+                onClick={() => setViewMode('grid')}
+                title="Overview Grid View"
+                aria-label="Overview Grid View"
+              >
+                <LayoutGrid size={15} />
+                <span>Overview</span>
+              </button>
+            </div>
+          )}
         </div>
 
-        {/* VIEW MODE 1: MASTER-DETAIL INTERACTIVE WORKSPACE (DEFAULT) */}
-        {viewMode === 'workspace' && activeExp && (
+        {/* VIEW MODE 1: MASTER-DETAIL INTERACTIVE WORKSPACE (Laptop only) */}
+        {showWorkspace && activeExp && (
           <div className="exp-workspace glass-card">
             {/* Left Column / Mobile Horizontal Tabs: Company Navigation Rail */}
             <div className="exp-nav-rail" role="tablist" aria-label="Companies and roles">
@@ -495,69 +524,157 @@ export default function Experience() {
           </div>
         )}
 
-        {/* VIEW MODE 2: COMPACT GRID OVERVIEW */}
-        {viewMode === 'grid' && (
+        {/* VIEW MODE 2: COMPACT GRID OVERVIEW (Always shown on mobile; toggled on desktop) */}
+        {!showWorkspace && (
           <div className="exp-grid-container">
-            {filteredExperiences.map((exp, idx) => (
-              <div
-                key={exp.id}
-                className="glass-card exp-grid-card"
-                onClick={() => {
-                  setActiveId(exp.id);
-                  setViewMode('workspace');
-                }}
-              >
-                <div className="exp-grid-card-top">
-                  <div className="exp-grid-num">0{idx + 1}</div>
-                  <span
-                    className="timeline-badge"
-                    style={{ ...getBadgeStyle(exp.badge), fontSize: '0.72rem', padding: '2px 8px' }}
-                  >
-                    {exp.badge}
-                  </span>
-                </div>
-
-                <h3 className="exp-grid-role">{exp.role}</h3>
-                <div className="exp-grid-company">{exp.company}</div>
-
-                <div className="exp-grid-meta">
-                  <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
-                    <Calendar size={12} />
-                    <span>{exp.duration}</span>
-                  </span>
-                  <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
-                    <MapPin size={12} />
-                    <span>{exp.location}</span>
-                  </span>
-                </div>
-
-                <p className="exp-grid-desc">{exp.description}</p>
-
-                <div className="exp-grid-tech">
-                  {exp.technologies.slice(0, 3).map((tech) => (
-                    <span key={tech} className="tech-chip" style={{ fontSize: '0.72rem', padding: '2px 8px' }}>
-                      {tech}
+            {filteredExperiences.map((exp, idx) => {
+              const isExpandedMobile = isMobile && expandedMobileId === exp.id;
+              return (
+                <div
+                  key={exp.id}
+                  className="glass-card exp-grid-card"
+                  onClick={() => {
+                    if (!isMobile) {
+                      setActiveId(exp.id);
+                      setViewMode('workspace');
+                    } else {
+                      setExpandedMobileId(isExpandedMobile ? null : exp.id);
+                    }
+                  }}
+                >
+                  <div className="exp-grid-card-top">
+                    <div className="exp-grid-num">0{idx + 1}</div>
+                    <span
+                      className="timeline-badge"
+                      style={{ ...getBadgeStyle(exp.badge), fontSize: '0.72rem', padding: '2px 8px' }}
+                    >
+                      {exp.badge}
                     </span>
-                  ))}
-                  {exp.technologies.length > 3 && (
-                    <span className="tech-chip" style={{ fontSize: '0.72rem', padding: '2px 8px', opacity: 0.7 }}>
-                      +{exp.technologies.length - 3} more
+                  </div>
+
+                  <h3 className="exp-grid-role">{exp.role}</h3>
+                  <div className="exp-grid-company">{exp.company}</div>
+
+                  <div className="exp-grid-meta">
+                    <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                      <Calendar size={12} />
+                      <span>{exp.duration}</span>
                     </span>
+                    <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                      <MapPin size={12} />
+                      <span>{exp.location}</span>
+                    </span>
+                  </div>
+
+                  <p className={`exp-grid-desc ${isExpandedMobile ? 'is-expanded' : ''}`}>
+                    {exp.description}
+                  </p>
+
+                  {/* Expanded details on mobile: Responsibilities & Deliverables */}
+                  {isExpandedMobile && (
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', marginTop: '6px' }}>
+                      <div>
+                        <div style={{ fontSize: '0.75rem', fontFamily: 'var(--font-mono)', color: 'var(--accent-sky)', fontWeight: 600, marginBottom: '6px', letterSpacing: '0.5px' }}>
+                          KEY RESPONSIBILITIES & CONTRIBUTIONS
+                        </div>
+                        <ul className="timeline-responsibilities" style={{ paddingLeft: '4px' }}>
+                          {exp.responsibilities.map((resp, rIdx) => (
+                            <li key={rIdx} className="timeline-resp-item" style={{ fontSize: '0.82rem', marginBottom: '6px' }}>
+                              <CheckCircle2
+                                size={14}
+                                style={{ color: 'var(--accent-emerald)', marginTop: '2px', flexShrink: 0 }}
+                              />
+                              <span>{resp}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+
+                      {((exp.featuredProjects && exp.featuredProjects.length > 0) || exp.githubUrl) && (
+                        <div style={{ borderTop: '1px solid var(--border-subtle)', paddingTop: '10px' }}>
+                          <div style={{ fontSize: '0.75rem', fontFamily: 'var(--font-mono)', color: 'var(--accent-sky)', fontWeight: 600, marginBottom: '8px' }}>
+                            DELIVERABLES & CODEBASE
+                          </div>
+                          <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                            {exp.featuredProjects && exp.featuredProjects.length > 0 ? (
+                              exp.featuredProjects.map((p, pIdx) => (
+                                <div key={pIdx} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '8px', padding: '10px', borderRadius: 'var(--radius-md)', background: 'rgba(56, 189, 248, 0.08)', border: '1px solid rgba(56, 189, 248, 0.25)', flexWrap: 'wrap' }}>
+                                  <span style={{ fontSize: '0.82rem', fontWeight: 600, color: 'var(--text-primary)' }}>{p.name}</span>
+                                  <div style={{ display: 'flex', gap: '6px' }}>
+                                    {p.githubUrl && (
+                                      <a
+                                        href={p.githubUrl}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        onClick={(e) => e.stopPropagation()}
+                                        className="btn btn-sm"
+                                        style={{ fontSize: '0.75rem', padding: '4px 10px', borderRadius: 'var(--radius-full)', background: 'rgba(56, 189, 248, 0.15)', border: '1px solid rgba(56, 189, 248, 0.4)', color: 'var(--accent-sky)' }}
+                                      >
+                                        <Github size={12} />
+                                        <span>Repo</span>
+                                      </a>
+                                    )}
+                                    {p.liveUrl && (
+                                      <a
+                                        href={p.liveUrl}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        onClick={(e) => e.stopPropagation()}
+                                        className="btn btn-sm"
+                                        style={{ fontSize: '0.75rem', padding: '4px 10px', borderRadius: 'var(--radius-full)', background: 'linear-gradient(135deg, rgba(56, 189, 248, 0.9), rgba(37, 99, 235, 0.9))', color: '#0b1120', fontWeight: 700 }}
+                                      >
+                                        <span>Live</span>
+                                      </a>
+                                    )}
+                                  </div>
+                                </div>
+                              ))
+                            ) : exp.githubUrl ? (
+                              <a
+                                href={exp.githubUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                onClick={(e) => e.stopPropagation()}
+                                className="btn btn-sm"
+                                style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '0.78rem', padding: '6px 12px', borderRadius: 'var(--radius-full)', background: 'rgba(56, 189, 248, 0.15)', border: '1px solid rgba(56, 189, 248, 0.4)', color: 'var(--accent-sky)', width: 'fit-content' }}
+                              >
+                                <Github size={13} />
+                                <span>Explore Repository</span>
+                                <ExternalLink size={12} />
+                              </a>
+                            ) : null}
+                          </div>
+                        </div>
+                      )}
+                    </div>
                   )}
-                </div>
 
-                <div className="exp-grid-footer">
-                  <span>View Details</span>
-                  {(exp.githubUrl || exp.featuredProjects?.length > 0) && (
-                    <span style={{ marginLeft: 'auto', marginRight: '6px', display: 'inline-flex', alignItems: 'center', gap: '4px', opacity: 0.85, color: 'var(--accent-sky)' }}>
-                      <Github size={12} />
-                      <span style={{ fontSize: '0.72rem' }}>Repo</span>
-                    </span>
-                  )}
-                  <ChevronRight size={14} />
+                  <div className="exp-grid-tech">
+                    {exp.technologies.slice(0, isExpandedMobile ? undefined : 3).map((tech) => (
+                      <span key={tech} className="tech-chip" style={{ fontSize: '0.72rem', padding: '2px 8px' }}>
+                        {tech}
+                      </span>
+                    ))}
+                    {!isExpandedMobile && exp.technologies.length > 3 && (
+                      <span className="tech-chip" style={{ fontSize: '0.72rem', padding: '2px 8px', opacity: 0.7 }}>
+                        +{exp.technologies.length - 3} more
+                      </span>
+                    )}
+                  </div>
+
+                  <div className="exp-grid-footer">
+                    <span>{isExpandedMobile ? 'Show Less' : 'View Details'}</span>
+                    {!isExpandedMobile && (exp.githubUrl || exp.featuredProjects?.length > 0) && (
+                      <span style={{ marginLeft: 'auto', marginRight: '6px', display: 'inline-flex', alignItems: 'center', gap: '4px', opacity: 0.85, color: 'var(--accent-sky)' }}>
+                        <Github size={12} />
+                        <span style={{ fontSize: '0.72rem' }}>Repo</span>
+                      </span>
+                    )}
+                    <ChevronRight size={14} style={{ transform: isExpandedMobile ? 'rotate(90deg)' : 'none', transition: 'transform 0.2s ease' }} />
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         )}
 
