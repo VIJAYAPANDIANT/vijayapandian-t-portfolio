@@ -210,28 +210,6 @@ export const projectsData = [
     ]
   },
   {
-    id: "ai-resume-builder",
-    title: "AI Resume Builder",
-    tagline: "Smart ATS-Optimized Resume Engine",
-    shortDescription:
-      "An intelligent, ATS-optimized resume builder powered by Google Gemini AI that transforms candidate draft experiences into high-impact, quantified achievement bullet points. Features real-time keyword gap analysis against target job descriptions, multiple recruiter-vetted modern templates, and instant client-side high-resolution PDF export.",
-    categories: ["AI", "Frontend"],
-    technologies: ["React", "JavaScript", "Gemini AI", "CSS3", "jspdf", "HTML5"],
-    image: "/assets/images/ai-resume-builder.svg",
-    githubUrl: "https://github.com/VIJAYAPANDIANT/ai-resume-builder",
-    liveUrl: "https://ai-resume-builder-demo.vercel.app",
-    problem:
-      "Candidates frequently get filtered out by automated Applicant Tracking Systems (ATS) due to improper formatting, missing role keywords, and poorly phrased impact metrics.",
-    solution:
-      "Created a modern, interactive resume studio powered by Gemini AI that evaluates resume content against target job descriptions in real-time, rewriting bullet points into quantified impact statements.",
-    keyFeatures: [
-      "AI bullet point enhancer transforming passive tasks into quantified achievements",
-      "Live ATS compatibility scoring engine with keyword gap analysis",
-      "Multiple clean, recruiter-approved, parser-friendly modern templates",
-      "Instant client-side high-resolution PDF rendering with real-time preview"
-    ]
-  },
-  {
     id: "premium-weather-dashboard",
     title: "Atmosphere Weather Dashboard",
     tagline: "Glassmorphic Weather Analytics & Forecast Station",
