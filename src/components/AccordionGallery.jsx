@@ -169,6 +169,12 @@ export default function AccordionGallery({
                     transition: `filter ${duration}s ease, transform ${isExpanded ? '0.12s ease-out' : `${duration}s ${easingBezier}`}`
                   }}
                   loading="lazy"
+                  onError={(e) => {
+                    if (!e.currentTarget.dataset.fallback) {
+                      e.currentTarget.dataset.fallback = 'true';
+                      e.currentTarget.src = '/assets/images/ai-resume-builder.svg';
+                    }
+                  }}
                 />
               </div>
 

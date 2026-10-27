@@ -50,7 +50,7 @@ export const projectsData = [
       "A full-stack, production-ready web application enabling users to build professional resumes, check ATS compatibility using Google Gemini 2.5 Flash, and export polished PDFs instantly with a personal dashboard.",
     categories: ["Full Stack", "AI"],
     technologies: ["React 18", "Express.js", "PostgreSQL", "Google Gemini API", "JWT Auth", "Tailwind CSS"],
-    image: "/assets/images/project-resume.svg",
+    image: "/assets/images/project-resume.svg?v=2",
     githubUrl: "https://github.com/VIJAYAPANDIANT/smart-resume-builder",
     liveUrl: "https://smart-resume-builder-a1ej.vercel.app/",
     problem:

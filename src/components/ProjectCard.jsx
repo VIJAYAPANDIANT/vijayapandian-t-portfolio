@@ -23,6 +23,12 @@ export default function ProjectCard({ project, onOpenModal }) {
           alt={`${project.title} Preview graphic`}
           className="project-image"
           loading="lazy"
+          onError={(e) => {
+            if (!e.currentTarget.dataset.fallback) {
+              e.currentTarget.dataset.fallback = 'true';
+              e.currentTarget.src = '/assets/images/ai-resume-builder.svg';
+            }
+          }}
         />
       </div>
 
