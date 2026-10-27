@@ -1098,6 +1098,22 @@ button {
     display: none !important;
   }
 
+  .exp-controls-bar {
+    justify-content: center !important;
+    margin-bottom: 20px;
+  }
+
+  .exp-filters {
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    overflow-x: visible !important;
+  }
+
+  .exp-filter-btn {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+
   .exp-grid-desc.is-expanded {
     display: block !important;
     -webkit-line-clamp: unset !important;
@@ -1882,29 +1898,25 @@ button {
 
 @media (max-width: 640px) {
   .exp-controls-bar {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 12px;
+    flex-direction: row;
+    justify-content: center !important;
+    align-items: center;
+    gap: 10px;
   }
 
   .exp-filters {
-    overflow-x: auto;
-    flex-wrap: nowrap;
-    padding-bottom: 6px;
-    scrollbar-width: none;
-  }
-
-  .exp-filters::-webkit-scrollbar {
-    display: none;
+    display: flex;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    overflow-x: visible !important;
+    padding-bottom: 0;
+    gap: 8px;
   }
 
   .exp-filter-btn {
+    padding: 6px 11px;
+    font-size: 0.78rem;
     white-space: nowrap;
-    flex-shrink: 0;
-  }
-
-  .exp-view-toggle {
-    align-self: flex-start;
   }
 
   .exp-grid-container {
@@ -2656,13 +2668,16 @@ button {
     font-size: 1.7rem;
   }
 
-  .filter-container {
+  .filter-container,
+  .exp-filters {
     gap: 6px;
+    justify-content: center;
   }
 
-  .filter-btn {
-    padding: 6px 12px;
-    font-size: 0.775rem;
+  .filter-btn,
+  .exp-filter-btn {
+    padding: 5px 9px;
+    font-size: 0.74rem;
   }
 
   .timeline-company {
