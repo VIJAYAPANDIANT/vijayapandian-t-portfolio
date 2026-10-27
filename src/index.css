@@ -1073,40 +1073,21 @@ button {
   margin-top: 4px;
 }
 
-/* Responsive adjustment for Mobile / Tablet */
+/* Responsive adjustment for Mobile / Small Tablet (<= 768px):
+   On mobile, hide accordion gallery container and view switcher toggle;
+   Mobile exclusively displays the clean, touch-friendly Grid Cards layout. */
 @media (max-width: 768px) {
   .accordion-gallery-container {
-    flex-direction: column !important;
-    height: 75vh !important;
-    max-height: 700px !important;
-    min-height: 500px !important;
+    display: none !important;
   }
 
-  .accordion-panel {
-    min-height: 0 !important;
-    width: 100% !important;
+  .projects-view-toggle {
+    display: none !important;
   }
 
-  .accordion-panel.is-expanded {
-    min-height: 0 !important;
-  }
-
-  .accordion-collapsed-label {
-    display: flex !important;
-  }
-
-  .accordion-collapsed-text {
-    writing-mode: horizontal-tb;
-    transform: none;
-    letter-spacing: 0.05em;
-  }
-
-  .accordion-content {
-    padding: 16px;
-  }
-
-  .accordion-title {
-    font-size: 1.25rem;
+  .projects-controls {
+    justify-content: center !important;
+    margin-bottom: 20px;
   }
 }
 
@@ -1153,6 +1134,10 @@ button {
   flex-wrap: wrap;
   gap: 16px;
   margin-bottom: 24px;
+}
+
+.projects-controls .filter-container {
+  margin-bottom: 0;
 }
 
 .projects-grid {

@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { FolderGit2, GalleryHorizontalEnd, LayoutGrid } from 'lucide-react';
 import { projectCategories, projectsData } from '../data/projects';
 import ProjectCard from './ProjectCard';
@@ -9,6 +9,29 @@ export default function Projects() {
   const [activeCategory, setActiveCategory] = useState('All');
   const [selectedProject, setSelectedProject] = useState(null);
   const [viewMode, setViewMode] = useState('accordion'); // 'accordion' | 'grid'
+  const [isMobile, setIsMobile] = useState(() => {
+    if (typeof window !== 'undefined') {
+      return window.innerWidth <= 768;
+    }
+    return false;
+  });
+
+  useEffect(() => {
+    const mql = window.matchMedia('(max-width: 768px)');
+    const onChange = (e) => {
+      setIsMobile(e.matches);
+    };
+
+    setIsMobile(mql.matches);
+
+    if (mql.addEventListener) {
+      mql.addEventListener('change', onChange);
+      return () => mql.removeEventListener('change', onChange);
+    } else {
+      mql.addListener(onChange);
+      return () => mql.removeListener(onChange);
+    }
+  }, []);
 
   const filteredProjects = useMemo(() => {
     if (activeCategory === 'All') {
@@ -69,33 +92,35 @@ export default function Projects() {
             })}
           </div>
 
-          {/* View Mode Switcher */}
-          <div className="projects-view-toggle">
-            <button
-              type="button"
-              className={`view-toggle-btn ${viewMode === 'accordion' ? 'active' : ''}`}
-              onClick={() => setViewMode('accordion')}
-              aria-label="Accordion Gallery View"
-              title="Interactive Accordion Gallery View"
-            >
-              <GalleryHorizontalEnd size={14} />
-              <span>Accordion Gallery</span>
-            </button>
-            <button
-              type="button"
-              className={`view-toggle-btn ${viewMode === 'grid' ? 'active' : ''}`}
-              onClick={() => setViewMode('grid')}
-              aria-label="Grid Cards View"
-              title="Traditional Grid View"
-            >
-              <LayoutGrid size={14} />
-              <span>Grid Cards</span>
-            </button>
-          </div>
+          {/* View Mode Switcher (Shown on Laptop and Desktop; hidden on mobile) */}
+          {!isMobile && (
+            <div className="projects-view-toggle">
+              <button
+                type="button"
+                className={`view-toggle-btn ${viewMode === 'accordion' ? 'active' : ''}`}
+                onClick={() => setViewMode('accordion')}
+                aria-label="Accordion Gallery View"
+                title="Interactive Accordion Gallery View"
+              >
+                <GalleryHorizontalEnd size={14} />
+                <span>Accordion Gallery</span>
+              </button>
+              <button
+                type="button"
+                className={`view-toggle-btn ${viewMode === 'grid' ? 'active' : ''}`}
+                onClick={() => setViewMode('grid')}
+                aria-label="Grid Cards View"
+                title="Traditional Grid View"
+              >
+                <LayoutGrid size={14} />
+                <span>Grid Cards</span>
+              </button>
+            </div>
+          )}
         </div>
 
-        {/* Main Display: AccordionGallery or Grid */}
-        {viewMode === 'accordion' ? (
+        {/* Main Display: AccordionGallery on Laptop (when selected) or Grid Cards (default on mobile) */}
+        {!isMobile && viewMode === 'accordion' ? (
           <AccordionGallery
             items={portfolioAccordionItems}
             defaultIndex={Math.min(2, Math.max(0, portfolioAccordionItems.length - 1))}
