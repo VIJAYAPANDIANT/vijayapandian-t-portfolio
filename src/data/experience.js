@@ -18,24 +18,34 @@ export const experienceData = [
     duration: "Sep 2026 – Oct 2026 · 2 mos",
     badge: "Internship",
     location: "Chennai, Tamil Nadu, India · Offline",
-    githubUrl: "https://github.com/VIJAYAPANDIANT/fsd-intern-task-and-project",
+    githubUrl: "https://github.com/VIJAYAPANDIANT/rescue-link-offline-emergency-sos",
     featuredProjects: [
+      {
+        name: "rescue-link-offline-emergency-sos",
+        repoUrl: "https://github.com/VIJAYAPANDIANT/rescue-link-offline-emergency-sos",
+        githubUrl: "https://github.com/VIJAYAPANDIANT/rescue-link-offline-emergency-sos",
+        badge: "Private",
+        description: "RescueLink — Decentralized, disaster-resilient offline Bluetooth Low Energy (BLE) emergency distress SOS and epidemic mesh relay system. Engineered with React Native, Expo, SQLite (WAL mode), Node.js, Express, and React 18 / Vite 6 Web Admin command operations."
+      },
       {
         name: "fsd-intern-task-and-project",
         repoUrl: "https://github.com/VIJAYAPANDIANT/fsd-intern-task-and-project",
+        githubUrl: "https://github.com/VIJAYAPANDIANT/fsd-intern-task-and-project",
+        badge: "Public",
         description: "Official repository for Full-Stack Development Internship at Career Solutions77. Features production-ready web applications: Smart Digital Museum (React 18 cultural heritage SPA) and Smart Medicine Reminder & Health Tracker (Full-stack React, Express, JWT, and atomic JSON persistence)."
       }
     ],
     description:
-      "Worked as a Full-Stack Development Intern at Career Solutions77 (Offline, Chennai). Engineered production-ready, decoupled full-stack web applications and robust REST APIs with strict data isolation, zero-database JSON atomic storage engines, and cloud deployments on Vercel.",
+      "Worked as a Full-Stack Development Intern at Career Solutions77 (Offline, Chennai). Engineered production-ready, decoupled full-stack web applications, decentralized offline emergency communications, and robust REST APIs with strict data isolation, zero-database JSON atomic storage engines, and cloud deployments on Vercel.",
     responsibilities: [
       "Engineered decoupled full-stack web applications following production standards with independent React 18 SPAs and Express REST APIs.",
+      "Architected RescueLink, a decentralized offline BLE emergency SOS distress signaling system with durable SQLite Write-Ahead Logging (WAL) and epidemic mesh forwarding.",
+      "Implemented a 5-stage mesh admission control pipeline featuring 32-bit FNV-1a checksums, 24-hour TTL expiration, loop prevention, and hop limit bounding.",
       "Architected and deployed the Smart Digital Museum web app with React 18, Vite, Tailwind CSS, 360° virtual tours, and LocalStorage state synchronization.",
       "Developed MediTrack, an enterprise healthcare adherence platform with automated dose scheduling, real-time compliance rate formulas, and multi-criteria intake logs.",
-      "Engineered a resilient zero-database JSON persistence engine with atomic temp-file swaps, promise-based write queues, and serverless runtime safety.",
-      "Implemented secure JWT authentication with bcryptjs salted hashing, strict resource ownership checks, and a 35-test automated Postman suite (100% pass rate)."
+      "Engineered a resilient zero-database JSON persistence engine with atomic temp-file swaps, promise-based write queues, and serverless runtime safety."
     ],
-    technologies: ["React 18", "Vite", "Tailwind CSS", "Node.js", "Express.js", "REST APIs", "JWT Auth", "bcryptjs", "Atomic JSON Engine", "Postman", "Git", "Vercel"]
+    technologies: ["React 18", "React Native", "Expo", "SQLite (WAL)", "BLE Mesh", "Vite", "Tailwind CSS", "Node.js", "Express.js", "REST APIs", "JWT Auth", "bcryptjs", "Atomic JSON Engine", "Postman", "Git", "Vercel"]
   },
   {
     id: "bharatcares-ibm",
