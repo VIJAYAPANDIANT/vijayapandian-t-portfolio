@@ -24,14 +24,12 @@ export const experienceData = [
         name: "rescue-link-offline-emergency-sos",
         repoUrl: "https://github.com/VIJAYAPANDIANT/rescue-link-offline-emergency-sos",
         githubUrl: "https://github.com/VIJAYAPANDIANT/rescue-link-offline-emergency-sos",
-        badge: "Public",
         description: "RescueLink — Decentralized, disaster-resilient offline Bluetooth Low Energy (BLE) emergency distress SOS and epidemic mesh relay system. Engineered with React Native, Expo, SQLite (WAL mode), Node.js, Express, and React 18 / Vite 6 Web Admin command operations."
       },
       {
         name: "fsd-intern-task-and-project",
         repoUrl: "https://github.com/VIJAYAPANDIANT/fsd-intern-task-and-project",
         githubUrl: "https://github.com/VIJAYAPANDIANT/fsd-intern-task-and-project",
-        badge: "Public",
         description: "Official repository for Full-Stack Development Internship at Career Solutions77. Features production-ready web applications: Smart Digital Museum (React 18 cultural heritage SPA) and Smart Medicine Reminder & Health Tracker (Full-stack React, Express, JWT, and atomic JSON persistence)."
       }
     ],

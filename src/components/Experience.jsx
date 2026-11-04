@@ -383,25 +383,8 @@ export default function Experience() {
                               <Github size={19} />
                             </div>
                             <div>
-                              <div style={{ fontSize: '0.92rem', fontWeight: 700, color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+                              <div style={{ fontSize: '0.92rem', fontWeight: 700, color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '8px' }}>
                                 <span>{proj.name}</span>
-                                {proj.badge && (
-                                  <span
-                                    style={{
-                                      fontSize: '0.68rem',
-                                      padding: '2px 8px',
-                                      borderRadius: '999px',
-                                      background: proj.badge.toLowerCase() === 'private' ? 'rgba(239, 68, 68, 0.15)' : 'rgba(16, 185, 129, 0.15)',
-                                      border: proj.badge.toLowerCase() === 'private' ? '1px solid rgba(239, 68, 68, 0.35)' : '1px solid rgba(16, 185, 129, 0.35)',
-                                      color: proj.badge.toLowerCase() === 'private' ? '#f87171' : '#34d399',
-                                      fontFamily: 'var(--font-mono)',
-                                      fontWeight: 600,
-                                      letterSpacing: '0.5px'
-                                    }}
-                                  >
-                                    {proj.badge}
-                                  </span>
-                                )}
                               </div>
                               {proj.description && (
                                 <div style={{ fontSize: '0.82rem', color: 'var(--text-secondary)', marginTop: '2px', lineHeight: 1.45 }}>
@@ -616,25 +599,7 @@ export default function Experience() {
                             {exp.featuredProjects && exp.featuredProjects.length > 0 ? (
                               exp.featuredProjects.map((p, pIdx) => (
                                 <div key={pIdx} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '8px', padding: '10px', borderRadius: 'var(--radius-md)', background: 'rgba(56, 189, 248, 0.08)', border: '1px solid rgba(56, 189, 248, 0.25)', flexWrap: 'wrap' }}>
-                                  <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
-                                    <span style={{ fontSize: '0.82rem', fontWeight: 600, color: 'var(--text-primary)' }}>{p.name}</span>
-                                    {p.badge && (
-                                      <span
-                                        style={{
-                                          fontSize: '0.65rem',
-                                          padding: '1px 6px',
-                                          borderRadius: '999px',
-                                          background: p.badge.toLowerCase() === 'private' ? 'rgba(239, 68, 68, 0.15)' : 'rgba(16, 185, 129, 0.15)',
-                                          border: p.badge.toLowerCase() === 'private' ? '1px solid rgba(239, 68, 68, 0.35)' : '1px solid rgba(16, 185, 129, 0.35)',
-                                          color: p.badge.toLowerCase() === 'private' ? '#f87171' : '#34d399',
-                                          fontFamily: 'var(--font-mono)',
-                                          fontWeight: 600
-                                        }}
-                                      >
-                                        {p.badge}
-                                      </span>
-                                    )}
-                                  </div>
+                                  <span style={{ fontSize: '0.82rem', fontWeight: 600, color: 'var(--text-primary)' }}>{p.name}</span>
                                   <div style={{ display: 'flex', gap: '6px' }}>
                                     {(p.repoUrl || p.githubUrl) && (
                                       <a
