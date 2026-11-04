@@ -24,7 +24,7 @@ export const experienceData = [
         name: "rescue-link-offline-emergency-sos",
         repoUrl: "https://github.com/VIJAYAPANDIANT/rescue-link-offline-emergency-sos",
         githubUrl: "https://github.com/VIJAYAPANDIANT/rescue-link-offline-emergency-sos",
-        badge: "Private",
+        badge: "Public",
         description: "RescueLink — Decentralized, disaster-resilient offline Bluetooth Low Energy (BLE) emergency distress SOS and epidemic mesh relay system. Engineered with React Native, Expo, SQLite (WAL mode), Node.js, Express, and React 18 / Vite 6 Web Admin command operations."
       },
       {
