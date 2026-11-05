@@ -19,7 +19,7 @@ export const educationData = {
     "Database Management Systems (DBMS)",
     "Operating Systems (OS)",
     "Computer Networks (CN)",
-    "Artificial Intelligence & Machine Learning (AI/ML)"
+    "Full Stack Development (MERN)"
   ],
   honors: [
     "Dean's Merit List for Academic Performance",
