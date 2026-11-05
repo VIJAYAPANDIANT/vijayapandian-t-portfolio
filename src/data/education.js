@@ -11,7 +11,7 @@ export const educationData = {
   highlights: [
     "Consistent strong academic standing with a current cumulative CGPA of 8.49.",
     "Active participant in technical symposiums, hackathons, and algorithm design workshops.",
-    "Active member of the Indian Society for Technical Education (ISTE) student chapter."
+    "Member of the Indian Society for Technical Education (ISTE) student chapter."
   ],
   coreCoursework: [
     "Data Structures & Algorithms (DSA)",
