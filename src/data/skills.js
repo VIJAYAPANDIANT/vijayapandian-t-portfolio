@@ -48,6 +48,7 @@ export const skillsData = [
   // Tools
   { name: "Git", category: "Tools", icon: "GitBranch", level: "Advanced", proficiency: 90 },
   { name: "GitHub", category: "Tools", icon: "GitPullRequest", level: "Advanced", proficiency: 92 },
+  { name: "GitLab", category: "Tools", icon: "GitBranch", level: "Advanced", proficiency: 86 },
   { name: "Postman", category: "Tools", icon: "Send", level: "Advanced", proficiency: 88 },
   { name: "VS Code", category: "Tools", icon: "Code", level: "Expert", proficiency: 95 },
   { name: "Figma", category: "Tools", icon: "PenTool", level: "Intermediate", proficiency: 78 }

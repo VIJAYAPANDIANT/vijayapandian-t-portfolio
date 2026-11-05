@@ -22,6 +22,7 @@ import {
   PostmanIcon,
   VsCodeIcon,
   FigmaIcon,
+  GitLabIcon,
   TailwindIcon,
   BootstrapIcon,
   SQLiteIcon
@@ -65,6 +66,7 @@ const skillIconMap = {
   // Tools
   'Git': GitIcon,
   'GitHub': GithubIcon,
+  'GitLab': GitLabIcon,
   'Postman': PostmanIcon,
   'VS Code': VsCodeIcon,
   'Figma': FigmaIcon
@@ -73,11 +75,12 @@ const skillIconMap = {
 export default function Skills() {
   const [activeCategory, setActiveCategory] = useState('All');
 
-  // Partition all 25 skills into 3 balanced rows for the train marquee
+  // Partition all skills into 3 balanced rows for the train marquee
   const { row1, row2, row3 } = useMemo(() => {
-    const r1 = skillsData.slice(0, 9);
-    const r2 = skillsData.slice(9, 17);
-    const r3 = skillsData.slice(17, 25);
+    const perRow = Math.ceil(skillsData.length / 3);
+    const r1 = skillsData.slice(0, perRow);
+    const r2 = skillsData.slice(perRow, perRow * 2);
+    const r3 = skillsData.slice(perRow * 2);
     return { row1: r1, row2: r2, row3: r3 };
   }, []);
 
