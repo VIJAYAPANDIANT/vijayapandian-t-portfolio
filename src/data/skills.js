@@ -51,5 +51,7 @@ export const skillsData = [
   { name: "GitLab", category: "Tools", icon: "GitBranch", level: "Advanced", proficiency: 86 },
   { name: "Postman", category: "Tools", icon: "Send", level: "Advanced", proficiency: 88 },
   { name: "VS Code", category: "Tools", icon: "Code", level: "Expert", proficiency: 95 },
-  { name: "Figma", category: "Tools", icon: "PenTool", level: "Intermediate", proficiency: 78 }
+  { name: "Figma", category: "Tools", icon: "PenTool", level: "Intermediate", proficiency: 85 },
+  { name: "Canva", category: "Tools", icon: "Palette", level: "Advanced", proficiency: 88 },
+  { name: "WordPress", category: "Tools", icon: "Globe", level: "Intermediate", proficiency: 82 }
 ];

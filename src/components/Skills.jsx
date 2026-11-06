@@ -23,6 +23,8 @@ import {
   VsCodeIcon,
   FigmaIcon,
   GitLabIcon,
+  CanvaIcon,
+  WordpressIcon,
   TailwindIcon,
   BootstrapIcon,
   SQLiteIcon
@@ -69,7 +71,9 @@ const skillIconMap = {
   'GitLab': GitLabIcon,
   'Postman': PostmanIcon,
   'VS Code': VsCodeIcon,
-  'Figma': FigmaIcon
+  'Figma': FigmaIcon,
+  'Canva': CanvaIcon,
+  'WordPress': WordpressIcon
 };
 
 export default function Skills() {
