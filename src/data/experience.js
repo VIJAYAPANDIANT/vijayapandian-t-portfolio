@@ -134,7 +134,7 @@ export const experienceData = [
     category: "ai",
     duration: "Dec 2025 – Jan 2026 · 2 mos",
     badge: "Internship",
-    location: "Rajapalaiyam, Tamil Nadu, India · Remote",
+    location: "Chennai, Tamil Nadu, India · Remote",
     githubUrl: "https://github.com/VIJAYAPANDIANT/ecowise-pro",
     featuredProjects: [
       {
