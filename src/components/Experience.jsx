@@ -686,7 +686,7 @@ export default function Experience() {
             </div>
             <div>
               <div style={{ fontWeight: 600, color: 'var(--text-primary)', fontSize: '0.95rem' }}>
-                7+ Industry Roles & Technical Internships Completed
+                8+ Industry Roles & Technical Internships Completed
               </div>
               <div style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>
                 Demonstrated real-world experience across Generative AI, Java / Spring Boot, React, and Relational Database Systems.

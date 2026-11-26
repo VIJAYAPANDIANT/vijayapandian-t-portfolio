@@ -217,6 +217,33 @@ export const experienceData = [
     technologies: ["User Experience (UX)", "UI Design", "JavaScript", "Chart.js", "HTML5 & CSS3"]
   },
   {
+    id: "cognifyz-java",
+    company: "Cognifyz Technologies",
+    role: "Java Development Intern",
+    category: "fullstack",
+    duration: "Aug 2025 – Sep 2025 · 2 mos",
+    badge: "Internship",
+    location: "Chennai, Tamil Nadu, India · Remote",
+    githubUrl: "https://github.com/VIJAYAPANDIANT/cognifyz",
+    featuredProjects: [
+      {
+        name: "Cognifyz Java Development Internship Suite",
+        repoUrl: "https://github.com/VIJAYAPANDIANT/cognifyz",
+        githubUrl: "https://github.com/VIJAYAPANDIANT/cognifyz",
+        description: "Core Java engineering suite comprising 7 modular applications: Temperature Converter, Palindrome Checker, Student Grade Calculator, Random Password Generator, Regex Password Strength Checker, Caesar Cipher File Encryption/Decryption, and Multithreaded Client-Server Socket Chat Application."
+      }
+    ],
+    description:
+      "Completed practical Java development assignments at Cognifyz Technologies, focusing on core Java concepts and application development. Developed console-based applications including a Temperature Converter, Palindrome Checker, Student Grade Calculator, Password Generator, and Password Strength Checker. Implemented file encryption and decryption using Caesar Cipher and built a Client-Server Chat Application using Java Sockets and Multithreading. Gained hands-on experience in OOP, arrays, string manipulation, regular expressions, file handling, networking, and problem-solving.",
+    responsibilities: [
+      "Developed modular console applications in Java covering mathematical formulas, string manipulation, and random generation (Temperature Converter, Palindrome Checker, Student Grade Calculator, Password Generator).",
+      "Implemented Level 2 security tools including regex-based Password Strength Checker and a Caesar Cipher (shift 3) File Encryption/Decryption system with BufferedReader/BufferedWriter.",
+      "Architected a real-time console Client-Server Chat Application using Java Sockets (ServerSocket, Socket) and multi-threading for concurrent stream handling.",
+      "Strengthened hands-on software engineering capabilities in Object-Oriented Programming (OOP), file I/O streams, network socket communication, and algorithmic problem-solving."
+    ],
+    technologies: ["Java", "OOP", "Networking (Sockets)", "Multithreading", "File I/O", "Regular Expressions", "Caesar Cipher Encryption"]
+  },
+  {
     id: "zero2site",
     company: "Zero2site",
     role: "Cloud Development Intern",

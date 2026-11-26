@@ -71,7 +71,7 @@
 - [Overview](#-overview)
 - [Core Engineering Highlights](#-core-engineering-highlights)
 - [System Architecture & Data Flow](#-system-architecture--data-flow)
-- [8 Verified Internships & Deliverables](#-8-verified-internships--deliverables)
+- [9 Verified Internships & Deliverables](#-9-verified-internships--deliverables)
 - [Flagship Projects Matrix](#-flagship-projects-matrix)
 - [Technical Competencies & Tooling](#-technical-competencies--tooling)
 - [Academic Background & Coursework](#-academic-background--coursework)
@@ -93,7 +93,7 @@ This repository contains the production source code for the personal portfolio, 
 Engineered with **React 18**, **Vite 5**, and high-performance **Vanilla CSS Custom Properties**, the platform highlights:
 
 1. **3D Holographic CSS Parallax Card**: Physics-driven cursor parallax and device tilt simulation with smooth spring dampening and holographic glare depth.
-2. **Interactive Master-Detail Experience Workspace**: Two-pane synchronized inspection console categorizing 8 industry internships with deliverable repository integrations and mobile-optimized fallbacks.
+2. **Interactive Master-Detail Experience Workspace**: Two-pane synchronized inspection console categorizing 9 industry internships with deliverable repository integrations and mobile-optimized fallbacks.
 3. **Multi-Project Architecture Modal**: In-depth modal overlay revealing problem statements, enterprise architectural blueprints, key features, and live production URLs.
 4. **Dynamic 3-Row Infinite Skills Marquee**: High-performance CSS marquee train dividing all technical competencies across 3 balanced infinite tracks.
 5. **Zero-Layout-Shift Responsive Engine**: Custom fluid typography via `clamp()` and container query logic ensuring pixel-perfect fidelity across mobile (320px–425px), tablet, laptop, and ultra-wide screens.
@@ -105,7 +105,7 @@ Engineered with **React 18**, **Vite 5**, and high-performance **Vanilla CSS Cus
 | Feature Dimension | Technical Implementation | Operational & UX Impact |
 |---|---|---|
 | **Physics-Based 3D Tilt Card** | Dynamic CSS custom properties (`--pointer-x`, `--pointer-y`, `--rotate-x`, `--rotate-y`) driven by an exponential decay smoothing loop (`1 - exp(-dt / tau)`) | Delivers 60 FPS hardware-accelerated holographic parallax without heavy third-party 3D engine overhead. |
-| **Master-Detail Experience Console** | Decoupled state synchronization with index clamp guards, category domain filters, and a dual-view switcher (Interactive vs. Overview Grid) | Eliminates vertical scroll fatigue; allows hiring managers to triage 8 internships and code deliverables in seconds. |
+| **Master-Detail Experience Console** | Decoupled state synchronization with index clamp guards, category domain filters, and a dual-view switcher (Interactive vs. Overview Grid) | Eliminates vertical scroll fatigue; allows hiring managers to triage 9 internships and code deliverables in seconds. |
 | **Dynamic 3-Row Skills Train** | Modular CSS keyframe marquee (`animate-marquee-ltr`) with dynamic `Math.ceil(length / 3)` partitioning and seamless DOM duplication | Ensures balanced distribution across tracks with zero empty-gap stutter on ultra-wide desktop monitors. |
 | **Comprehensive Architecture Modal** | Focus-trapped modal overlay rendering structural problem statements, solutions, tech pills, and live demo endpoints | Provides enterprise architectural context for each project without navigating away from the page. |
 | **Zero-Dependency Vector System** | Handcrafted, accessible SVG brand icon registry (`role="img"`, `viewBox="0 0 24 24"`, `fill="currentColor"`) matching theme accents | Reduces HTTP request overhead, eliminates icon-font flashes, and delivers crisp rendering on high-DPI screens. |
@@ -154,7 +154,7 @@ flowchart TD
 
 ---
 
-## 💼 8 Verified Internships & Deliverables
+## 💼 9 Verified Internships & Deliverables
 
 | # | Organization | Role | Duration & Track | Key Engineering Deliverables & Verified Repositories |
 |---|---|---|---|---|
@@ -165,7 +165,8 @@ flowchart TD
 | **05** | **1M1B (1 Million for 1 Billion)** | AI for Sustainability Virtual Intern | Dec 2025 – Jan 2026 · Remote | • [ecowise-pro](https://github.com/VIJAYAPANDIANT/ecowise-pro) &nbsp;[Live App](https://ecowise-pro.vercel.app/) (Explainable AI Environmental Decision System) |
 | **06** | **Codec Technologies India** | Java Developer Intern | Jan 2026 – Feb 2026 · Remote | • [student-management-system-java](https://github.com/VIJAYAPANDIANT/student-management-system-java)<br>• [expense-tracker-java](https://github.com/VIJAYAPANDIANT/expense-tracker-java) (Core Java OOP & File Handling) |
 | **07** | **Codec Technologies India** | UI/UX & Frontend Developer Intern | Jan 2026 – Feb 2026 · Remote | • [food-delivery-system](https://github.com/VIJAYAPANDIANT/food-delivery-system) (QuickEats)<br>• [personal-finance-app](https://github.com/VIJAYAPANDIANT/personal-finance-app) (FinDash Analytics) |
-| **08** | **Zero2site** | Cloud Development Intern | May 2025 – Jun 2025 · Remote | • [event-poll](https://github.com/VIJAYAPANDIANT/event-poll) &nbsp;[Live App](https://eventpoll-client-a2bl.vercel.app)<br>• [task-master](https://github.com/VIJAYAPANDIANT/task-master) &nbsp;[Live App](https://task-master-chi-three.vercel.app/) |
+| **08** | **Cognifyz Technologies** | Java Development Intern | Aug 2025 – Sep 2025 · Remote | • [cognifyz](https://github.com/VIJAYAPANDIANT/cognifyz) (Core Java, Multithreaded Sockets, Caesar Cipher Encryption, CLI Applications) |
+| **09** | **Zero2site** | Cloud Development Intern | May 2025 – Jun 2025 · Remote | • [event-poll](https://github.com/VIJAYAPANDIANT/event-poll) &nbsp;[Live App](https://eventpoll-client-a2bl.vercel.app)<br>• [task-master](https://github.com/VIJAYAPANDIANT/task-master) &nbsp;[Live App](https://task-master-chi-three.vercel.app/) |
 
 ---
 
@@ -294,7 +295,7 @@ vijayapandian-t-portfolio/
 │   ├── data/
 │   │   ├── achievements.js       # Verified DSA numbers, hackathons, and GitHub stats
 │   │   ├── education.js          # Academic credentials, coursework, and honors
-│   │   ├── experience.js         # 8 verified internships with deliverable code links
+│   │   ├── experience.js         # 9 verified internships with deliverable code links
 │   │   ├── personalInfo.js       # Centralized contact handles, stats, and biography text
 │   │   ├── projects.js           # 10 flagship projects with comprehensive architecture specs
 │   │   ├── services.js           # Freelance deliverables and service offerings
