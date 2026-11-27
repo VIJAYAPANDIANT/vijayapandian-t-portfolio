@@ -127,9 +127,9 @@
     <rect x="-275" y="-12" width="140" height="25" rx="6" fill="#0f172a" fill-opacity="0.8" stroke="#818cf8" stroke-width="1" stroke-opacity="0.35" />
     <text x="-205" y="5" text-anchor="middle" fill="#a5b4fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, sans-serif" font-size="11" font-weight="600">☕ Java &amp; Spring Boot</text>
 
-    <!-- Tech Item: GenAI & LLMs -->
+    <!-- Tech Item: AI & Cloud -->
     <rect x="-120" y="-12" width="125" height="25" rx="6" fill="#0f172a" fill-opacity="0.8" stroke="#c084fc" stroke-width="1" stroke-opacity="0.35" />
-    <text x="-57.5" y="5" text-anchor="middle" fill="#d8b4fe" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, sans-serif" font-size="11" font-weight="600">🤖 GenAI &amp; Gemini</text>
+    <text x="-57.5" y="5" text-anchor="middle" fill="#d8b4fe" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, sans-serif" font-size="11" font-weight="600">🤖 AI &amp; Cloud</text>
 
     <!-- Tech Item: Node & Express -->
     <rect x="20" y="-12" width="125" height="25" rx="6" fill="#0f172a" fill-opacity="0.8" stroke="#34d399" stroke-width="1" stroke-opacity="0.35" />
