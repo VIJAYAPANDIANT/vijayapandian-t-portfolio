@@ -1,0 +1,146 @@
+<svg width="100%" height="auto" viewBox="0 0 1200 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Dark Obsidian Background Gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070a13" />
+      <stop offset="50%" stop-color="#0c1222" />
+      <stop offset="100%" stop-color="#070a13" />
+    </linearGradient>
+
+    <!-- Card Border Gradient -->
+    <linearGradient id="border-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.1" />
+    </linearGradient>
+
+    <!-- Cyan Ambient Glow -->
+    <radialGradient id="glow-cyan" cx="15%" cy="20%" r="45%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Violet Ambient Glow -->
+    <radialGradient id="glow-violet" cx="85%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#818cf8" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Emerald Ambient Glow -->
+    <radialGradient id="glow-emerald" cx="50%" cy="85%" r="40%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Text Highlight Gradient -->
+    <linearGradient id="text-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="45%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <!-- Wave 1 Gradient -->
+    <linearGradient id="wave-grad-1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.35" />
+      <stop offset="50%" stop-color="#6366f1" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0.35" />
+    </linearGradient>
+
+    <!-- Wave 2 Gradient -->
+    <linearGradient id="wave-grad-2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.2" />
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.2" />
+    </linearGradient>
+
+    <!-- Pill Gradient -->
+    <linearGradient id="pill-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Canvas Frame -->
+  <rect width="1200" height="320" rx="20" fill="url(#bg-grad)" stroke="url(#border-grad)" stroke-width="1.5" />
+
+  <!-- Ambient Glow Spheres -->
+  <rect width="1200" height="320" rx="20" fill="url(#glow-cyan)" />
+  <rect width="1200" height="320" rx="20" fill="url(#glow-violet)" />
+  <rect width="1200" height="320" rx="20" fill="url(#glow-emerald)" />
+
+  <!-- Geometric Tech Grid Overlay -->
+  <g opacity="0.08" stroke="#38bdf8" stroke-width="1">
+    <line x1="80" y1="0" x2="80" y2="320" stroke-dasharray="4 8" />
+    <line x1="240" y1="0" x2="240" y2="320" stroke-dasharray="4 8" />
+    <line x1="400" y1="0" x2="400" y2="320" stroke-dasharray="4 8" />
+    <line x1="560" y1="0" x2="560" y2="320" stroke-dasharray="4 8" />
+    <line x1="720" y1="0" x2="720" y2="320" stroke-dasharray="4 8" />
+    <line x1="880" y1="0" x2="880" y2="320" stroke-dasharray="4 8" />
+    <line x1="1040" y1="0" x2="1040" y2="320" stroke-dasharray="4 8" />
+    <line x1="0" y1="60" x2="1200" y2="60" stroke-dasharray="4 8" />
+    <line x1="0" y1="140" x2="1200" y2="140" stroke-dasharray="4 8" />
+    <line x1="0" y1="220" x2="1200" y2="220" stroke-dasharray="4 8" />
+  </g>
+
+  <!-- Glowing Constellation Dots -->
+  <circle cx="160" cy="80" r="2.5" fill="#38bdf8" opacity="0.6" />
+  <circle cx="280" cy="180" r="2" fill="#818cf8" opacity="0.5" />
+  <circle cx="920" cy="90" r="3" fill="#c084fc" opacity="0.6" />
+  <circle cx="1060" cy="190" r="2" fill="#38bdf8" opacity="0.5" />
+  <circle cx="80" cy="240" r="2.5" fill="#34d399" opacity="0.5" />
+  <circle cx="1120" cy="70" r="2.5" fill="#38bdf8" opacity="0.6" />
+
+  <!-- Bottom Dynamic Wave Layer 1 -->
+  <path d="M0 240 C 200 210, 360 270, 600 240 C 840 210, 1000 260, 1200 230 L 1200 320 L 0 320 Z" fill="url(#wave-grad-1)" />
+
+  <!-- Bottom Dynamic Wave Layer 2 -->
+  <path d="M0 260 C 240 280, 480 230, 720 270 C 960 300, 1080 240, 1200 265 L 1200 320 L 0 320 Z" fill="url(#wave-grad-2)" />
+
+  <!-- Top Status Pill -->
+  <g transform="translate(600, 52)">
+    <rect x="-215" y="-14" width="430" height="28" rx="14" fill="url(#pill-grad)" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.45" />
+    <!-- Glowing Status Indicator Dot -->
+    <circle cx="-190" cy="0" r="5" fill="#10b981" />
+    <circle cx="-190" cy="0" r="8" fill="#10b981" opacity="0.3" />
+    <text x="-172" y="4" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" letter-spacing="1.2">
+      SOFTWARE DEVELOPMENT ENGINEER • FULL-STACK &amp; AI
+    </text>
+  </g>
+
+  <!-- Central Title -->
+  <text x="600" y="132" text-anchor="middle" fill="url(#text-grad)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="52" font-weight="900" letter-spacing="3">
+    VIJAYAPANDIAN T
+  </text>
+
+  <!-- Subtitle Line -->
+  <text x="600" y="172" text-anchor="middle" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="500" letter-spacing="0.5">
+    Production Developer Portfolio &amp; Engineering Hub • SRM Easwari CSE
+  </text>
+
+  <!-- Tech Stack Pills Row -->
+  <g transform="translate(600, 218)">
+    <!-- Tech Item: React & Next.js -->
+    <rect x="-410" y="-12" width="120" height="25" rx="6" fill="#0f172a" fill-opacity="0.8" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.35" />
+    <text x="-350" y="5" text-anchor="middle" fill="#7dd3fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, sans-serif" font-size="11" font-weight="600">⚡ React 18 &amp; Next</text>
+
+    <!-- Tech Item: Java & Spring Boot -->
+    <rect x="-275" y="-12" width="140" height="25" rx="6" fill="#0f172a" fill-opacity="0.8" stroke="#818cf8" stroke-width="1" stroke-opacity="0.35" />
+    <text x="-205" y="5" text-anchor="middle" fill="#a5b4fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, sans-serif" font-size="11" font-weight="600">☕ Java &amp; Spring Boot</text>
+
+    <!-- Tech Item: GenAI & LLMs -->
+    <rect x="-120" y="-12" width="125" height="25" rx="6" fill="#0f172a" fill-opacity="0.8" stroke="#c084fc" stroke-width="1" stroke-opacity="0.35" />
+    <text x="-57.5" y="5" text-anchor="middle" fill="#d8b4fe" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, sans-serif" font-size="11" font-weight="600">🤖 GenAI &amp; Gemini</text>
+
+    <!-- Tech Item: Node & Express -->
+    <rect x="20" y="-12" width="125" height="25" rx="6" fill="#0f172a" fill-opacity="0.8" stroke="#34d399" stroke-width="1" stroke-opacity="0.35" />
+    <text x="82.5" y="5" text-anchor="middle" fill="#6ee7b7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, sans-serif" font-size="11" font-weight="600">🟢 Node &amp; Express</text>
+
+    <!-- Tech Item: SQL & Databases -->
+    <rect x="160" y="-12" width="120" height="25" rx="6" fill="#0f172a" fill-opacity="0.8" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.35" />
+    <text x="220" y="5" text-anchor="middle" fill="#7dd3fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, sans-serif" font-size="11" font-weight="600">🗄️ SQL &amp; MongoDB</text>
+
+    <!-- Tech Item: 450+ DSA -->
+    <rect x="295" y="-12" width="115" height="25" rx="6" fill="#0f172a" fill-opacity="0.8" stroke="#f59e0b" stroke-width="1" stroke-opacity="0.35" />
+    <text x="352.5" y="5" text-anchor="middle" fill="#fcd34d" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, sans-serif" font-size="11" font-weight="600">🎯 450+ DSA Solved</text>
+  </g>
+</svg>

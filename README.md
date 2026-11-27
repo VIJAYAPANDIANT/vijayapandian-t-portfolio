@@ -1,14 +1,10 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=220&section=header&text=Vijayapandian%20T&fontSize=46&fontColor=38bdf8&animation=fadeIn&fontAlignY=38&desc=Software%20Development%20Engineer%20%E2%80%A2%20Full-Stack%20%26%20AI%20Developer%20%E2%80%A2%20Problem%20Solver&descAlignY=62&descColor=94a3b8&descSize=18" alt="Vijayapandian T Header"/>
+<img width="100%" src="./public/assets/images/header-banner.svg" alt="Vijayapandian T Header" />
 
 # Vijayapandian T — Production Developer Portfolio & Engineering Hub
 
 <p align="center">
-  <a href="https://github.com/VIJAYAPANDIANT/vijayapandian-t-portfolio">
-    <img src="https://api.visitorbadge.io/api/visitors?path=VIJAYAPANDIANT.vijayapandian-t-portfolio&label=REPOSITORY%20VIEWS&labelColor=%230d1117&countColor=%2338bdf8&style=for-the-badge" alt="Repository Views" />
-  </a>
-  &nbsp;
   <a href="https://github.com/VIJAYAPANDIANT">
     <img src="https://komarev.com/ghpvc/?username=VIJAYAPANDIANT&label=PROFILE+VIEWS&color=38bdf8&style=for-the-badge&labelColor=0d1117" alt="Profile Views" />
   </a>
@@ -23,6 +19,10 @@
   &nbsp;
   <a href="LICENSE">
     <img src="https://img.shields.io/badge/License-MIT-38bdf8?style=for-the-badge&labelColor=0d1117" alt="License: MIT" />
+  </a>
+  &nbsp;
+  <a href="https://vijayapandian-t-portfolio.vercel.app">
+    <img src="https://img.shields.io/badge/Live-Production_Ready-10b981?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0d1117" alt="Live Production Ready" />
   </a>
 </p>
 
