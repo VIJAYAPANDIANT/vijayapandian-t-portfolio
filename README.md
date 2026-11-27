@@ -158,7 +158,7 @@ flowchart TD
 
 | # | Organization | Role | Duration & Track | Key Engineering Deliverables & Verified Repositories |
 |---|---|---|---|---|
-| **01** | **Career Solutions77** | Full-Stack Development Intern | Sep 2026 – Oct 2026 · Offline | • [rescue-link-offline-emergency-sos](https://github.com/VIJAYAPANDIANT/rescue-link-offline-emergency-sos) (Offline BLE Emergency Mesh SOS)<br>• [fsd-intern-task-and-project](https://github.com/VIJAYAPANDIANT/fsd-intern-task-and-project) (Smart Digital Museum & MediTrack) |
+| **01** | **Career Solutions** | Full Stack Developer Intern | Sep 2026 – Oct 2026 · Offline | • [rescue-link-offline-emergency-sos](https://github.com/VIJAYAPANDIANT/rescue-link-offline-emergency-sos) (Offline BLE Emergency Mesh SOS)<br>• [fsd-intern-task-and-project](https://github.com/VIJAYAPANDIANT/fsd-intern-task-and-project) (Smart Digital Museum & MediTrack) |
 | **02** | **BharatCares® × IBM SkillsBuild** | Gen AI & Cloud Computing Intern | Jun 2026 – Jul 2026 · Remote | • [smart-resume-builder](https://github.com/VIJAYAPANDIANT/smart-resume-builder) &nbsp;[Live App](https://smart-resume-builder-a1ej.vercel.app/) (AI ATS Resume Optimization Platform) |
 | **03** | **Elevate Labs** | SQL Developer Intern | Jan 2026 – Apr 2026 · Remote | • [sql-internship-portfolio](https://github.com/VIJAYAPANDIANT/sql-internship-portfolio) (Enterprise 3NF Schemas, Window Functions, 20 SQL Projects) |
 | **04** | **1M1B (1 Million for 1 Billion)** | 1M1B Green Intern | Feb 2026 – Mar 2026 · Hybrid | • [smart-waste-mapping-platform](https://github.com/VIJAYAPANDIANT/ai-powered-smart-waste-mapping-platform) &nbsp;[Live App](https://ai-powered-smart-waste-mapping-plat.vercel.app/) (Geospatial GIS & Random Forest Prediction) |

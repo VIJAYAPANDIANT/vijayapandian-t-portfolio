@@ -11,9 +11,9 @@ export const experienceCategories = [
 
 export const experienceData = [
   {
-    id: "career-solutions77",
-    company: "Career Solutions77",
-    role: "Full-Stack Development Intern",
+    id: "career-solutions",
+    company: "Career Solutions",
+    role: "Full Stack Developer Intern",
     category: "fullstack",
     duration: "Sep 2026 – Oct 2026 · 2 mos",
     badge: "Internship",
@@ -30,11 +30,11 @@ export const experienceData = [
         name: "fsd-intern-task-and-project",
         repoUrl: "https://github.com/VIJAYAPANDIANT/fsd-intern-task-and-project",
         githubUrl: "https://github.com/VIJAYAPANDIANT/fsd-intern-task-and-project",
-        description: "Official repository for Full-Stack Development Internship at Career Solutions77. Features production-ready web applications: Smart Digital Museum (React 18 cultural heritage SPA) and Smart Medicine Reminder & Health Tracker (Full-stack React, Express, JWT, and atomic JSON persistence)."
+        description: "Official repository for Full Stack Developer Internship at Career Solutions. Features production-ready web applications: Smart Digital Museum (React 18 cultural heritage SPA) and Smart Medicine Reminder & Health Tracker (Full-stack React, Express, JWT, and atomic JSON persistence)."
       }
     ],
     description:
-      "Worked as a Full-Stack Development Intern at Career Solutions77 (Offline, Chennai). Engineered production-ready, decoupled full-stack web applications, decentralized offline emergency communications, and robust REST APIs with strict data isolation, zero-database JSON atomic storage engines, and cloud deployments on Vercel.",
+      "Worked as a Full Stack Developer Intern at Career Solutions (Offline, Chennai). Engineered production-ready, decoupled full-stack web applications, decentralized offline emergency communications, and robust REST APIs with strict data isolation, zero-database JSON atomic storage engines, and cloud deployments on Vercel.",
     responsibilities: [
       "Engineered decoupled full-stack web applications following production standards with independent React 18 SPAs and Express REST APIs.",
       "Architected RescueLink, a decentralized offline BLE emergency SOS distress signaling system with durable SQLite Write-Ahead Logging (WAL) and epidemic mesh forwarding.",
