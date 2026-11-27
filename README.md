@@ -5,8 +5,8 @@
 # Vijayapandian T — Production Developer Portfolio & Engineering Hub
 
 <p align="center">
-  <a href="https://github.com/VIJAYAPANDIANT">
-    <img src="https://komarev.com/ghpvc/?username=VIJAYAPANDIANT&label=PROFILE+VIEWS&color=38bdf8&style=for-the-badge&labelColor=0d1117" alt="Profile Views" />
+  <a href="https://github.com/VIJAYAPANDIANT/vijayapandian-t-portfolio">
+    <img src="https://hits.sh/github.com/VIJAYAPANDIANT/vijayapandian-t-portfolio.svg?style=for-the-badge&label=REPOSITORY+VIEWS&color=38bdf8&labelColor=0d1117" alt="Repository Views" />
   </a>
   &nbsp;
   <a href="https://github.com/VIJAYAPANDIANT/vijayapandian-t-portfolio/stargazers">
